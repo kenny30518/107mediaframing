@@ -7,244 +7,69 @@
 
     <!-- Bootstrap CSS -->
     <link class="title" rel="icon" type="image/ico" href="image/title.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.0/fullpage.css" integrity="sha512-hGBKkjAVJUXoImyDezOKpzuY4LS1eTvJ4HTC/pbxn47x5zNzGA1vi3vFQhhOehWLTNHdn+2Yqh/IRNPw/8JF/A==" crossorigin="anonymous" />
-    <link href="css/custom.css" rel="stylesheet">
+    <link rel="preload" as="image" href="https://i.imgur.com/N4RQLfa.png">
+    <link rel="preload" as="image" href="https://i.imgur.com/XnkHJea.png">
+    <link href="css/landingpage.css" rel="stylesheet">
 
     <title>資傳107級畢業展帶風向</title>
   </head>
   <body>
-    <div class="loading" id="preloader">
-      <div class="wavy">
-        <span style="--i:1;">風</span>
-        <span style="--i:2;">向</span>
-        <span style="--i:3;">製</span>
-        <span style="--i:4;">造</span>
-        <span style="--i:5;">中</span>
-        <span style="--i:6;">.</span>
-        <span style="--i:7;">.</span>
-        <span style="--i:8;">.</span>
-      </div>
+    <div class="cover">
+        <div class="fake-link" onclick="go();play()"></div>
+        <img src="https://i.imgur.com/z1Zj8F0.png">
+        <audio id="audio" src="audio/keyboard.mp3"></audio>
     </div>
-
-    <!--<nav class="navbar navbar-expand-lg navbar-light fixed-top">-->
-
-      <!-- 預留放LOGO
-      <a href="#section1"><img class="logo" src="image/"></a>
-      -->
-
-      <div class="toggle-btn">
-          <span class="one"></span>
-          <span class="two"></span>
-          <span class="three"></span>
-      </div>
-      <div class="menu">
-        <div class="data">
-          <ul>
-            <li>
-              <a href="#section1">HOME</a>
-            </li>
-            <li>
-              <a href="#section2">INTRODUCE</a>
-            </li>
-            <li>
-              <a href="#section3">ABOUT US</a>
-            </li>
-          </ul>
+    <div class="s1">
+        <video autoplay="autoplay" loop="true" muted media="all" class="coverVideo">
+            <source src="video/cover.mp4" type="video/mp4">
+        </video>
+        <div class="menu-upper">
+            <div class="logo">
+                <img src="https://imgur.com/EY1SJuB.png">
+            </div>
         </div>
-      </div>
 
-      <!--<div class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </div>-->
+        <div class="menu-lower">
 
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <ul class="navbar-nav mx-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#section1">HOME</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#section2">INTRODUCE</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#section3">ABOUT US</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
-    <div id="fullpage">
-      <section class="section s1">
-        <div class="container">
-          <div class="lower text-center">
-            <p class="scrolldown" style="margin: -20px;">scroll down</p>
-            <div class="arrow">
-              <a class="arrowcolor" href="#section2"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-down" class="svg-inline--fa fa-chevron-down fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg></a>
-            </div>
-          </div>
         </div>
-      </section>
 
-      <section class="section s2">
-        <div class="row">
-          <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-6 offset-lg-6 col-xl-6 offset-xl-6">
-            <div class="container">
-              <h2 style="padding-bottom: 20px;">《人造風向》</h2>
-              <p>資訊時代下，片面的、正確的、錯誤的資訊層出不窮，但因為易於取得，也容易導致閱聽眾被動接收。
-              </p>
-              <p class="textspace">
-                身為傳播學院的學生，我們就是具備「帶風向」能力的角色。現階段，大眾對於「帶風向」一詞都持有貶義的想法與標籤。但我們認為帶風向的意思是「傳達新的觀點」，以網路社群影響力去引發流行或群眾討論。
-              </p>
-              <p>
-                因此我們將以資訊傳播學系四年所學的「資訊設計」、「知識加值」、「網路傳播」三大領域，集結13個專題作品，帶給觀展者「新的觀點，新的風向」。
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section s3">
-        <h1 class="heading">About us</h1>
-          <div class="row widthset">
-            <div class="col-md-4 col-md-6 col-xl-4">
-              <div class="profile" id="profile1">
-                <div class="top-img">
-                  <img src="https://i.imgur.com/y0o6QjE.jpg" onmouseover="this.src='https://i.imgur.com/eHvUJZG.gif'" onmouseleave="this.src='https://i.imgur.com/y0o6QjE.jpg'" class="profile-img">
-                </div>            
-                <h3 class="user-name">劉艾瑄</h3>
-                <h5>專案經理</h5>
-                <div class="textsetting">
-                  <P>最了解夥伴的專案經理就是我！不要認錯了！因為不能接受一成不變的生活而成為換髮型狂熱者，現階段是捲髮。</P>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 col-md-6 col-xl-4">
-              <div class="profile" id="profile2">
-                <div class="top-img">
-                  <img src="https://imgur.com/FQv8TYr.jpg" onmouseover="this.src='https://imgur.com/c4lttc1.gif'" onmouseleave="this.src='https://imgur.com/FQv8TYr.jpg'" class="profile-img">
-                </div>
-                <h3 class="user-name">許少綱</h3>
-                <h5>美術設計</h5>
-                <div class="textsetting">
-                  <P>我是團隊的美術設計啦！有著看見不喜歡的設計時，會一直煩惱如果是我會怎麼呈現的壞習慣。想靈感的時候容易肚子餓。</P>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 col-md-6 col-xl-4">
-              <div class="profile" id="profile3">
-                <div class="top-img">
-                  <img src="https://imgur.com/XiQOPDl.jpg"  class="profile-img">
-                </div>
-                <h3 class="user-name">陳俊頴</h3>
-                <h5>網頁設計</h5>
-                <div class="textsetting">
-                 <P>爆肝、眼花、頭腦無力，這就是我網站設計的日常拉，平時興趣就看看飛機，開開車，還是一個臭直男。</P>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 col-md-6 col-xl-4">
-              <div class="profile" id="profile4">
-                <div class="top-img">
-                  <img src="https://imgur.com/FAOau3H.jpg" onmouseover="this.src='https://imgur.com/PiYOhE0.gif'" onmouseleave="this.src='https://imgur.com/FAOau3H.jpg'" class="profile-img">
-                </div>
-                <h3 class="user-name">吳依庭</h3>
-                <h5>行銷公關</h5>
-                <div class="textsetting">
-                  <P>大家好我叫做吳依庭，今年20歲，雙子座O型，是熱情的桃園人，平時沒事喜歡逛街購物、追追影集、看看電影，陶冶身心靈。</P>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 col-md-6 col-xl-4">
-              <div class="profile" id="profile5">
-                <div class="top-img">
-                  <img src="https://imgur.com/inhy291.jpg" onmouseover="this.src='https://imgur.com/dcuwRAY.gif'" onmouseleave="this.src='https://imgur.com/inhy291.jpg'" class="profile-img">
-                </div>
-                <h3 class="user-name">劉芳妤</h3>
-                <h5>行銷公關</h5>
-                <div class="textsetting">
-                  <P>一個金魚腦人。在團隊中負責行銷跟財務。有時腦子不太靈光，常常凸ㄘㄟˊ、忘東忘西，好心的小夥伴們收留了我，只能說可喜可賀！可喜可賀！</P>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 col-md-6 col-xl-4">
-              <div class="profile" id="profile6">
-                <div class="top-img">
-                  <img src="https://imgur.com/Joc3C3q.jpg" onmouseover="this.src='https://imgur.com/8MTplmf.gif'" onmouseleave="this.src='https://imgur.com/Joc3C3q.jpg'" class="profile-img">
-                </div>
-                <h3 class="user-name">林盈萱</h3>
-                <h5>展場設計</h5>
-                <div class="textsetting">
-                  <P>常被說安靜，但只是沒表現出澎派的小劇場！最近的人生體悟是「別輕易同意軟體更新，不然辛苦完成的3D建模會毫不留情跟你Say Goodbye~」</P>
-                </div>
-              </div>
-            </div>
-            <div class="sponsor">
-              <h3>合作廠商</h3>
-              <div class="row">
-                <div class="col-sm-6 col-md-4">
-                  <img src="https://imgur.com/lqU9iMl.png" class="sponsor-img" id="smileLogo">
-                </div>
-                <div class="col-sm-6 col-md-4">
-                  <img src="https://imgur.com/0sFAmR5.png" class="sponsor-img" id="pegavisionLogo">
-                </div>
-                <div class="col-sm-6 col-md-4">
-                  <img src="https://i.imgur.com/ePlZcQl.png" class="sponsor-img" id="myPlusLogo">
-                </div>
-                <div class="col-sm-6 col-md-4">
-                  <img src="https://imgur.com/pDpBjgc.png" class="sponsor-img">
-                </div>
-                <div class="col-sm-6 col-md-4">
-                  <img src="https://imgur.com/pDpBjgc.png" class="sponsor-img">
-                </div>
-                <div class="col-sm-6 col-md-4">
-                  <img src="https://imgur.com/pDpBjgc.png" class="sponsor-img">
-                </div>
-              </div>
-            </div>
-          </div>
-          <footer>
+        <div class="wrapper">
             <div class="row">
-              <div class="col-6">
-                <div class="row align-items-center">
-                  <div class="col-6">
-                    <div class="schoollogo">
-                      <a class="schoolimg" href="https://www.shu.edu.tw/"><img src="https://imgur.com/aSWCkCP.png"></a>
-                    </div>
-                  </div>
-                  <div class="col-6">
-                    <div class="icslogo">
-                      <a class="icsimg" href="http://ics.wp.shu.edu.tw/"><img src="https://imgur.com/OHQB7V7.png"></a>
-                    </div>
-                  </div>
+                <div class="col-md-6 offset-md-6 btn">
+                    <a href="mainpage2.html">中文版</a>
                 </div>
-              </div>
-              <div class="col-6">
-                <div class="col">
-                  <div></div>
-                </div>
-                <div class="col">
-                  <div class="copyright">
-                    <img src="https://imgur.com/CmziL58.png">
-                  </div>
-                </div>
-              </div>
             </div>
-          </footer>
-      </section>
+            <div class="row">
+                <div class="col-md-6 offset-md-6 btn">
+                    <a href="mainpage2.html" style="padding: 10px 65px;">English</a>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <!--Bootstrap JavaScript-->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <!--fullpage.js-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.0/vendors/scrolloverflow.js" integrity="sha512-+DJqTZei2r0qDU75bKSfWggvHgPveNzalRB0ZxQpRhuRw9iLmQMr4Djbl+qg5xiuXPNiWXAjzXKKw4WJxUxr4g==" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.0/fullpage.js" integrity="sha512-XnvEFIQIK4NvMki+6FYKTM7XdnsbDAqHB2KLXfgFkafRQBtKOkLZQYjf7ydXd8OfrAn8vWS68ESil4GHtpdqPQ==" crossorigin="anonymous"></script>
-    <!--GSAP-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
-    <script src="js/custom.js"></script>
   </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-rwdImageMaps/1.6/jquery.rwdImageMaps.min.js" integrity="sha512-eZB7hQa0bRlrKMQ2njpP0d/Klu6o30Gsr8e5FUCjUT3fSlnVkm/1J14n58BuwgaMuObrGb7SvUfQuF8qFsPU4g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/landingpage.js"></script>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

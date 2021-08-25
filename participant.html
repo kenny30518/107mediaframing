@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta lang="zh-Hant-TW">
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	    <!-- Bootstrap CSS -->
+	    <link class="title" rel="icon" type="image/ico" href="image/title.ico">
+	    <link rel="preconnect" href="https://fonts.gstatic.com">
+	    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;500;700&display=swap" rel="stylesheet">
+	    <link href="css/participant.css" rel="stylesheet">
+		<title>資傳107級畢業展帶風向</title>
+	</head>
+	<body>
+		<div class="loading" id="preloader">
+			<div class="wavy">
+				<span style="--i:1;">風</span>
+				<span style="--i:2;">向</span>
+				<span style="--i:3;">製</span>
+				<span style="--i:4;">造</span>
+				<span style="--i:5;">中</span>
+				<span style="--i:6;">.</span>
+				<span style="--i:7;">.</span>
+				<span style="--i:8;">.</span>
+			</div>
+		</div>
+	    <div class="menu">
+	    	<div class="menulogo">
+				<img src="https://imgur.com/EY1SJuB.png">
+			</div>
+
+	    	<div class="data">
+	    		<ul>
+					<li>
+						<a href="mainpage2.html">首頁</a>
+					</li>
+					<li>
+						<a href="curator.html">策展人</a>
+					</li>
+					<li>
+						<a href="traffic.html">交通資訊</a>
+					</li>
+					<li>
+						<a href="participant.html">參展作品</a>
+					</li>
+					<li>
+						<a href="#">最新風向</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<section>
+			<div class="bg"></div>
+			<div class="header">
+				<div class="burgerwrapper">
+					<div class="rwdBurger">
+						<div class="item1"></div>
+						<div class="item2"></div>
+						<div class="item3"></div>
+					</div>
+				</div>
+
+				<div class="headerContainer" id="headerContainer">
+					<div class="logo">
+						<img src="https://imgur.com/EY1SJuB.png">
+					</div>
+					<div class="mainNav">
+						<ul>
+							<li>
+								<a href="mainpage2.html">首頁</a>
+							</li>
+							<li>
+								<a href="curator.html">策展人</a>
+							</li>
+							<li>
+								<a href="traffic.html">交通資訊</a>
+							</li>
+							<li>
+								<a href="participant.html">參展作品</a>
+							</li>
+							<li>
+								<a href="#">最新風向</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="content">
+				<div class="textBox">
+					<h2 id="title">人造風向</h2>
+					<p id="introduce">資訊時代下，片面的、正確的、錯誤的資訊層出不窮，但因為易於取得，也容易導致閱聽眾被動接收。身為傳播學院的學生，我們就是具備「帶風向」能力的角色。
+					</p>
+				</div>
+				<div class="imgBx">
+					<img src="https://i.imgur.com/BVPnYr5.png" class="logo">
+				</div>
+			</div>
+			<ul class="thumb">
+				<li data-text="Media Framing" class="active"><img src="https://i.imgur.com/BVPnYr5.png" onclick="imgSlider('https://i.imgur.com/BVPnYr5.png');changeBgColor('#5aa6a5');change_text1()"></li>
+				<li data-text="Farm In Love"><img src="https://i.imgur.com/fIHwvJ8.png" onclick="imgSlider('https://i.imgur.com/fIHwvJ8.png');changeBgColor('#91B493');change_text2()"></li>
+				<li data-text="Something Need To Know"><img src="https://i.imgur.com/u56o0oX.png" onclick="imgSlider('https://i.imgur.com/u56o0oX.png');changeBgColor('#DDB4B4');change_text3()"></li>
+				<li data-text="Social Crisis"><img src="https://i.imgur.com/LxBjNlf.png" onclick="imgSlider('https://i.imgur.com/LxBjNlf.png');changeBgColor('#6A658B');change_text4()"></li>
+				<li data-text="Time Capture"><img src="https://i.imgur.com/ygwJFXf.png" onclick="imgSlider('https://i.imgur.com/ygwJFXf.png');changeBgColor('#D8C4A9');change_text5()"></li>
+				<li data-text="Save And Sound"><img src="https://i.imgur.com/4rbGkdF.png" onclick="imgSlider('https://i.imgur.com/4rbGkdF.png');changeBgColor('#74736B');change_text6()"></li>
+				<li data-text="bē kì"><img src="https://i.imgur.com/Z3SKgrJ.png" onclick="imgSlider('https://i.imgur.com/Z3SKgrJ.png');changeBgColor('#C8BAAA');change_text7()"></li>
+				<li data-text="T.dot"><img src="https://i.imgur.com/vQQToEF.png" onclick="imgSlider('https://i.imgur.com/vQQToEF.png');changeBgColor('#AFCDD8');change_text8()"></li>
+				<li data-text="Cullet"><img src="https://i.imgur.com/6gms5na.png" onclick="imgSlider('https://i.imgur.com/6gms5na.png');changeBgColor('#D4D2A7');change_text9()"></li>
+				<li data-text="Temples island"><img src="https://i.imgur.com/yQcbljf.png" onclick="imgSlider('https://i.imgur.com/yQcbljf.png');changeBgColor('#A65C4F');change_text10()"></li>
+				<li data-text="Defensive driving"><img src="https://i.imgur.com/kfjHEhl.png" onclick="imgSlider('https://i.imgur.com/kfjHEhl.png');changeBgColor('#BD9F7A');change_text11()"></li>
+				<li data-text="Sink into phone"><img src="https://i.imgur.com/6LrIxAd.png" onclick="imgSlider('https://i.imgur.com/6LrIxAd.png');changeBgColor('#D8999E');change_text12()"></li>
+				<li data-text="Reverse by a ball"><img src="https://i.imgur.com/pzljrkD.png" onclick="imgSlider('https://i.imgur.com/pzljrkD.png');changeBgColor('#DB8662');change_text13()"></li>
+			</ul>
+			<ul class="sci">
+				<li><a href="https://www.facebook.com/ics.unboxing" id="fb" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+				<li><a href="https://www.instagram.com/107ics.media_framing/" id="ig" target="_blank"><i class="fab fa-instagram"></i></a></li>
+				<li><a href="" id="yt" target="_blank"><i class="fab fa-youtube"></i></a></li>
+				<li><a href="" id="pd" target="_blank"><i class="fas fa-podcast"></i></a></li>
+				<li><a href="" id="sp" target="_blank"><i class="fab fa-spotify"></i></a></li>
+				
+			</ul>
+
+			<div class="extend">
+				<p>查看更多組別</p>
+			</div>
+
+		</section>
+
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js" integrity="sha512-UxP+UhJaGRWuMG2YC6LPWYpFQnsSgnor0VUF3BHdD83PS/pOpN+FYbZmrYN+ISX8jnvgVUciqP/fILOXDjZSwg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="https://kit.fontawesome.com/bdca2f9925.js" crossorigin="anonymous"></script>
+		<script src="js/participant.js"></script>
+
+	</body>
+</html>

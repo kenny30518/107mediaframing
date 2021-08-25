@@ -1,0 +1,440 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box; 
+	font-family: 'Noto Sans TC', sans-serif;
+}
+
+body{
+	overflow-x: hidden;
+	
+}
+
+.loading{
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	z-index: 9999;
+	background-color: #5aa6a5;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.wavy{
+	position: relative;
+	-webkit-box-reflect: below -12px linear-gradient(transparent, rgba(0,0,0,0.2)) ;
+}
+
+.wavy span{
+	position: relative;
+	display: inline-block;
+	color: white;
+	font-size: 2em;
+	animation: animate 2s ease-in-out infinite;
+	animation-delay: calc(0.2s * var(--i));
+}
+
+@keyframes animate{
+	0%{
+		transform: translateY(0px);
+	}
+	20%{
+		transform: translateY(-20px);
+	}
+	40%,100%{
+		transform: translateY(0px);
+	}
+}
+
+
+.bg{
+	width: 100%;
+	height: 100%;
+	top: 0;
+	position: fixed;
+	background-image: url(https://i.imgur.com/ujb52B7.png);
+	background-position: center;
+	background-size: cover;	
+}
+
+.inner-bg{
+	position: relative;
+	width: 100%;
+	height: 200vh;
+	top: 0;
+	right: 0;
+	position: absolute;
+	background: url(https://i.imgur.com/cT73oSB.png);
+	background-size: cover;
+	background-position: center;
+}
+
+.inner-bg img{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100vw;
+	height: auto;
+}
+
+.header{
+	height: 8vh;
+	width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+	z-index: 9999;
+}
+
+#headerContainer{
+	width: 100%;
+	position: absolute;
+	background-color: transparent;
+	display: flex;
+	min-height: 10vh;
+	align-items: center;
+	justify-content: space-around;
+	transition: 0.8s ease;
+}
+
+.mainNav{
+	position: absolute;
+	right: 5%;
+}
+
+.headerContainer .mainNav ul li{
+	display: block;
+	float: left;
+	list-style: none;
+}
+
+.headerContainer .mainNav ul li a{
+	cursor: pointer;
+	color: #5aa6a5;
+	text-decoration: none;
+	transition: 0.5s ease-in-out;
+	padding: 5px 20px;
+}
+
+.headerContainer .mainNav ul li a:hover{
+	background-color: white;
+	cursor: pointer;
+	color: #6a9d9f;
+	text-decoration: none;
+}
+
+.wrapper{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.menu{
+	background: #5aa6a5;
+	z-index: 0;
+	position: absolute;
+	height: 100vh;
+	width: 100%;
+	left: -100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.menulogo{
+	position: absolute;
+	top: 10%;
+	max-width: 250px;
+}
+
+.menulogo img{
+	width: 100%;
+	height: 100%;
+}
+
+.data{
+	position: fixed;
+	text-align: left;
+	transform: translateX(-130%);
+}
+
+.rwdBurger div{
+	transform: translateY(50%);
+	background-color: white;
+	width: 25px;
+	height: 3px;
+	margin: 5px;
+	display: none;
+}
+
+.rwdText p{
+	margin-bottom: 0;
+	color: white;
+	display: none;
+}
+
+.burger{
+	z-index: 1001;
+	display: none;
+}
+
+.burger:hover{
+	cursor: pointer;
+	display: none;
+}
+
+.burger div{
+	background-color: white;
+	width: 25px;
+	height: 3px;
+	margin: 5px;
+}
+
+.data ul{
+	list-style: none;
+}
+
+.data li{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.data ul a{
+	color: #fff;
+	text-decoration: none;
+}
+
+.data ul a:hover{
+	color: #fff;
+	text-decoration: none;
+}
+
+.image{
+	position: absolute;
+	top: 25px;
+	left: 125px;
+	width: 25vw;
+	height: auto;
+}
+
+.image img{
+	width: 100%;
+	height: 100%;
+}
+
+.title{
+	position: absolute;
+	top: 30%;
+	left: 14%;
+}
+
+.title h2{
+	font-size: 2.5em;
+	letter-spacing: 10px;
+	font-weight: 700;
+	color: #305351;
+}
+
+.title p{
+	font-size: 1.3em;
+	font-weight: 700;
+	letter-spacing: 10px;
+	padding-top: 20px;
+	padding-left: 25px; 
+}
+
+.s1{
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+}
+
+.wrapper{
+	position: relative;	
+	top: 70vh;
+	width: 1200px;
+	display: flex;
+	justify-content: space-around;
+	align-content: center;
+	flex-wrap: wrap;
+}
+
+.maincontainer{
+	position: relative;
+	width: 320px;
+	height: 410px;
+	margin: 20px 20px;
+	perspective: 1000px;
+}
+
+.thecard{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;
+	transition: transform 1s;
+	cursor: pointer;
+}
+
+.thecard img{
+	width: 90%;
+	height: auto;
+	border: 4px solid black;
+	margin-bottom: 90px;
+}
+
+.thefront{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden;
+	background-color: white;
+	transform: rotateY(0deg);
+	-webkit-transform: rotateY(0deg);
+	box-shadow: 11px 12px 4px 0px rgb(0 0 0 / 30%);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border: 4px solid black;
+}
+
+.thecard .thefront p{
+	opacity: 1;
+	position: absolute;
+	color: white;
+	letter-spacing: 5px;
+	padding: 5px 20px;
+	background-color: black;
+	border-radius: 3px;
+	left: 18px;
+    margin-bottom: 0;
+    bottom: 35px;
+    transition: 0.5s ease-in-out;
+}
+
+.theback p{
+	margin: 0px 30px;
+	line-height: 35px;
+}
+
+.theback h2,h4{
+	margin-bottom: 20px;
+}
+
+.theback a{
+	text-decoration: none;
+	color: black;
+}
+
+.theback{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden;
+	background-color: white;
+	transform: rotateY(180deg);
+	-webkit-transform: rotateY(180deg);
+	box-shadow: 11px 12px 4px 0px rgb(0 0 0 / 30%);
+	border: 4px solid black;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.icon{
+	position: absolute;
+	font-size: 40px;
+	bottom: 10px;
+}
+
+.icon i{
+	padding: 0 10px;
+}
+
+.fa-instagram:hover{
+	color: #e1306c;
+}
+
+.fa-facebook-square:hover{
+	color: #3b5998;
+}
+
+.fa-envelope:hover{
+	color: #0072C6;
+}
+
+@media only screen and (max-width: 1080px){
+	.wrapper{
+		top: 105vh;
+	}
+}
+
+@media only screen and (max-width: 768px){
+	.nav-links{
+		visibility: hidden;
+	}
+
+	.logo img{
+		padding-top: 15px;
+		width: 60%;
+	}
+
+	.mainNav{
+		display: none;
+	}
+
+	.logo img{
+		display: none;
+	}
+
+	.showBurger{
+		display: none;
+	}
+
+	.burgerwrapper{
+		position: relative;
+		top: 10px;
+		right: 10px;
+		z-index: 9999;
+	}
+
+	.rwdBurger{
+		cursor: pointer;
+		z-index: 9999;
+	}
+
+	.rwdBurger div{
+		display: inherit;
+	}
+
+	.menu{
+		z-index: 9999;
+	}
+
+	.inner-bg{
+		display: none;
+	}
+
+}
+
+@media only screen and (max-width: 720px){
+	.image{
+		display: none;
+		pointer-events: none;
+	}
+
+	.s1{
+		height: 300vh;
+	}
+}
+
+
+

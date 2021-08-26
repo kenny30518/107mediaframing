@@ -130,7 +130,9 @@ body{
     top: 0;
     left: 0;
     display: flex;
-    z-index: 2;
+    justify-content: flex-end;
+    position: absolute;
+	z-index: 9999;
 }
 
 #headerContainer{
@@ -170,10 +172,11 @@ body{
 	text-decoration: none;
 }
 
-.wrapper{
-	display: flex;
-	align-items: center;
-	margin-right: 20px;
+.burgerwrapper{
+	position: fixed;
+	top: 10px;
+	right: 10px;
+	z-index: 9999;
 }
 
 .menu{
@@ -212,30 +215,6 @@ body{
 	height: 3px;
 	margin: 5px;
 	display: none;
-}
-
-.rwdText p{
-	margin-bottom: 0;
-	color: white;
-	display: none;
-}
-
-
-.burger{
-	z-index: 1001;
-	display: none;
-}
-
-.burger:hover{
-	cursor: pointer;
-	display: none;
-}
-
-.burger div{
-	background-color: white;
-	width: 25px;
-	height: 3px;
-	margin: 5px;
 }
 
 .data ul{
@@ -566,17 +545,7 @@ footer .copyrights{
 		justify-content: flex-end;
 	}
 
-	.burger{
-		display: block;
-		padding-right: 15px;
-		z-index: 1001;
-	}
-
 	.mainNav{
-		display: none;
-	}
-
-	.burger{
 		display: none;
 	}
 
@@ -609,7 +578,6 @@ footer .copyrights{
 }
 
 @media only screen and (max-width: 768px){
-
 
 }
 

@@ -32,6 +32,7 @@
 }*/
 
 //$( ".start" ).click
+
 var isPressed = false;
 $(document).keydown(function(event) {
     if (!isPressed & event.keyCode === 13) {
@@ -50,7 +51,7 @@ function go(){
 	var tl = new TimelineMax();
 	
     if($( window ).width() <= 768) { 
-    	$(".cover img").attr("src","https://i.imgur.com/XnkHJea.png");
+    	document.querySelector(".cover img").style.content = "url(https://i.imgur.com/XnkHJea.png)";
     }else {
     	$(".cover img").attr("src","https://i.imgur.com/N4RQLfa.png");
     }
@@ -104,3 +105,4 @@ $( window ).resize(function() {
         $(".cover img").attr("src","https://i.imgur.com/z1Zj8F0.png");
     }
 });
+

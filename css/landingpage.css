@@ -118,13 +118,8 @@ img{
 }
 
 @media only screen and (max-width: 768px){
-	.s1{
-		width: 100%;
-		height: 100vh;
-		background-image: url(https://imgur.com/SJAtc2e.jpg);
-		background-size: cover;
-		background-position: center;
-		overflow: hidden;
+	.cover img{
+		content: url(https://i.imgur.com/4LvRL0L.png);
 	}
 
 	.cover .fake-link{

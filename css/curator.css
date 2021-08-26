@@ -7,7 +7,8 @@
 
 body{
 	overflow-x: hidden;
-	
+	overflow-y: scroll;
+	height: 200vh;
 }
 
 .loading{
@@ -127,12 +128,6 @@ body{
 	text-decoration: none;
 }
 
-.wrapper{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
 .menu{
 	background: #5aa6a5;
 	z-index: 0;
@@ -226,6 +221,11 @@ body{
 	height: 100%;
 }
 
+.content{
+	display: flex;
+	justify-content: center;
+}
+
 .title{
 	position: absolute;
 	top: 30%;
@@ -249,7 +249,6 @@ body{
 
 .s1{
 	width: 100vw;
-	height: 100vh;
 	display: flex;
 	justify-content: center;
 }
@@ -371,12 +370,6 @@ body{
 	color: #0072C6;
 }
 
-@media only screen and (max-width: 1080px){
-	.wrapper{
-		top: 105vh;
-	}
-}
-
 @media only screen and (max-width: 768px){
 	.nav-links{
 		visibility: hidden;
@@ -429,10 +422,6 @@ body{
 	.image{
 		display: none;
 		pointer-events: none;
-	}
-
-	.s1{
-		height: 300vh;
 	}
 }
 

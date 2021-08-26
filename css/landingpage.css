@@ -120,6 +120,7 @@ img{
 @media only screen and (max-width: 768px){
 	.cover img{
 		content: url(https://i.imgur.com/4LvRL0L.png);
+		z-index: 2;
 	}
 
 	.cover .fake-link{

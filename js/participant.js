@@ -95,7 +95,7 @@ for (let i=0; i < el.length; i++){
 	 	while(c < el.length){
 	 		el[c++].className = 'check';
 	 	}
-	 	el[i].className = 'check active'
+	 	el[i].className = 'check active';
 	 }
 }
 
@@ -111,7 +111,7 @@ function changeBgColor(color){
 
 function change_text1(){
     document.getElementById("title").innerHTML = "人造風向";
-    document.getElementById("introduce").innerHTML = "資訊時代下，片面的、正確的、錯誤的資訊層出不窮，但因為易於取得，也容易導致閱聽眾被動接收。身為傳播學院的學生，我們就是具備「帶風向」能力的角色。";
+    document.getElementById("introduce").innerHTML = "在廣大的網路風場中，真假訊息難辨，本團隊扣連網路社群引起的議題風向與引導輿論的社會現象，利用不同社群/傳播管道引發群眾討論與反思，最終引領閱聽眾產生「新的觀點，新的風向」。";
     document.getElementById("fb").href = "https://www.facebook.com/ics.unboxing";
     document.getElementById("ig").href = "https://www.instagram.com/107ics.media_framing/";
     document.getElementById("yt").href = "#";

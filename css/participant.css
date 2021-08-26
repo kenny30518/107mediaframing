@@ -245,7 +245,7 @@ section{
 .content .textBox{
 	margin-right: 200px;
 	position: relative;
-	max-width: 500px;
+	max-width: 650px;
 }
 
 .content .textBox h2{
@@ -257,6 +257,8 @@ section{
 
 .content .textBox p{
 	color: #fff;
+	letter-spacing: 5px;
+    line-height: 40px;
 	margin-top: 20px;
 	font-size: 1.3em;
 }
@@ -330,7 +332,7 @@ section{
 	white-space: nowrap;
 	content: attr(data-text);
 	font-size: 6em;
-	color: rgba(0,0,0,0.1);
+	color: rgba(255,255,255,30%);
 	opacity: 0;
 	font-weight: 700;
 	pointer-events: none;
@@ -409,6 +411,14 @@ section{
 }
 
 @media (max-width: 1540px),(max-height: 800px){
+	.content .textBox p {
+	    font-size: 1em;
+	}
+
+	.content .textBox h2 {
+	    font-size: 3em;
+	}
+
 	.thumb li{
 		padding: 0;
 		height: 85px;

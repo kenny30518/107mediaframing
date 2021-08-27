@@ -96,7 +96,18 @@ for (let i=0; i < el.length; i++){
 	 		el[c++].className = 'check';
 	 	}
 	 	el[i].className = 'check active';
-	 }
+        if($( window ).width() > 991){
+            if (el[1].className == 'check active') {
+                document.querySelector('.bg').className = 'bg special';
+            }else{
+                document.querySelector('.bg').className = 'bg';
+            }
+        }else if($( window ).width() <= 991){
+            if (el[1].className == 'check active') {
+                document.querySelector('.bg').style.background = '#b3bda2';
+            }
+        }
+    }
 }
 
 //content code

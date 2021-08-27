@@ -1,4 +1,4 @@
-
+/*
 
 //slider//
 $('.responsive').slick({
@@ -35,7 +35,7 @@ $('.responsive').slick({
     // settings: "unslick"
     // instead of a settings object
   ]
-});
+});*/
 
 //preloader//
 $(window).on('load', function(){
@@ -106,6 +106,7 @@ $(document).on("click", ".rwdBurger", function() {
 		tl.reversed(!tl.reversed());
 });
 
+/*
 //slider//
 $(document).ready(function(){
 
@@ -139,7 +140,7 @@ $(document).ready(function(){
 	  ]
 	});
 });
-
+*/
 
 
 

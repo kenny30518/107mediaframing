@@ -12,8 +12,8 @@ body{
 
 .loading{
 	position: fixed;
-	width: 100vw;
-	height: 100vh;
+	width: 100%;
+	height: 120vh;
 	max-width:100%;
 	z-index: 9999;
 	background-color: #5aa6a5;
@@ -49,8 +49,9 @@ body{
 }
 
 .s1{
+	overflow-x: hidden;
 	height: 135vh;
-	width: 100vw;
+	width: 100%;
 	background: url(https://i.imgur.com/kDBc88S.jpg);
 	background-size: cover;
 	background-position: center;
@@ -63,7 +64,7 @@ body{
 
 .s1 .image{
 	position: relative;
-	width: 35vw;
+	width: 35%;
 	height: auto;
 	margin-left: 70px;
 	margin-bottom: 25px;
@@ -192,7 +193,6 @@ body{
     display: flex;
     justify-content: flex-end;
     position: absolute;
-	z-index: 9999;
 }
 
 #headerContainer{
@@ -243,8 +243,8 @@ body{
 	background: #5aa6a5;
 	z-index: 0;
 	position: fixed;
-	height: 100vh;
-	width: 100vw;
+	height: 120vh;
+	width: 100%;
 	left: -120%;
 	display: flex;
 	justify-content: center;
@@ -313,7 +313,7 @@ body{
 .s2{
 	background: #90bab9;
 	position: relative;
-	width: 100vw;
+	width: 100%;
 	height: 100vh;
 	display: flex;
 	justify-content: center;
@@ -322,7 +322,7 @@ body{
 
 .phone{
 	position: absolute;
-	width: 100vw;
+	width: 100%;
 	height: auto;
 }
 
@@ -378,8 +378,8 @@ body{
 }
 
 .s3{
-	height: 100vh;
-	width: 100vw;
+	height: 120vh;
+	width: 100%;
 	background: #90bab9;
 	z-index: 1;
 }
@@ -428,6 +428,7 @@ body{
 }
 
 footer{
+	overflow-x: hidden;
 	width: 100%;
 	bottom: 0;
 	left: 0;
@@ -633,7 +634,8 @@ footer .copyrights{
 	}
 
 	.copyrights p{
-		transform: translateX(-30%);
+		transform: translateX(-15%);
+		font-size: 5px;
 	}
 }
 

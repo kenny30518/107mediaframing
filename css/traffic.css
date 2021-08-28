@@ -6,9 +6,9 @@
 }
 
 body{
-	background-color: white;
+	background-position: center;
+	background-color: #5aa6a5;
 	overflow-x: hidden;
-	box-sizing: border-box;
 }
 
 .loading{
@@ -16,7 +16,7 @@ body{
 	width: 100vw;
 	height: 100vh;
 	z-index: 9999;
-	background-color: black;
+	background-color: #5aa6a5;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -187,11 +187,9 @@ body{
 }
 
 .s1{
-	width: 100vw;
+	width: 100%;
 	min-height: 100vh;
-	background-image: url(https://i.imgur.com/pB5Q3GQ.png);
-	background-size: cover;
-	background-position: center;
+	background: #5aa6a5;
 }
 
 .wrapper{

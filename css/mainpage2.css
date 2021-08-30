@@ -5,6 +5,10 @@
 	font-family: 'Noto Sans TC', sans-serif;
 }
 
+html{
+	scroll-behavior: smooth;
+}
+
 body{
 	overflow-x: hidden;
 	background: #5aa6a5;
@@ -137,6 +141,11 @@ body{
     display: inline-block;
     left: 55px;
     color: #fff;
+}
+
+.lower a{
+	text-decoration: none;
+	color: #fff;
 }
 
 .arrow{

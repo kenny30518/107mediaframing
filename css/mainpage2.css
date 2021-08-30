@@ -535,7 +535,6 @@ footer .copyrights{
 	.s1 .coverContent{
 		font-size: 0.8em;
 		left: 2%;
-		top: 15%;
 	}
 
 	.text{
@@ -545,13 +544,6 @@ footer .copyrights{
 }
 
 @media (max-width: 1441px),(max-height: 800px){
-	.s1 .coverContent{
-		top: 5%;
-		flex-direction: column;
-		justify-content: center;
-		align-items: flex-start;
-	}
-
 	.s1 .heading h3{
 		font-size: 1.3em;
 	}
@@ -587,6 +579,13 @@ footer .copyrights{
 }
 
 @media only screen and (max-width: 992px){
+	.s1 .coverContent{
+		top: 5%;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+	}
+
 	.nav-links{
 		visibility: hidden;
 	}

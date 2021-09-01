@@ -69,6 +69,7 @@ tl.to(".item3",0.8,{
 });
 
 tl.to(".menu", 0.5, {
+    autoAlpha: 1,
     left:"0%",
     ease: Expo.easeInOut,
     delay: -1

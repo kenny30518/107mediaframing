@@ -6,8 +6,7 @@
 }
 
 body{
-	background-position: center;
-	background-color: #5aa6a5;
+	background-color: #F6F2E8;
 	overflow-x: hidden;
 }
 
@@ -61,7 +60,7 @@ body{
 #headerContainer{
 	width: 100%;
 	position: relative;
-	background-color: transparent;
+	background-color: #5aa6a5;
 	display: flex;
 	min-height: 10vh;
 	align-items: center;
@@ -140,47 +139,48 @@ body{
 }
 
 [data-tab-content] {
-  display: none;
+	display: none;
 }
 
 .active[data-tab-content] {
-  display: block;
+	display: inherit;
 }
 
 .tabs {
-  display: flex;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  border-bottom: 1px solid black;
+	display: flex;
+	list-style-type: none;
+	margin: 0;
+	padding-bottom: 30px;
+	padding: 0;
+	border-bottom: 1px solid black;
 }
 
 .tab {
-  cursor: pointer;
-  padding: 10px;
+	cursor: pointer;
+	padding: 10px;
+	transition: 0.3s ease-in-out;
 }
 
 .tab.active {
-  background-color: #CCC;
+	background-color: #CCC;
 }
 
 .tab:hover {
-  background-color: #AAA;
+	background-color: #AAA;
 }
 
 .tab-content {
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-.wrapper{
-	display: flex;
-	align-items: center;
+	margin-top: 30px;
+	margin-left: 20px;
 	margin-right: 20px;
 }
 
+.tab-content:nth-child(2) li{
+	list-style-type: decimal;
+}
+
 .menu{
-	background-image: url(https://i.imgur.com/pB5Q3GQ.png);
+	background: #5aaa6a5;
 	z-index: 0;
 	position: absolute;
 	height: 300vh;
@@ -209,23 +209,6 @@ body{
 	display: none;
 }
 
-.burger{
-	z-index: 1001;
-	display: none;
-}
-
-.burger:hover{
-	cursor: pointer;
-	display: none;
-}
-
-.burger div{
-	background-color: white;
-	width: 25px;
-	height: 3px;
-	margin: 5px;
-}
-
 .data ul{
 	list-style: none;
 }
@@ -248,83 +231,4 @@ body{
 .data ul a:hover{
 	color: #fff;
 	text-decoration: none;
-}
-
-.s1{
-	width: 100%;
-	min-height: 100vh;
-	background: #5aa6a5;
-}
-
-.wrapper{
-	margin-top: 100px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	width: 100%;
-}
-
-.upperContent{
-	position: relative;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	width: 1200px;
-}
-
-.content{
-	margin-top: 35px;
-}
-
-.fa-map-marker-alt{
-	margin-left: 20px;
-}
-
-.fa-subway{
-	margin-right: 20px;
-}
-
-.lowerContent{
-	margin-top: 100px;
-	position: relative;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	width: 1200px;
-}
-
-.fa-parking{
-	margin-right: 20px;
-}
-
-.shop{
-	margin-top: 100px;
-	position: relative;
-	display: flex;
-	width: 1200px;
-	justify-content: flex-start;
-}
-
-.fa-store{
-	margin-left: 20px;
-}
-
-.shopContent{
-	margin-top: 100px;
-	position: relative;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	width: 1200px;
-	margin-bottom: 100px;
-}
-
-.shopContent img{
-	width: 30%;
-}
-
-.introduce{
-	margin-left: 30px;
-	display: flex;
-	flex-direction: column;
 }

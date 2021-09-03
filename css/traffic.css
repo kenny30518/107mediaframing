@@ -109,6 +109,70 @@ body{
 	display: block;
 }
 
+.cover{
+	width: 100%;
+	height: 232px;
+}
+
+.cover img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.upper{
+	padding: 100px 200px;
+}
+
+.upper h1{
+	font-size: 6em;
+	color: transparent;
+	-webkit-text-stroke: 2px rgb(26, 26, 26);
+}
+
+.upper h2{
+	font-size: 2em;
+	margin-top: 20px;
+}
+
+.main-content{
+	padding: 0px 200px;
+}
+
+[data-tab-content] {
+  display: none;
+}
+
+.active[data-tab-content] {
+  display: block;
+}
+
+.tabs {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid black;
+}
+
+.tab {
+  cursor: pointer;
+  padding: 10px;
+}
+
+.tab.active {
+  background-color: #CCC;
+}
+
+.tab:hover {
+  background-color: #AAA;
+}
+
+.tab-content {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
 .wrapper{
 	display: flex;
 	align-items: center;

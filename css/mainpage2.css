@@ -358,6 +358,7 @@ body{
 
 .text h2[data-scroll="in"]{
 	opacity: 1;
+	transition-delay: 0.3s;
 }
 
 .text p{

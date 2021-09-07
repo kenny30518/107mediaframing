@@ -347,6 +347,124 @@ body{
 	color: #0072C6;
 }
 
+.s2{
+	width: 100%;
+	height: 100vh;
+}
+
+.footer{
+	overflow-x: hidden;
+	width: 100%;
+	top: 100%;
+	transform: translateY(-100%);
+	left: 0;
+	position: relative;
+	background-color: white;
+}
+
+.content{
+	padding: 20px 0;
+	width: 90%;
+	height: auto;
+	margin: 0 auto;
+}
+
+.content .top{
+	width: 100%;
+	height: auto;
+	text-align: center;
+}
+
+.content .top ul{
+	padding: 0;
+	margin: 0;
+}
+
+.content .top ul li{
+	list-style: none;
+	text-align: center;
+	display: inline-block;
+	width: 250px;
+	height: auto;
+	margin: 10px 60px;
+	position: relative;
+}
+
+.content .top ul li img{
+	width: 100%;
+	height: 100%;
+}
+
+.school{
+	width: 55%;
+}
+
+.ICS{
+	width: 85%;
+}
+
+.social-media{
+	display: flex;
+	justify-content: flex-end;
+}
+
+.social-media a{
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	margin: 0 8px;
+	border-radius: 50%;
+	text-align: center;
+	color: white;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+.social-media a:nth-child(1){
+	background-color: #4267B2;
+}
+
+.social-media a:nth-child(1):hover{
+	background-color: #5aa6a5;
+}
+
+.social-media a:nth-child(2){
+	background-color: #E1306C;
+}
+
+.social-media a:nth-child(2):hover{
+	background-color: #5aa6a5;
+}
+
+.social-media a:nth-child(3){
+	background-color: #FF0000;
+}
+
+.social-media a:nth-child(3):hover{
+	background-color: #5aa6a5;
+}
+
+.footer .copyrights{
+	white-space: nowrap;
+}
+
+.copyrights p{
+	margin-bottom: 0;
+}
+
+@media only screen and (max-width: 1366px){
+	.social-media{
+		justify-content: center;
+	}
+}
+
+@media only screen and (max-width: 830px){
+	.copyrights p{
+		transform: translateX(-15%);
+		font-size: 5px;
+	}
+}
+
 @media only screen and (max-width: 768px){
 	.nav-links{
 		visibility: hidden;
@@ -387,6 +505,10 @@ body{
 
 	.inner-bg{
 		display: none;
+	}
+
+	.wrapper{
+		margin-bottom: 40px;
 	}
 
 }

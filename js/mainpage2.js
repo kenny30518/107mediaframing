@@ -106,11 +106,6 @@ $(document).on("click", ".rwdBurger", function() {
 		tl.reversed(!tl.reversed());
 });
 
-//scroll out animation
-ScrollOut({
-	targets: '.s2 .text h2,.s2 .text p'
-})
-
 //Smooth scroll effect
 $('.lower a').on('click', function(e){
 	if(this.hash !== ''){
@@ -121,6 +116,11 @@ $('.lower a').on('click', function(e){
 			scrollTop: $(hash).offset().top
 		},800);
 	}
+});
+
+//scroll out animation
+ScrollOut({
+	targets: '.s2 .text h2,.s2 .text p'
 });
 
 /*

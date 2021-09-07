@@ -5,10 +5,6 @@
 	font-family: 'Noto Sans TC', sans-serif;
 }
 
-html{
-	-webkit-scroll-behavior: smooth;
-}
-
 body{
 	overflow-x: hidden;
 	background: #5aa6a5;

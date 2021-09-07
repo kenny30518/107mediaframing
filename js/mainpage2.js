@@ -106,6 +106,7 @@ $(document).on("click", ".rwdBurger", function() {
 		tl.reversed(!tl.reversed());
 });
 
+//scroll out animation
 ScrollOut({
 	targets: '.s2 .text h2,.s2 .text p'
 })

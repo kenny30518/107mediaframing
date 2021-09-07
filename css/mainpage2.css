@@ -356,6 +356,22 @@ body{
 	font-weight: 700;
 	color: #b4bcb7;
 	font-size: 1.8em;
+	opacity: 0;
+	transition: 0.5s;
+}
+
+.text h2[data-scroll="in"]{
+	opacity: 1;
+}
+
+.text p{
+	opacity: 0;
+	transition: 0.5s;
+}
+
+.text p[data-scroll="in"]{
+	opacity: 1;
+	transition-delay: 0.5s;
 }
 
 .client-wrap{

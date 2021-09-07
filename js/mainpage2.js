@@ -106,6 +106,10 @@ $(document).on("click", ".rwdBurger", function() {
 		tl.reversed(!tl.reversed());
 });
 
+ScrollOut({
+	targets: '.s2 .text h2,.s2 .text p'
+})
+
 /*
 //slider//
 $(document).ready(function(){

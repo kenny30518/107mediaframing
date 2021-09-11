@@ -253,6 +253,7 @@ p{
 }
 
 .bus-image{
+	flex: 5 1 0%;
     height: 440px;
     margin-top: 40px;
     position: sticky;
@@ -261,6 +262,7 @@ p{
 .bus-image img{
 	width: 100%;
 	height: 100%;
+	object-fit: cover;
 }
 
 .data{

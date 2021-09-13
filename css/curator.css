@@ -8,7 +8,7 @@
 body{
 	overflow-x: hidden;
 	overflow-y: scroll;
-	height: 200vh;
+	height: 100vh;
 }
 
 .loading{
@@ -60,7 +60,6 @@ body{
 }
 
 .inner-bg{
-	position: relative;
 	width: 100%;
 	height: 200vh;
 	top: 0;
@@ -347,16 +346,10 @@ body{
 	color: #0072C6;
 }
 
-.s2{
-	width: 100%;
-	height: 100vh;
-}
-
 .footer{
 	overflow-x: hidden;
 	width: 100%;
 	top: 100%;
-	transform: translateY(-100%);
 	left: 0;
 	position: relative;
 	background-color: white;

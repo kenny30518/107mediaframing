@@ -64,12 +64,10 @@ p{
 #headerContainer{
 	width: 100%;
 	position: relative;
-	background-color: #5aa6a5;
 	display: flex;
 	min-height: 10vh;
 	align-items: center;
 	justify-content: space-around;
-	transition: 0.8s ease;
 }
 
 .mainNav{
@@ -84,7 +82,7 @@ p{
 
 .headerContainer .mainNav ul li a{
 	cursor: pointer;
-	color: white;
+	color: #5aa6a5;
 	text-decoration: none;
 	transition: 0.5s ease-in-out;
 	padding: 5px 20px;
@@ -113,14 +111,16 @@ p{
 }
 
 .cover{
+	margin-top: 70px;
 	width: 100%;
-	height: 300px;
+	height: 500px;
 }
 
 .cover img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    clip-path: polygon(0px 0px, 100% 0px, 100% 50%, 0% 150%);
 }
 
 .title{
@@ -133,6 +133,7 @@ p{
 	color: #292B2C;
 	padding: 100px 200px;
 	font-weight: 400;
+	text-align: right;
 }
 
 .upper h1{

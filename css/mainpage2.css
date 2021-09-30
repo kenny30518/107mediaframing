@@ -544,6 +544,7 @@ footer{
 }
 
 footer .copyrights{
+	margin-top: 20px;
 	white-space: nowrap;
 }
 
@@ -650,11 +651,6 @@ footer .copyrights{
 
 	.mail{
 		margin-bottom: 30px;
-	}
-
-	.copyrights p{
-		transform: translateX(-15%);
-		font-size: 5px;
 	}
 }
 

@@ -504,7 +504,6 @@ footer{
 
 .social-media{
 	display: flex;
-	justify-content: flex-end;
 }
 
 .social-media a{

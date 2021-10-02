@@ -138,6 +138,7 @@ body{
     display: inline-block;
     left: 55px;
     color: #fff;
+    z-index: 9;
 }
 
 .lower a{

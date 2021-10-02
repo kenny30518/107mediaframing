@@ -1,0 +1,187 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box; 
+	font-family: 'Noto Sans TC', sans-serif;
+}
+
+body{
+	overflow-x: hidden;
+	overflow-y: scroll;
+	height: 100vh;
+}
+
+.loading{
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	z-index: 9999;
+	background-color: #5aa6a5;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.wavy{
+	position: relative;
+	-webkit-box-reflect: below -12px linear-gradient(transparent, rgba(0,0,0,0.2)) ;
+}
+
+.wavy span{
+	position: relative;
+	display: inline-block;
+	color: white;
+	font-size: 2em;
+	animation: animate 2s ease-in-out infinite;
+	animation-delay: calc(0.2s * var(--i));
+}
+
+@keyframes animate{
+	0%{
+		transform: translateY(0px);
+	}
+	20%{
+		transform: translateY(-20px);
+	}
+	40%,100%{
+		transform: translateY(0px);
+	}
+}
+
+.header{
+	position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    display: block;
+    width: 80px;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.menu{
+	background: #5aa6a5;
+	z-index: 0;
+	position: fixed;
+	height: 100vh;
+	width: 100%;
+	left: -100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.menulogo{
+	position: absolute;
+	top: 10%;
+	max-width: 250px;
+}
+
+.menulogo img{
+	width: 100%;
+	height: 100%;
+}
+
+.data{
+	position: fixed;
+	text-align: left;
+	transform: translateX(-130%);
+}
+
+.rwdBurger{
+	cursor: pointer;
+	margin-top: 20px;
+}
+
+.rwdBurger div{
+	background-color: white;
+	width: 25px;
+	height: 2px;
+	margin: 5px;
+}
+
+.s1{
+	height: 100vh;
+}
+
+.video{
+	width: 100vw;
+	height: 100vh;
+	object-fit: cover;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: -1;
+}
+
+.left{
+	position: absolute;
+	width: 33vw;
+	height: 100%;
+	left: 0;
+	background: rgba(0, 0, 0, 0.5);
+	z-index: 9;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.left .title{
+	display: flex;
+	flex-direction: column;
+}
+
+.left .title h1:nth-child(1){
+	letter-spacing: 4px;
+}
+
+.left .title h1{
+	color: white;
+	font-weight: 700;
+	font-size: 60px;
+}
+
+.left .link{
+	margin-top: 150px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.left .link h1{
+	color: white;
+	font-weight: 700;
+	font-size: 40px;
+}
+
+.left .link a{
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+}
+
+.left .button{
+	margin-top: 150px;
+}
+
+.left .button a{
+	font-size: 25px;
+	font-weight: 700;
+	text-decoration: none;
+	color: white;
+	padding: 15px 30px;
+	border: 4px solid white;
+	transition: 0.5s ease-in-out;
+}
+
+.left .button a:hover{
+	background: white;
+	color: inherit;
+}

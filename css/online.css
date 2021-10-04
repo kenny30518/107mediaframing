@@ -216,6 +216,10 @@ body{
 		background: black;
 	}
 
+	.data{
+		margin-top: 70px;
+	}
+
 	.left{
 		width: 100%;
 	}

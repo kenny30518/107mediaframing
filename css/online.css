@@ -212,7 +212,8 @@ body{
 
 @media (max-width: 996px){
 	.header.active{
-		width: 200px;
+		width: 100%;
+		background: black;
 	}
 
 	.left{

@@ -191,3 +191,59 @@ body{
 	background: white;
 	color: inherit;
 }
+
+@media (max-width: 1441px){
+	.left .title h1{
+		font-size: 40px;
+	}
+
+	.left .link h1{
+		font-size: 35px;
+	}
+
+	.left .link a{
+		font-size: 15px;
+	}
+
+	.left .button a{
+		font-size: 20px;
+	}
+}
+
+@media (max-width: 996px){
+	.header.active{
+		width: 200px;
+	}
+
+	.left{
+		width: 100%;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

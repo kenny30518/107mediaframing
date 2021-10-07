@@ -9,6 +9,7 @@ body{
 	overflow-x: hidden;
 	overflow-y: scroll;
 	height: 100vh;
+	cursor: url('../image/title.cur'), auto;
 }
 
 .loading{

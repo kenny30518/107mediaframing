@@ -380,9 +380,10 @@ body{
 }
 
 .client-in{
-	width: 100%;
+	max-width: 1000px;
 	height: auto;
 	text-align: center;
+	margin: 0 auto;
 }
 
 .client-in ul{
@@ -405,10 +406,8 @@ body{
 }
 
 .s3{
-	height: 120vh;
 	width: 100%;
 	background: #90bab9;
-	z-index: 1;
 }
 
 .s3 h2{
@@ -428,8 +427,9 @@ body{
 
 .mail{
 	position: relative;
-	margin: 5% auto;
 	text-align: center;
+	padding-bottom: 60px;
+	padding-top: 60px;
 }
 
 .mail .contact{
@@ -582,10 +582,6 @@ footer .copyrights{
 		padding-top: 50px;
 		margin-bottom: 1em;
 	}
-
-	.mail{
-		margin: 2% auto;
-	}
 }
 
 @media (max-width: 1366px){
@@ -648,10 +644,6 @@ footer .copyrights{
 		right: 0;
 		margin-left: 0;
 		margin-right: 0;
-	}
-
-	.mail{
-		margin-bottom: 30px;
 	}
 }
 

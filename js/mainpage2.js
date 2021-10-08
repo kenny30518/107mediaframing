@@ -132,6 +132,10 @@ ScrollOut({
 	targets: '.s2 .text h2,.s2 .text p'
 });
 
+$('.carousel').carousel({
+  interval: 2000
+})
+
 /*
 //slider//
 $(document).ready(function(){

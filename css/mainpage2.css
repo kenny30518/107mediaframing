@@ -59,6 +59,29 @@ body{
 	background-position: center;
 }
 
+.s1 .scrollToTop{
+	position: fixed;
+	bottom: 800px;
+	right: 40px;
+	width: 60px;
+	height: 60px;
+	z-index: 9998;
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.5s;
+	cursor: pointer;
+}
+
+.s1 .scrollToTop.active{
+	bottom: 40px;
+	opacity: 1;
+	visibility: visible;
+}
+
+.fa-arrow-alt-circle-up{
+	font-size: 60px;
+}
+
 .s1 .upper{
 	position: relative;
 	top: 3%;
@@ -398,6 +421,13 @@ body{
 	height: auto;
 	margin: 0 20px;
 	position: relative;
+	opacity: 0;
+	transition: 0.5s;
+	transition-delay: 0.5s;
+}
+
+.client-in ul li[data-scroll="in"]{
+	opacity: 1;
 }
 
 .client-in ul li img{

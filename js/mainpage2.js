@@ -129,12 +129,22 @@ $('.lower a').on('click', function(e){
 
 //scroll out animation
 ScrollOut({
-	targets: '.s2 .text h2,.s2 .text p'
+	targets: '.s2 .text h2,.s2 .text p,.client-in li'
 });
 
-$('.carousel').carousel({
-  interval: 2000
+//scroll to top animation
+window.addEventListener('scroll', function(){
+	var scroll = document.querySelector('.scrollToTop');
+	scroll.classList.toggle("active", window.scrollY > 500)
 })
+
+function scrollToTop(){
+	window.scrollTo({
+		top: 0,
+		behavior: 'smooth'
+	})
+}
+
 
 /*
 //slider//

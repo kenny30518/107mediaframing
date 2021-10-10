@@ -127,6 +127,17 @@ $('.lower a').on('click', function(e){
 	}
 });
 
+$('.scrollToTop a').on('click', function(e){
+	if(this.hash !== ''){
+		e.preventDefault();
+
+		const hash = this.hash;
+		$('html, body').animate({
+			scrollTop: $(hash).offset().top
+		},800);
+	}
+});
+
 //scroll out animation
 ScrollOut({
 	targets: '.s2 .text h2,.s2 .text p,.client-in li'
@@ -137,13 +148,6 @@ window.addEventListener('scroll', function(){
 	var scroll = document.querySelector('.scrollToTop');
 	scroll.classList.toggle("active", window.scrollY > 500)
 })
-
-function scrollToTop(){
-	window.scrollTo({
-		top: 0,
-		behavior: 'smooth'
-	})
-}
 
 
 /*

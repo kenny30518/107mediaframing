@@ -226,7 +226,6 @@ body{
     display: flex;
     justify-content: flex-end;
     position: absolute;
-    z-index: 2;
 }
 
 #headerContainer{
@@ -275,7 +274,7 @@ body{
 
 .menu{
 	background: #5aa6a5;
-	z-index: 0;
+	z-index: 9999;
 	position: fixed;
 	height: 100vh;
 	width: 100%;
@@ -653,7 +652,7 @@ footer .copyrights{
 
 	.rwdBurger{
 		cursor: pointer;
-		z-index: 10;
+		z-index: 9999;
 	}
 
 	.rwdBurger div{
@@ -663,10 +662,6 @@ footer .copyrights{
 	.rwdText{
 		display: inherit;
 	}
-
-	.menu{
-		z-index: 1;
-	}
 }
 
 @media (max-width: 830px){
@@ -675,6 +670,28 @@ footer .copyrights{
 		right: 0;
 		margin-left: 0;
 		margin-right: 0;
+	}
+
+	.content{
+		width: 100%;
+	}
+
+	.s1 .scrollToTop{
+		right: 10px;
+		width: 45px;
+		height: 45px;
+	}
+
+	.fa-arrow-alt-circle-up{
+		font-size: 45px;
+	}
+
+	footer .copyrights{
+		margin-top: 0;
+	}
+
+	.copyrights p{
+		font-size: 12px;
 	}
 }
 

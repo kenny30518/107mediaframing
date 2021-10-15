@@ -398,7 +398,6 @@ body{
 
 .social-media{
 	display: flex;
-	justify-content: flex-end;
 }
 
 .social-media a{
@@ -438,6 +437,7 @@ body{
 }
 
 .footer .copyrights{
+	margin-top: 20px;
 	white-space: nowrap;
 }
 
@@ -448,13 +448,6 @@ body{
 @media only screen and (max-width: 1366px){
 	.social-media{
 		justify-content: center;
-	}
-}
-
-@media only screen and (max-width: 830px){
-	.copyrights p{
-		transform: translateX(-15%);
-		font-size: 5px;
 	}
 }
 
@@ -510,6 +503,18 @@ body{
 	.image{
 		display: none;
 		pointer-events: none;
+	}
+
+	.content{
+		width: 100%;
+	}
+
+	.footer .copyrights{
+		margin-top: 0;
+	}
+
+	.copyrights p{
+		font-size: 12px;
 	}
 }
 

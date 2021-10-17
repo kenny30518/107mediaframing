@@ -186,6 +186,30 @@ body{
 	align-items: center;
 }
 
+.s1 .scrollToTop{
+	position: fixed;
+	bottom: 800px;
+	right: 40px;
+	width: 60px;
+	height: 60px;
+	z-index: 9998;
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.5s;
+	cursor: pointer;
+}
+
+.s1 .scrollToTop.active{
+	bottom: 40px;
+	opacity: 1;
+	visibility: visible;
+}
+
+.fa-arrow-alt-circle-up{
+	font-size: 60px;
+	color: #555656;
+}
+
 .intro{
 	color: #fff;
 	margin-left: 100px;

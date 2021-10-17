@@ -72,6 +72,23 @@ ScrollOut({
 	targets: '.content_image,.intro h2,.intro h3'
 });
 
+window.addEventListener('scroll', function(){
+	var scroll = document.querySelector('.scrollToTop');
+	scroll.classList.toggle("active", window.scrollY > 500)
+})
+
+//scroll to top animation
+$('.scrollToTop a').on('click', function(e){
+	if(this.hash !== ''){
+		e.preventDefault();
+
+		const hash = this.hash;
+		$('html, body').animate({
+			scrollTop: $(hash).offset().top
+		},800);
+	}
+});
+
 
 
 

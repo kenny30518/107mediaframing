@@ -7,7 +7,7 @@
 
 body{
 	overflow-x: hidden;
-	background: #5aa6a5;
+	background: #8ab0b0;
 	height: 100vh;
 	cursor: url('../image/title.cur'), auto;
 }
@@ -52,9 +52,9 @@ body{
 
 .s1{
 	overflow-x: hidden;
-	height: 135vh;
+	height: 123vh;
 	width: 100%;
-	background: url(https://i.imgur.com/kDBc88S.jpg);
+	background: url(../image/s1.png);
 	background-size: cover;
 	background-position: center;
 }
@@ -85,7 +85,7 @@ body{
 
 .s1 .upper{
 	position: relative;
-	top: 3%;
+	top: 7%;
 }
 
 .s1 .image{
@@ -114,46 +114,19 @@ body{
 	font-size: 20px;
 }
 
-.s1 .coverContent{
-	display: flex;
-	align-items: center;
-	position: relative;
-	top: 7%;
-	left: 2.5%;
-}
-
-.s1 .coverContent .left{
-	display: flex;
-	align-items: center;
-}
-
-.s1 .coverContent .right{
-	display: flex;
-	align-items: center;
-}
-
-.s1 .coverContent div{
-	margin: 0px 12px;
-}
-
-.s1 .coverContent .date{
-	font-size: 1.8em;
-	font-weight: 700;
-}
-
-.s1 .coverContent h2{
-	color: #5aa6a5;
-	font-size: 1.5em;
-	letter-spacing: 7px;
-	padding: 7px 13px;
-	background: white;
-}
-
-.s1 .coverContent p{
+.slogan{
 	color: white;
-	font-weight: 500;
-	letter-spacing: 3.5px;
-	margin-top: -5px;
+	font-weight: 700;
+	font-size: 24px;
+	position: relative;
+	top: 10%;
+	left: 10%;
+	letter-spacing: 6px;
+	margin-top: 60px;
+}
+
+.slogan p:nth-child(2){
+	margin-left: 40px;
 }
 
 .lower{
@@ -344,11 +317,15 @@ body{
 }
 
 .s2{
-	background: #90bab9;
+	background: url(../image/s2.png);
+	background-position: center;
+	background-size: cover;
+	/*background: #90bab9;*/
 	position: relative;
 	width: 100%;
-	height: 100vh;
+	min-height: 132vh;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
@@ -396,6 +373,55 @@ body{
 	transition-delay: 0.5s;
 }
 
+.s2 .coverContent{
+	display: flex;
+	align-items: center;
+	position: relative;
+	top: 7%;
+	left: 2.5%;
+	transform: translateX(31%);
+	margin-top: 60px;
+}
+
+.s2 .coverContent .left{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+    align-items: flex-start;
+}
+
+.s2 .coverContent .right{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+    align-items: flex-start;
+}
+
+.s2 .coverContent div{
+	margin: 0px 12px;
+}
+
+.s2 .coverContent .date{
+	font-size: 1.8em;
+	font-weight: 700;
+}
+
+.s2 .coverContent h2{
+	color: #5aa6a5;
+	font-size: 1.5em;
+	letter-spacing: 7px;
+	padding: 7px 13px;
+	background: white;
+	margin-bottom: 20px;
+}
+
+.s2 .coverContent p{
+	color: #526D68;
+	font-weight: 500;
+	letter-spacing: 3.5px;
+	margin-top: -5px;
+}
+
 .client-wrap{
 	width: 90%;
 	height: auto;
@@ -437,7 +463,7 @@ body{
 
 .s3{
 	width: 100%;
-	background: #90bab9;
+	background: #8ab0b0;
 }
 
 .s3 h2{

@@ -52,7 +52,7 @@ body{
 
 .s1{
 	overflow-x: hidden;
-	height: 123vh;
+	height: 128vh;
 	width: 100%;
 	background: url(../image/s1.png);
 	background-size: cover;
@@ -605,14 +605,6 @@ footer{
 .social-media a:nth-child(2):hover{
 	color: #E1306C;
 	background-color: #fff;
-}
-
-.social-media a:nth-child(3){
-	background-color: #FF0000;
-}
-
-.social-media a:nth-child(3):hover{
-	background-color: #5aa6a5;
 }
 
 footer .copyrights{

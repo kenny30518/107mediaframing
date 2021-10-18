@@ -3,7 +3,6 @@
 	padding: 0;
 	box-sizing: border-box; 
 	font-family: 'Noto Sans TC', sans-serif;
-	overflow-x: hidden;
 }
 
 body{
@@ -328,9 +327,9 @@ body{
 	display: flex;
 	align-items: center;
 	position: absolute;
-	width: 100%;
+	width: 40%;
 	height: 100%;
-	
+	left: 45%;
 }
 
 .response{

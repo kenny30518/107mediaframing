@@ -5,10 +5,13 @@
 	font-family: 'Noto Sans TC', sans-serif;
 }
 
+html{
+	scroll-behavior: smooth;
+}
+
 body{
 	overflow-x: hidden;
 	background: #8ab0b0;
-	height: 100vh;
 	cursor: url('../image/title.cur'), auto;
 }
 
@@ -184,30 +187,6 @@ body{
 	flex-direction: row;
 	justify-content: space-evenly;
 	align-items: center;
-}
-
-.s1 .scrollToTop{
-	position: fixed;
-	bottom: 800px;
-	right: 40px;
-	width: 60px;
-	height: 60px;
-	z-index: 9998;
-	visibility: hidden;
-	opacity: 0;
-	transition: 0.5s;
-	cursor: pointer;
-}
-
-.s1 .scrollToTop.active{
-	bottom: 40px;
-	opacity: 1;
-	visibility: visible;
-}
-
-.fa-arrow-alt-circle-up{
-	font-size: 60px;
-	color: #555656;
 }
 
 .intro{
@@ -474,4 +453,55 @@ footer .copyrights{
 
 .copyrights p{
 	margin-bottom: 0;
+}
+
+@media only screen and (max-width: 992px){
+	.nav-links{
+		visibility: hidden;
+	}
+
+	.header{
+		justify-content: flex-end;
+	}
+
+	.mainNav{
+		display: none;
+	}
+
+	.rwdBurger{
+		cursor: pointer;
+		z-index: 9999;
+	}
+
+	.rwdBurger div{
+		display: inherit;
+	}
+
+	.rwdText{
+		display: inherit;
+	}
+}
+
+@media (max-width: 830px){
+	.content{
+		width: 100%;
+	}
+
+	.s1 .scrollToTop{
+		right: 10px;
+		width: 45px;
+		height: 45px;
+	}
+
+	.fa-arrow-alt-circle-up{
+		font-size: 45px;
+	}
+
+	footer .copyrights{
+		margin-top: 0;
+	}
+
+	.copyrights p{
+		font-size: 12px;
+	}
 }

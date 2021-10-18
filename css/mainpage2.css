@@ -495,26 +495,18 @@ body{
 	padding-top: 60px;
 }
 
-.mail .contact{
-	background-color: white;
-	text-decoration: none;
-	color: #6a9d9f;
-	padding: 10px 20px;
-	border: 2px solid white;
-}
-
 .mail a{
 	background-color: inherit;
 	text-decoration: none;
 	color: white;
 	padding: 10px 20px;
 	border: 2px solid white;
+	transition: 0.5s ease-in-out;
 }
 
 .mail a:hover{
 	background-color: white;
 	color: #6a9d9f;
-	transition: 1s ease-in-out;
 }
 
 footer{

@@ -318,19 +318,15 @@ body{
 	align-items: center;
 }
 
-.response_wrapper{
-	display: flex;
-	align-items: center;
-	position: absolute;
-	width: 40%;
-	height: 100%;
-	left: 45%;
-}
-
 .response{
 	letter-spacing: 4px;
-	z-index: 2;
-	color: #fff;
+    z-index: 2;
+    color: #fff;
+    width: 40%;
+    left: 45%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
 }
 
 .response h2{
@@ -585,6 +581,30 @@ footer .copyrights{
 
 	.reverse .content_image{
 		margin-left: 0;
+	}
+
+	.s4{
+		padding: 0px 40px;
+		justify-content: center;
+		flex-direction: column;
+		margin-bottom: 50px;
+	}
+
+	.response {
+		position: relative;
+		width: initial;
+		left: initial;
+	}
+
+	.s4 .s4_image {
+		position: relative;
+	    width: 100%;
+	    right: initial;
+	}
+
+	.s4 .s4_image{
+		max-width: 300px;
+		max-height: 300px;
 	}
 }
 

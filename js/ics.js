@@ -63,7 +63,22 @@ ScrollOut({
 	targets: '.content_image,.intro h2,.intro h3'
 });
 
+//change section 4 image when screen resize
+$(window).on('load', function(){
+    if($( window ).width() <= 768) { 
+    $(".s4 .s4_image img").attr("src","image/fan.svg");
+}else {
+    $(".s4 .s4_image img").attr("src","image/response.svg");
+}
+});
 
+$( window ).resize(function() {
+    if($( window ).width() <= 768) { 
+        $(".s4 .s4_image img").attr("src","image/fan.svg");
+    }else {
+        $(".s4 .s4_image img").attr("src","image/response.svg");
+    }
+});
 
 
 

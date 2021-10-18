@@ -149,6 +149,23 @@ window.addEventListener('scroll', function(){
 	scroll.classList.toggle("active", window.scrollY > 500)
 })
 
+//change section 4 image when screen resize
+$(window).on('load', function(){
+    if($( window ).width() <= 768) { 
+    $(".s2 .phone img").attr("src","image/windmill.svg");
+}else {
+    $(".s2 .phone img").attr("src","image/s2.png");
+}
+});
+
+$( window ).resize(function() {
+    if($( window ).width() <= 768) { 
+        $(".s2 .phone img").attr("src","image/windmill.svg");
+    }else {
+        $(".s2 .phone img").attr("src","image/s2.png");
+    }
+});
+
 
 /*
 //slider//

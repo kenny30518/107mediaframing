@@ -628,6 +628,14 @@ footer .copyrights{
 	margin-bottom: 0;
 }
 
+.copyrights p:nth-child(1){
+	margin-right: 10px;
+}
+
+.copyrights p:nth-child(2){
+	margin-left: 10px;
+}
+
 @media (max-width: 1600px){
 	.s1 .heading{
 		left: 0;
@@ -750,6 +758,14 @@ footer .copyrights{
 
 	.copyrights p{
 		font-size: 12px;
+	}
+
+	.copyrights p:nth-child(1){
+		margin-right: 0px;
+	}
+
+	.copyrights p:nth-child(2){
+		margin-left: 0px;
 	}
 }
 

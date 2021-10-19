@@ -458,6 +458,14 @@ body{
 	margin-bottom: 0;
 }
 
+.copyrights p:nth-child(1){
+	margin-right: 10px;
+}
+
+.copyrights p:nth-child(2){
+	margin-left: 10px;
+}
+
 @media only screen and (max-width: 1366px){
 	.social-media{
 		justify-content: center;
@@ -547,6 +555,14 @@ body{
 
 	.copyrights p{
 		font-size: 12px;
+	}
+
+	.copyrights p:nth-child(1){
+		margin-right: 0px;
+	}
+
+	.copyrights p:nth-child(2){
+		margin-left: 0px;
 	}
 }
 

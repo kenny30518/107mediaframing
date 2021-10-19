@@ -229,7 +229,6 @@ body{
 .intro{
 	color: #fff;
 	position: relative;
-	margin-left: 100px;
 }
 
 .intro h1{
@@ -239,7 +238,6 @@ body{
 }
 
 .intro h2{
-	margin-top: 40px;
 	letter-spacing: 4px;
 	opacity: 0;
 	transition: 1.5s;		
@@ -274,7 +272,6 @@ body{
 }
 
 .content_image{
-	margin-right: 100px;
 	position: relative;
 	max-width: 400px;
 	max-height: 400px;
@@ -308,16 +305,6 @@ body{
 
 .reverse{
 	flex-direction: row-reverse;
-}
-
-.reverse .intro{
-	margin-left: 0;
-	margin-right: 100px;
-}
-
-.reverse .content_image{
-	margin-left: 100px;
-	margin-right: 0;
 }
 
 .s3{

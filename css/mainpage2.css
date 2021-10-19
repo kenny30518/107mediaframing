@@ -9,7 +9,7 @@ body{
 	overflow-x: hidden;
 	background: #8ab0b0;
 	height: 100vh;
-	cursor: url('../image/title.cur'), auto;
+	cursor: url('../image/cursor.cur'), auto;
 }
 
 .loading{

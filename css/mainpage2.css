@@ -452,7 +452,7 @@ body{
 }
 
 .client-in{
-	max-width: 1000px;
+	max-width: 1600px;
 	height: auto;
 	text-align: center;
 	margin: 0 auto;
@@ -637,7 +637,7 @@ footer .copyrights{
 
 	.text{
 		font-size: 1em;
-		width: 45%; 
+		width: 50%; 
 	}
 }
 
@@ -654,6 +654,13 @@ footer .copyrights{
 		padding-top: 50px;
 		margin-bottom: 1em;
 	}
+
+	.client-in{
+		max-width: 1000px;
+		height: auto;
+		text-align: center;
+		margin: 0 auto;
+	}
 }
 
 @media (max-width: 1366px){
@@ -669,6 +676,10 @@ footer .copyrights{
 		flex-direction: column;
 		align-items: flex-start;
 		top: 7%;
+	}
+
+	.s2 .text p{
+		text-align: justify;
 	}
 }
 

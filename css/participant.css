@@ -234,7 +234,7 @@ section{
 	background: rgba(0,0,0,0.1);
 }
 
-.bg.special::before{
+/*.bg.special::before{
 	content: '';
 	position: absolute;
 	top: 0;
@@ -242,7 +242,7 @@ section{
 	width: 80%;
 	height: 100%;
 	background: #b3bda2;
-}
+}*/
 
 .content{
 	position: relative;
@@ -267,6 +267,7 @@ section{
 
 .content .textBox p{
 	color: #fff;
+	text-align: justify;
 	letter-spacing: 5px;
     line-height: 40px;
 	margin-top: 20px;
@@ -384,7 +385,7 @@ section{
 }
 
 #yt{
-	opacity: 1;
+	opacity: 0;
 	pointer-events: initial;
 }
 

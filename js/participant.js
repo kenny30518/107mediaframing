@@ -97,7 +97,7 @@ for (let i=0; i < el.length; i++){
 	 		el[c++].className = 'check';
 	 	}
 	 	el[i].className = 'check active';
-        if($( window ).width() > 991){
+        /*if($( window ).width() > 991){
             if (el[1].className == 'check active') {
                 document.querySelector('.bg').className = 'bg special';
             }else{
@@ -107,7 +107,7 @@ for (let i=0; i < el.length; i++){
             if (el[1].className == 'check active') {
                 document.querySelector('.bg').style.background = '#b3bda2';
             }
-        }
+        }*/
     }
 }
 
@@ -124,13 +124,13 @@ function changeBgColor(color){
 function change_text1(){
     document.getElementById("title").innerHTML = "人造風向";
     document.getElementById("introduce").innerHTML = "在廣大的網路風場中，真假訊息難辨，本團隊扣連網路社群引起的議題風向與引導輿論的社會現象，利用不同社群/傳播管道引發群眾討論與反思，最終引領閱聽眾產生「新的觀點，新的風向」。";
-    document.getElementById("fb").href = "https://www.facebook.com/ics.unboxing";
+    document.getElementById("fb").href = "https://www.facebook.com/ics.mediaframing";
     document.getElementById("ig").href = "https://www.instagram.com/107ics.media_framing/";
     document.getElementById("yt").href = "#";
     document.getElementById("fb").style.opacity = 1;
     document.getElementById("fb").style.pointerEvents = "initial";
-    document.getElementById("yt").style.opacity = 1;
-    document.getElementById("yt").style.pointerEvents = "initial";
+    document.getElementById("yt").style.opacity = 0;
+    document.getElementById("yt").style.pointerEvents = "none";
     document.getElementById("pd").style.opacity = 0;
     document.getElementById("pd").style.pointerEvents = "none";
     document.getElementById("sp").style.opacity = 0;
@@ -282,7 +282,7 @@ function change_text10(){
 
 function change_text11(){
     document.getElementById("title").innerHTML = "ㄏㄚˊ士奇";
-    document.getElementById("introduce").innerHTML = "我們是ㄏㄚˊ士奇，常說馬路如虎口，但是道路上發生的車禍還是層出不窮，尤其事機車騎士，發生車禍造成的傷害都是我們無法預料的，為了降低事故甚至憾事的發生，我們將製作相關有趣風格的知識型短片，希望大家能對防衛性駕駛重新產生興趣，並且重視這件事情。";
+    document.getElementById("introduce").innerHTML = "我們是ㄏㄚˊ士奇，常說馬路如虎口，但是道路上發生的車禍還是層出不窮，尤其是機車騎士，發生車禍造成的傷害都是我們無法預料的，為了降低事故甚至憾事的發生，我們將製作相關有趣風格的知識型短片，希望大家能對防衛性駕駛重新產生興趣，並且重視這件事情。";
     document.getElementById("fb").href = "https://www.facebook.com/profile.php?id=100070647199484";
     document.getElementById("ig").href = "https://www.instagram.com/husky_moto_rider/";
     document.getElementById("fb").style.opacity = 1;

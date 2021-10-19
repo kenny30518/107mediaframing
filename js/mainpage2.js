@@ -100,17 +100,17 @@ $(document).on("click", ".burgerwrapper", function() {
 //change section 2 content by screen width
 $(window).on('load', function(){
     if($( window ).width() <= 1366){
-		document.querySelector(".s2 .text p").innerHTML = "《人造風向Media Framing》意即資傳系的學生創造資訊、網站及影像，以輕快、活潑、亮眼的形象進入大眾視野，帶來明確、新穎的資訊，同時也是引領著十二個風向的風場！最終引發觀眾們產生「新的觀點，新的風向」。";
+		document.querySelector(".s2 .text p").innerHTML = "《人造風向Media Framing》意即世新資傳系的學生創造資訊、網站及影像，以輕快、活潑、亮眼的形象進入大眾視野，帶來明確、新穎的資訊，也是引領著十二個風向的風場！最終引發觀眾們產生「新的觀點，新的風向」。";
 	}else {
-		document.querySelector(".s2 .text p").innerHTML = "《人造風向Media Framing》意即資傳系的學生創造資訊、<br>網站及影像，以輕快、活潑、亮眼的形象進入大眾視野，<br>帶來明確、新穎的資訊，同時也是引領著十二個風向的風場！<br>最終引發觀眾們產生「新的觀點，新的風向」。";
+		document.querySelector(".s2 .text p").innerHTML = "《人造風向Media Framing》意即世新資傳系的學生創造資訊、<br>網站及影像，以輕快、活潑、亮眼的形象進入大眾視野，<br>帶來明確、新穎的資訊，也是引領著十二個風向的風場！<br>最終引發觀眾們產生「新的觀點，新的風向」。";
 	}
 });
 
 $( window ).resize(function() { 
 	if($( window ).width() <= 1366){
-		document.querySelector(".s2 .text p").innerHTML = "《人造風向Media Framing》意即資傳系的學生創造資訊、網站及影像，以輕快、活潑、亮眼的形象進入大眾視野，帶來明確、新穎的資訊，同時也是引領著十二個風向的風場！最終引發觀眾們產生「新的觀點，新的風向」。";
+		document.querySelector(".s2 .text p").innerHTML = "《人造風向Media Framing》意即世新資傳系的學生創造資訊、網站及影像，以輕快、活潑、亮眼的形象進入大眾視野，帶來明確、新穎的資訊，也是引領著十二個風向的風場！最終引發觀眾們產生「新的觀點，新的風向」。";
 	}else {
-		document.querySelector(".s2 .text p").innerHTML = "《人造風向Media Framing》意即資傳系的學生創造資訊、<br>網站及影像，以輕快、活潑、亮眼的形象進入大眾視野，<br>帶來明確、新穎的資訊，同時也是引領著十二個風向的風場！<br>最終引發觀眾們產生「新的觀點，新的風向」。";
+		document.querySelector(".s2 .text p").innerHTML = "《人造風向Media Framing》意即世新資傳系的學生創造資訊、<br>網站及影像，以輕快、活潑、亮眼的形象進入大眾視野，<br>帶來明確、新穎的資訊，也是引領著十二個風向的風場！<br>最終引發觀眾們產生「新的觀點，新的風向」。";
 	}
 });
 

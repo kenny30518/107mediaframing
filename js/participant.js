@@ -130,15 +130,12 @@ function change_text1(){
     document.getElementById("introduce").innerHTML = "在廣大的網路風場中，真假訊息難辨，本團隊扣連網路社群引起的議題風向與引導輿論的社會現象，利用不同社群/傳播管道引發群眾討論與反思，最終引領閱聽眾產生「新的觀點，新的風向」。";
     document.getElementById("fb").href = "https://www.facebook.com/ics.mediaframing";
     document.getElementById("ig").href = "https://www.instagram.com/107ics.media_framing/";
-    document.getElementById("yt").href = "#";
-    document.getElementById("fb").style.opacity = 1;
-    document.getElementById("fb").style.pointerEvents = "initial";
-    document.getElementById("yt").style.opacity = 0;
-    document.getElementById("yt").style.pointerEvents = "none";
-    document.getElementById("pd").style.opacity = 0;
-    document.getElementById("pd").style.pointerEvents = "none";
-    document.getElementById("sp").style.opacity = 0;
-    document.getElementById("sp").style.pointerEvents = "none";
+    document.getElementById("fb").style.display = "block";
+    document.getElementById("yt").style.display = "none";
+    document.getElementById("pd").style.display = "none";
+    document.getElementById("pd").style.display = "none";
+    document.getElementById("sp").style.display = "none";
+    document.getElementById("web").style.display = "none";
 }
 
 function change_text2(){
@@ -147,14 +144,12 @@ function change_text2(){
     document.getElementById("fb").href = "https://www.facebook.com/farminlove2021";
     document.getElementById("ig").href = "https://www.instagram.com/farminlove2021/";
     document.getElementById("yt").href = "https://www.youtube.com/channel/UCqzttcoP691_7RkIovTlAoA";
-    document.getElementById("fb").style.opacity = 1;
-    document.getElementById("fb").style.pointerEvents = "initial";
-    document.getElementById("yt").style.opacity = 1;
-    document.getElementById("yt").style.pointerEvents = "initial";
-    document.getElementById("pd").style.opacity = 0;
-    document.getElementById("pd").style.pointerEvents = "none";
-    document.getElementById("sp").style.opacity = 0;
-    document.getElementById("sp").style.pointerEvents = "none";
+    document.getElementById("web").href = "https://farm-inlove.com/";
+    document.getElementById("fb").style.display = "block";
+    document.getElementById("yt").style.display = "block";
+    document.getElementById("pd").style.display = "none";
+    document.getElementById("sp").style.display = "none";
+    document.getElementById("web").style.display = "block";
 }
 
 function change_text3(){
@@ -165,29 +160,24 @@ function change_text3(){
     document.getElementById("yt").href = "https://www.youtube.com/channel/UC6D983LvFPvn19Iy4o0cAoQ";
     document.getElementById("pd").href = "https://podcasts.apple.com/tw/podcast/something-need-to-know/id1574641723";
     document.getElementById("sp").href = "https://open.spotify.com/show/0SDIBAan45HGL2bI463i5E?si=c422c002a8514fd9&nd=1";
-    document.getElementById("fb").style.opacity = 1;
-    document.getElementById("fb").style.pointerEvents = "initial";
-    document.getElementById("yt").style.opacity = 1;
-    document.getElementById("yt").style.pointerEvents = "initial";
-    document.getElementById("pd").style.opacity = 1;
-    document.getElementById("pd").style.pointerEvents = "initial";
-    document.getElementById("sp").style.opacity = 1;
-    document.getElementById("sp").style.pointerEvents = "initial";
+    document.getElementById("web").href = "https://growupunderstand.com/";
+    document.getElementById("fb").style.display = "block";
+    document.getElementById("yt").style.display = "block";
+    document.getElementById("pd").style.display = "block";
+    document.getElementById("sp").style.display = "block";
+    document.getElementById("web").style.display = "block";
 }
 
 function change_text4(){
     document.getElementById("title").innerHTML = "涉群危基";
     document.getElementById("introduce").innerHTML = "這是一個被監控的社會我們遊走在看似自由的網路世界然而危機步步逼近.......大家好我們是涉群危基個人的資料和網路的足跡如今已經比石油等等的資源還要重要了你還在把個人資料無條件的送出去嗎？涉群危基帶你瞭解監控資本主義和個資的重要";
-    document.getElementById("fb").href = "";
-    document.getElementById("ig").href = " https://instagram.com/ics_social_crisis?utm_medium=copy_link";
-    document.getElementById("fb").style.opacity = 0;
-    document.getElementById("fb").style.pointerEvents = "none";
-    document.getElementById("yt").style.opacity = 0;
-    document.getElementById("yt").style.pointerEvents = "none";
-    document.getElementById("pd").style.opacity = 0;
-    document.getElementById("pd").style.pointerEvents = "none";
-    document.getElementById("sp").style.opacity = 0;
-    document.getElementById("sp").style.pointerEvents = "none";
+    document.getElementById("ig").href = "https://instagram.com/ics_social_crisis?utm_medium=copy_link";
+    document.getElementById("web").href = "";
+    document.getElementById("fb").style.display = "none";
+    document.getElementById("yt").style.display = "none";
+    document.getElementById("pd").style.display = "none";
+    document.getElementById("sp").style.display = "none";
+    document.getElementById("web").style.display = "block";
 }
 
 function change_text5(){
@@ -195,15 +185,13 @@ function change_text5(){
     document.getElementById("introduce").innerHTML = "以充滿愛與回憶卻不知如何表達的「拾刻家族」帶入主題；以網站提供大家把話語、情感寄送到未來某刻；以影音探索不同故事的深刻回憶；以社群吸引你我他並創造屬於自己的時空膠囊。「拾刻·時客，為你紀錄每個時刻！」";
     document.getElementById("fb").href = "https://www.facebook.com/timecapture.ics";
     document.getElementById("ig").href = "https://www.instagram.com/timecapture.ics/";
-    document.getElementById("yt").href = "https://www.youtube.com/channel/UCfJxOKQd2DOC7X9ThLhCtHA"
-    document.getElementById("fb").style.opacity = 1;
-    document.getElementById("fb").style.pointerEvents = "initial";
-    document.getElementById("yt").style.opacity = 1;
-    document.getElementById("yt").style.pointerEvents = "initial";
-    document.getElementById("pd").style.opacity = 0;
-    document.getElementById("pd").style.pointerEvents = "none";
-    document.getElementById("sp").style.opacity = 0;
-    document.getElementById("sp").style.pointerEvents = "none";
+    document.getElementById("yt").href = "https://www.youtube.com/channel/UCfJxOKQd2DOC7X9ThLhCtHA";
+    document.getElementById("web").href = "https://timecapture.com.tw/";
+    document.getElementById("fb").style.display = "block";
+    document.getElementById("yt").style.display = "block";
+    document.getElementById("pd").style.display = "none";
+    document.getElementById("sp").style.display = "none";
+    document.getElementById("web").style.display = "block";
 }
 
 function change_text6(){
@@ -211,14 +199,12 @@ function change_text6(){
     document.getElementById("introduce").innerHTML = "你是否也有能勾起你回憶的聲音呢？我們將提供一個平台讓你可以保存和分享聲音以及背後的故事。留聲跡希望與你一同留下屬於你聲音的足跡。";
     document.getElementById("fb").href = "https://www.facebook.com/%E7%95%99%E8%81%B2%E8%B7%A1-100123572290088/";
     document.getElementById("ig").href = "https://instagram.com/save.andsound?utm_medium=copy_link";
-    document.getElementById("fb").style.opacity = 1;
-    document.getElementById("fb").style.pointerEvents = "initial";
-    document.getElementById("yt").style.opacity = 0;
-    document.getElementById("yt").style.pointerEvents = "none";
-    document.getElementById("pd").style.opacity = 0;
-    document.getElementById("pd").style.pointerEvents = "none";
-    document.getElementById("sp").style.opacity = 0;
-    document.getElementById("sp").style.pointerEvents = "none";
+    document.getElementById("web").href = "";
+    document.getElementById("fb").style.display = "block";
+    document.getElementById("yt").style.display = "none";
+    document.getElementById("pd").style.display = "none";
+    document.getElementById("sp").style.display = "none";
+    document.getElementById("web").style.display = "block";
 }
 
 function change_text7(){
@@ -229,14 +215,12 @@ function change_text7(){
     document.getElementById("yt").href = "https://www.youtube.com/channel/UCshAh0e5QoEE-DerayzR8XA";
     document.getElementById("pd").href = "https://podcasts.apple.com/tw/podcast/%E9%96%8B%E8%AC%9B/id1567786004?l=en";
     document.getElementById("sp").href = "https://open.spotify.com/show/4JwJOjXmdQ3IcjDiGa9VdK?si=vuyR-OhpQRSd_JYH8u1sZw&dl_branch=1";
-    document.getElementById("fb").style.opacity = 1;
-    document.getElementById("fb").style.pointerEvents = "initial";
-    document.getElementById("yt").style.opacity = 1;
-    document.getElementById("yt").style.pointerEvents = "initial";
-    document.getElementById("pd").style.opacity = 1;
-    document.getElementById("pd").style.pointerEvents = "initial";
-    document.getElementById("sp").style.opacity = 1;
-    document.getElementById("sp").style.pointerEvents = "initial";
+    document.getElementById("web").href = "https://beki.website/";
+    document.getElementById("fb").style.display = "block";
+    document.getElementById("yt").style.display = "block";
+    document.getElementById("pd").style.display = "block";
+    document.getElementById("sp").style.display = "block";
+    document.getElementById("web").style.display = "block";
 }
 
 function change_text8(){
@@ -245,14 +229,12 @@ function change_text8(){
     document.getElementById("fb").href = "https://www.facebook.com/Tdot-%E6%A1%8C%E9%BB%9E%E5%AD%90-108555258175268/?ref=page_internal";
     document.getElementById("ig").href = "https://www.instagram.com/t.dot_107/";
     document.getElementById("yt").href = "https://www.youtube.com/channel/UCMs_CWhgBNHjc5rxblcdz2w/videos";
-    document.getElementById("fb").style.opacity = 1;
-    document.getElementById("fb").style.pointerEvents = "initial";
-    document.getElementById("yt").style.opacity = 1;
-    document.getElementById("yt").style.pointerEvents = "initial";
-    document.getElementById("pd").style.opacity = 0;
-    document.getElementById("pd").style.pointerEvents = "none";
-    document.getElementById("sp").style.opacity = 0;
-    document.getElementById("sp").style.pointerEvents = "none";
+    document.getElementById("web").href = "https://tdot107.com/";
+    document.getElementById("fb").style.display = "block";
+    document.getElementById("yt").style.display = "block";
+    document.getElementById("pd").style.display = "none";
+    document.getElementById("sp").style.display = "none";
+    document.getElementById("web").style.display = "block";
 }
 
 function change_text9(){
@@ -260,14 +242,11 @@ function change_text9(){
     document.getElementById("introduce").innerHTML = "訊息滴滴滴滴滴滴滴滴……<br>當然是沒有那個耐心一條條看完<br>新聞Boomboomboomboom……<br>怎麽會有那個時間瞭解所有啊！<br>沒關係，蜘網整合論壇和聊天，推出新功能！";
     document.getElementById("ig").href = "https://www.instagram.com/z.cullet_/";
     document.getElementById("yt").href = "";
-    document.getElementById("fb").style.opacity = 0;
-    document.getElementById("fb").style.pointerEvents = "none";
-    document.getElementById("yt").style.opacity = 0;
-    document.getElementById("yt").style.pointerEvents = "none";
-    document.getElementById("pd").style.opacity = 0;
-    document.getElementById("pd").style.pointerEvents = "none";
-    document.getElementById("sp").style.opacity = 0;
-    document.getElementById("sp").style.pointerEvents = "none";
+    document.getElementById("fb").style.display = "none";
+    document.getElementById("yt").style.display = "none";
+    document.getElementById("pd").style.display = "none";
+    document.getElementById("sp").style.display = "none";
+    document.getElementById("web").style.display = "none";
 }
 
 function change_text10(){
@@ -275,14 +254,11 @@ function change_text10(){
     document.getElementById("introduce").innerHTML = "我們是廟嶼，宮廟的「廟」島嶼的「嶼」，專門介紹宮廟文化的科普和冷知識的推廣，以宮廟冷知識作為主軸製作網頁和相關文章推廣宮廟文化，使年輕一輩的社會大眾對其有更深入的認識，重新對宮廟文化引起興趣。";
     document.getElementById("fb").href = "https://www.facebook.com/%E5%BB%9F%E5%B6%BC-Temple-Islands-107538774931012";
     document.getElementById("ig").href = "https://www.instagram.com/templeislands/";
-    document.getElementById("fb").style.opacity = 1;
-    document.getElementById("fb").style.pointerEvents = "initial";
-    document.getElementById("yt").style.opacity = 0;
-    document.getElementById("yt").style.pointerEvents = "none";
-    document.getElementById("pd").style.opacity = 0;
-    document.getElementById("pd").style.pointerEvents = "none";
-    document.getElementById("sp").style.opacity = 0;
-    document.getElementById("sp").style.pointerEvents = "none";
+    document.getElementById("fb").style.display = "block";
+    document.getElementById("yt").style.display = "none";
+    document.getElementById("pd").style.display = "none";
+    document.getElementById("sp").style.display = "none";
+    document.getElementById("web").style.display = "none";
 }
 
 function change_text11(){
@@ -290,15 +266,12 @@ function change_text11(){
     document.getElementById("introduce").innerHTML = "我們是ㄏㄚˊ士奇，常說馬路如虎口，但是道路上發生的車禍還是層出不窮，尤其是機車騎士，發生車禍造成的傷害都是我們無法預料的，為了降低事故甚至憾事的發生，我們將製作相關有趣風格的知識型短片，希望大家能對防衛性駕駛重新產生興趣，並且重視這件事情。";
     document.getElementById("fb").href = "https://www.facebook.com/profile.php?id=100070647199484";
     document.getElementById("ig").href = "https://www.instagram.com/husky_moto_rider/";
-    document.getElementById("fb").style.opacity = 1;
-    document.getElementById("fb").style.pointerEvents = "initial";
+    document.getElementById("fb").style.display = "block";
     document.getElementById("yt").href = "https://www.youtube.com/channel/UC1F6HVaQR1AxGh3TVgGvPGw";
-    document.getElementById("yt").style.opacity = 1;
-    document.getElementById("yt").style.pointerEvents = "initial";
-    document.getElementById("pd").style.opacity = 0;
-    document.getElementById("pd").style.pointerEvents = "none";
-    document.getElementById("sp").style.opacity = 0;
-    document.getElementById("sp").style.pointerEvents = "none";
+    document.getElementById("yt").style.display = "block";
+    document.getElementById("pd").style.display = "none";
+    document.getElementById("sp").style.display = "none";
+    document.getElementById("web").style.display = "none";
 }
 
 function change_text12(){
@@ -306,14 +279,11 @@ function change_text12(){
     document.getElementById("introduce").innerHTML = "我們是世新大學的資傳系畢業製作，手機成癮在現代成為許多人的問題，我們針對這個問題去研究，並找出相關的解決方案。";
     document.getElementById("fb").href = "https://www.facebook.com/沈淪新機-104273178610507/";
     document.getElementById("ig").href = "https://www.instagram.com/iiiint_/";
-    document.getElementById("fb").style.opacity = 1;
-    document.getElementById("fb").style.pointerEvents = "initial";
-    document.getElementById("yt").style.opacity = 0;
-    document.getElementById("yt").style.pointerEvents = "none";
-    document.getElementById("pd").style.opacity = 0;
-    document.getElementById("pd").style.pointerEvents = "none";
-    document.getElementById("sp").style.opacity = 0;
-    document.getElementById("sp").style.pointerEvents = "none";
+    document.getElementById("fb").style.display = "block";
+    document.getElementById("yt").style.display = "none";
+    document.getElementById("pd").style.display = "none";
+    document.getElementById("sp").style.display = "none";
+    document.getElementById("web").style.display = "none";
 }
 
 function change_text13(){
@@ -322,12 +292,9 @@ function change_text13(){
     document.getElementById("fb").href = "https://www.facebook.com/%E7%90%83%E7%94%9F-101608288874782";
     document.getElementById("ig").href = "https://www.instagram.com/reverse_by_a_ball/";
     document.getElementById("yt").href = "https://www.youtube.com/channel/UC1mcJnbWW0dA2DrNW0DThDw";
-    document.getElementById("fb").style.opacity = 1;
-    document.getElementById("fb").style.pointerEvents = "initial";
-    document.getElementById("yt").style.opacity = 1;
-    document.getElementById("yt").style.pointerEvents = "initial";
-    document.getElementById("pd").style.opacity = 0;
-    document.getElementById("pd").style.pointerEvents = "none";
-    document.getElementById("sp").style.opacity = 0;
-    document.getElementById("sp").style.pointerEvents = "none";
+    document.getElementById("fb").style.display = "block";
+    document.getElementById("yt").style.display = "block";
+    document.getElementById("pd").style.display = "none";
+    document.getElementById("sp").style.display = "none";
+    document.getElementById("web").style.display = "none";
 }

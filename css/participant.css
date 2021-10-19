@@ -385,23 +385,27 @@ section{
 }
 
 #yt{
-	opacity: 0;
-	pointer-events: initial;
+	display: none;
 }
 
 #pd{
-	opacity: 0;
-	pointer-events: none;
+	display: none;
 }
 
 #sp{
-	opacity: 0;
-	pointer-events: none;
+	display: none;
 }
 
 #fb{
-	opacity: 1;
-	pointer-events: initial;
+	display: block;
+}
+
+#ig{
+	display: block;
+}
+
+#web{
+	display: none;
 }
 
 .extend{

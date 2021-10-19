@@ -160,14 +160,15 @@ function change_text3(){
     document.getElementById("ig").href = "https://www.instagram.com/idk_0120/?utm_medium=copy_link";
     document.getElementById("yt").href = "https://www.youtube.com/channel/UC6D983LvFPvn19Iy4o0cAoQ";
     document.getElementById("pd").href = "https://podcasts.apple.com/tw/podcast/something-need-to-know/id1574641723";
+    document.getElementById("sp").href = "https://open.spotify.com/show/0SDIBAan45HGL2bI463i5E?si=c422c002a8514fd9&nd=1";
     document.getElementById("fb").style.opacity = 1;
     document.getElementById("fb").style.pointerEvents = "initial";
     document.getElementById("yt").style.opacity = 1;
     document.getElementById("yt").style.pointerEvents = "initial";
     document.getElementById("pd").style.opacity = 1;
     document.getElementById("pd").style.pointerEvents = "initial";
-    document.getElementById("sp").style.opacity = 0;
-    document.getElementById("sp").style.pointerEvents = "none";
+    document.getElementById("sp").style.opacity = 1;
+    document.getElementById("sp").style.pointerEvents = "initial";
 }
 
 function change_text4(){

@@ -619,6 +619,9 @@ footer{
 footer .copyrights{
 	margin-top: 20px;
 	white-space: nowrap;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
 }
 
 .copyrights p{
@@ -742,6 +745,7 @@ footer .copyrights{
 
 	footer .copyrights{
 		margin-top: 0;
+		flex-direction: column;
 	}
 
 	.copyrights p{

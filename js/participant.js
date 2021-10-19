@@ -199,7 +199,7 @@ function change_text6(){
     document.getElementById("introduce").innerHTML = "你是否也有能勾起你回憶的聲音呢？我們將提供一個平台讓你可以保存和分享聲音以及背後的故事。留聲跡希望與你一同留下屬於你聲音的足跡。";
     document.getElementById("fb").href = "https://www.facebook.com/%E7%95%99%E8%81%B2%E8%B7%A1-100123572290088/";
     document.getElementById("ig").href = "https://instagram.com/save.andsound?utm_medium=copy_link";
-    document.getElementById("web").href = "";
+    document.getElementById("web").href = "https://saveandsound.azurewebsites.net/home.jsp";
     document.getElementById("fb").style.display = "block";
     document.getElementById("yt").style.display = "none";
     document.getElementById("pd").style.display = "none";

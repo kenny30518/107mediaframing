@@ -565,6 +565,15 @@ footer .copyrights{
 		padding: 0px 60px;
 	}
 
+	.timeline:before{
+		display: none;
+		width: 0;
+	}
+
+	.dot{
+		display: none;
+	}
+
 	#s1{
 		height: 0;
 	}

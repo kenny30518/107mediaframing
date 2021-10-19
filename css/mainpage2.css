@@ -12,6 +12,10 @@ body{
 	cursor: url('../image/cursor.cur'), auto;
 }
 
+a:hover{
+	cursor: url('../image/hover.cur'), auto;
+}
+
 .loading{
 	position: fixed;
 	width: 100%;
@@ -224,7 +228,6 @@ body{
 }
 
 .headerContainer .mainNav ul li a{
-	cursor: pointer;
 	color: white;
 	text-decoration: none;
 	transition: 0.5s ease-in-out;
@@ -233,7 +236,6 @@ body{
 
 .headerContainer .mainNav ul li a:hover{
 	background-color: white;
-	cursor: pointer;
 	color: #6a9d9f;
 	text-decoration: none;
 }

@@ -159,7 +159,7 @@ function change_text3(){
     document.getElementById("fb").href = "https://www.facebook.com/%E9%95%B7%E5%A4%A7%E6%89%8D%E4%B8%8D%E6%9C%83%E6%87%82-105418818385188/";
     document.getElementById("ig").href = "https://www.instagram.com/idk_0120/?utm_medium=copy_link";
     document.getElementById("yt").href = "https://www.youtube.com/channel/UC6D983LvFPvn19Iy4o0cAoQ";
-    document.getElementById("pd").href = "https://podcastsconnect.apple.com/my-podcasts/show/something-need-to-know/27dccf7c-4b53-420a-a0db-09b1d09a8a6b";
+    document.getElementById("pd").href = "https://podcasts.apple.com/tw/podcast/something-need-to-know/id1574641723";
     document.getElementById("fb").style.opacity = 1;
     document.getElementById("fb").style.pointerEvents = "initial";
     document.getElementById("yt").style.opacity = 1;
@@ -172,11 +172,11 @@ function change_text3(){
 
 function change_text4(){
     document.getElementById("title").innerHTML = "涉群危基";
-    document.getElementById("introduce").innerHTML = "這是一個被監控的社會我們遊走在看似自由的網路世界然而危機步步逼近.......大家好我們是涉群危基個人的資料和網路的足跡如今已經比石油等等的資源還要重要了你還在把個人資料無條件的送出去嗎？社群危基帶你瞭解監控資本主義和個資的重要";
-    document.getElementById("fb").href = "https://www.facebook.com/涉群危基-Social-Crisis-111455887873772";
+    document.getElementById("introduce").innerHTML = "這是一個被監控的社會我們遊走在看似自由的網路世界然而危機步步逼近.......大家好我們是涉群危基個人的資料和網路的足跡如今已經比石油等等的資源還要重要了你還在把個人資料無條件的送出去嗎？涉群危基帶你瞭解監控資本主義和個資的重要";
+    document.getElementById("fb").href = "";
     document.getElementById("ig").href = " https://instagram.com/ics_social_crisis?utm_medium=copy_link";
-    document.getElementById("fb").style.opacity = 1;
-    document.getElementById("fb").style.pointerEvents = "initial";
+    document.getElementById("fb").style.opacity = 0;
+    document.getElementById("fb").style.pointerEvents = "none";
     document.getElementById("yt").style.opacity = 0;
     document.getElementById("yt").style.pointerEvents = "none";
     document.getElementById("pd").style.opacity = 0;
@@ -204,7 +204,7 @@ function change_text5(){
 function change_text6(){
     document.getElementById("title").innerHTML = "留聲跡";
     document.getElementById("introduce").innerHTML = "你是否也有能勾起你回憶的聲音呢？我們將提供一個平台讓你可以保存和分享聲音以及背後的故事。留聲跡希望與你一同留下屬於你聲音的足跡。";
-    document.getElementById("fb").href = "https://m.facebook.com/profile.php?id=100123572290088&ref=content_filter";
+    document.getElementById("fb").href = "https://www.facebook.com/%E7%95%99%E8%81%B2%E8%B7%A1-100123572290088/";
     document.getElementById("ig").href = "https://instagram.com/save.andsound?utm_medium=copy_link";
     document.getElementById("fb").style.opacity = 1;
     document.getElementById("fb").style.pointerEvents = "initial";
@@ -237,8 +237,8 @@ function change_text7(){
 function change_text8(){
     document.getElementById("title").innerHTML = "桌點子";
     document.getElementById("introduce").innerHTML = "我們致力創造一個線上桌遊整合平台，結合桌遊測驗及線上論壇，讓你在選擇桌遊及理解桌遊上不再有選擇困難!!「桌點子，激發你的新點子!」";
-    document.getElementById("fb").href = "https://www.facebook.com/Tdot-%E6%A1%8C%E9%BB%9E%E5%AD%90-108555258175268/about/?ref=page_internal";
-    document.getElementById("ig").href = "https://www.instagram.com/t_dot_107/";
+    document.getElementById("fb").href = "https://www.facebook.com/Tdot-%E6%A1%8C%E9%BB%9E%E5%AD%90-108555258175268/?ref=page_internal";
+    document.getElementById("ig").href = "https://www.instagram.com/t.dot_107/";
     document.getElementById("yt").href = "https://www.youtube.com/channel/UCMs_CWhgBNHjc5rxblcdz2w/videos";
     document.getElementById("fb").style.opacity = 1;
     document.getElementById("fb").style.pointerEvents = "initial";
@@ -254,11 +254,11 @@ function change_text9(){
     document.getElementById("title").innerHTML = "蜘網";
     document.getElementById("introduce").innerHTML = "訊息滴滴滴滴滴滴滴滴……<br>當然是沒有那個耐心一條條看完<br>新聞Boomboomboomboom……<br>怎麽會有那個時間瞭解所有啊！<br>沒關係，蜘網整合論壇和聊天，推出新功能！";
     document.getElementById("ig").href = "https://www.instagram.com/z.cullet_/";
-    document.getElementById("yt").href = "https://www.youtube.com/channel/UC8GWK3q7QV-d6ooH8xjChnQ";
+    document.getElementById("yt").href = "";
     document.getElementById("fb").style.opacity = 0;
     document.getElementById("fb").style.pointerEvents = "none";
-    document.getElementById("yt").style.opacity = 1;
-    document.getElementById("yt").style.pointerEvents = "initial";
+    document.getElementById("yt").style.opacity = 0;
+    document.getElementById("yt").style.pointerEvents = "none";
     document.getElementById("pd").style.opacity = 0;
     document.getElementById("pd").style.pointerEvents = "none";
     document.getElementById("sp").style.opacity = 0;

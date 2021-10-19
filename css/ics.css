@@ -575,7 +575,9 @@ footer .copyrights{
 	}
 
 	#s1{
-		height: 0;
+		height: 50vh;
+		display: flex;
+		justify-content: flex-end;
 	}
 
 	.s1{

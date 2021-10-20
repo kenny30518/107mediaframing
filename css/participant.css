@@ -9,6 +9,11 @@ body{
 	background-position: center;
 	background-color: black;
 	overflow-x: hidden;
+	cursor: url('../image/cursor.cur'), auto;
+}
+
+a:hover{
+	cursor: url('../image/hover.cur'), auto;
 }
 
 .loading{
@@ -81,7 +86,6 @@ body{
 }
 
 .headerContainer .mainNav ul li a{
-	cursor: pointer;
 	color: white;
 	text-decoration: none;
 	transition: 0.5s ease-in-out;
@@ -90,7 +94,6 @@ body{
 
 .headerContainer .mainNav ul li a:hover{
 	background-color: white;
-	cursor: pointer;
 	color: #6a9d9f;
 	text-decoration: none;
 }
@@ -167,7 +170,6 @@ body{
 }
 
 .burger:hover{
-	cursor: pointer;
 	display: none;
 }
 
@@ -311,7 +313,7 @@ section{
 	list-style: none;
 	display: inline-block;
 	margin: 10px 10px;
-	cursor: pointer;
+	cursor: url('../image/hover.cur'), auto;
 	transition: 0.5s;
 	height: 95px;
 	background: rgba(255,255,255,0.1);
@@ -462,7 +464,6 @@ section{
 	}
 
 	.rwdBurger{
-		cursor: pointer;
 		z-index: 9999;
 	}
 
@@ -564,7 +565,6 @@ section{
 
     .extend{
     	display: block;
-    	cursor: pointer;
     }
 
 	.sci{

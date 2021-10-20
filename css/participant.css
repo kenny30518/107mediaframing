@@ -119,22 +119,27 @@ a:hover{
 	margin-right: 20px;
 }
 
+.burgerwrapper{
+	position: relative;
+	top: 10px;
+	right: 10px;
+	z-index: 9999;
+}
+
 .menu{
-	background: #5aa6a5;
+	position: fixed;
 	opacity: 0;
-	z-index: 0;
-	position: absolute;
-	height: 100vh;
 	width: 100%;
-	left: -100%;
+	height: 100vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	transition: 0.8s ease-in-out;
+	z-index: 1;
 }
 
 .menulogo{
-	position: absolute;
-	top: 10%;
+	position: relative;
 	max-width: 250px;
 }
 
@@ -143,58 +148,51 @@ a:hover{
 	height: 100%;
 }
 
-.data{
+.menu.active{
+	opacity: 1;
+	background: #5aa6a5;
+	z-index: 9998;
+}
+
+.data_wrapper{
 	position: fixed;
-	text-align: left;
-	transform: translateX(-130%);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.data{
+	opacity: 0;
+	pointer-events: none;
+	transition: 0.8s;
+}
+
+.data.active{
+	opacity: 1;
+	pointer-events: all;
 }
 
 .rwdBurger div{
-	transform: translateY(50%);
 	background-color: white;
 	width: 25px;
-	height: 3px;
+	height: 2px;
 	margin: 5px;
 	display: none;
-}
-
-.rwdText p{
-	margin-bottom: 0;
-	color: white;
-	display: none;
-}
-
-.burger{
-	z-index: 1001;
-	display: none;
-}
-
-.burger:hover{
-	display: none;
-}
-
-.burger div{
-	background-color: white;
-	width: 25px;
-	height: 3px;
-	margin: 5px;
 }
 
 .data ul{
+	letter-spacing: 3px;
 	list-style: none;
+	margin-bottom: 0;
+	padding-left: 0;
 }
 
 .data li{
-	margin-top: 25px;
-	margin-bottom: 25px;
+	margin-top: 35px;
+	margin-bottom: 35px;
 }
 
 .data ul a{
-	color: #fff;
-	text-decoration: none;
-}
-
-.data ul a:hover{
 	color: #fff;
 	text-decoration: none;
 }
@@ -456,23 +454,14 @@ section{
 		padding-bottom: 120px;
 	}
 
-	.burgerwrapper{
-		position: relative;
-		top: 10px;
-		right: 10px;
-		z-index: 9999;
-	}
-
 	.rwdBurger{
+		display: inherit;
+		cursor: pointer;
 		z-index: 9999;
 	}
 
 	.rwdBurger div{
 		display: inherit;
-	}
-
-	.menu{
-		z-index: 9999;
 	}
 
 	.mainNav{
@@ -553,6 +542,7 @@ section{
 		bottom: -100%;
 		display: none;
 		padding-left: 0;
+		z-index: 2;
 	}
 
 	.thumb li::before{
@@ -565,6 +555,7 @@ section{
 
     .extend{
     	display: block;
+    	z-index: 2;
     }
 
 	.sci{
@@ -576,13 +567,24 @@ section{
 	    justify-content: center;
 	    flex-direction: row;
 	    align-items: center;
-	}
+	    z-index: 2;
+}
 
 	.sci li a i{
 		font-size: 40px;
 	}
 }
 
+@media (max-height: 500px){
+	.data_wrapper{
+		flex-direction: row;
+	}
+
+	.data li {
+	    margin-top: 20px;
+	    margin-bottom: 20px;
+	}
+}
 
 
 

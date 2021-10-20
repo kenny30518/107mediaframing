@@ -851,6 +851,16 @@ footer .copyrights{
 	}
 }
 
+@media (max-height: 500px){
+	.data_wrapper{
+		flex-direction: row;
+	}
+
+	.data li {
+	    margin-top: 20px;
+	    margin-bottom: 20px;
+	}
+}
 
 
 

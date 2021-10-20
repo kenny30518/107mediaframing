@@ -162,7 +162,7 @@ function change_text4(){
     document.getElementById("title").innerHTML = "涉群危基";
     document.getElementById("introduce").innerHTML = "這是一個被監控的社會我們遊走在看似自由的網路世界然而危機步步逼近.......大家好我們是涉群危基個人的資料和網路的足跡如今已經比石油等等的資源還要重要了你還在把個人資料無條件的送出去嗎？涉群危基帶你瞭解監控資本主義和個資的重要";
     document.getElementById("ig").href = "https://instagram.com/ics_social_crisis?utm_medium=copy_link";
-    document.getElementById("web").href = "";
+    document.getElementById("web").href = "https://icssocialcrisis.wordpress.com/";
     document.getElementById("fb").style.display = "none";
     document.getElementById("yt").style.display = "none";
     document.getElementById("pd").style.display = "none";

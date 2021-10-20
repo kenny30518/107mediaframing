@@ -9,12 +9,7 @@ $(window).on('load', function(){
     }
 });
 
-//burger animation
-function show(){
-    document.querySelector('.menu').classList.toggle('active');
-    document.querySelector('.data').classList.toggle('active');
-}
-
+//burger animation//
 var tl = new TimelineMax({paused: true});
 
 tl.to(".item1",0.8,{
@@ -30,18 +25,27 @@ tl.to(".item2",0.8,{
 });
 
 tl.to(".item3",0.8,{
-    y: -8,
+    y: -10,
     rotation: -225,
     ease: Expo.easeInOut,
     delay: -0.8
 });
 
-tl.reverse();
-$(document).on("click", ".burgerwrapper", function() {
-        tl.reversed(!tl.reversed());
+tl.to(".menu", 0.5, {
+    left:"0%",
+    ease: Expo.easeInOut,
+    delay: -1
 });
 
-$('.book').on('click', function () {
-  $(this).toggleClass('book--expanded');
-  $('.wrapper2').toggleClass('deactive');
+tl.staggerFrom(".menu ul li", 1,{
+    x: -200,
+    rotation: -10,
+    opacity: 0,
+    ease: Expo.easeInOut,
+    delay: -1
+},0.3);
+
+tl.reverse();
+$(document).on("click", ".rwdBurger", function() {
+        tl.reversed(!tl.reversed());
 });

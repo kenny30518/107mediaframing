@@ -10,7 +10,7 @@ $(window).on('load', function(){
             document.querySelector("body").style.visibility = "visible";
         }
     }
-    image.src = 'https://i.imgur.com/pzljrkD.png'
+    image.src = 'image/reversebyaball.png'
 });
 
 //RWD extend

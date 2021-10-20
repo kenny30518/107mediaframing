@@ -135,7 +135,6 @@ a:hover{
 	justify-content: center;
 	align-items: center;
 	transition: 0.8s ease-in-out;
-	z-index: 1;
 }
 
 .menulogo{
@@ -452,6 +451,10 @@ section{
 
 	section{
 		padding-bottom: 120px;
+	}
+
+	.menu{
+		z-index: 1;
 	}
 
 	.rwdBurger{

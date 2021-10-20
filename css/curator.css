@@ -555,6 +555,7 @@ a:hover{
 	}
 
 	.footer{
+		z-index: 2;
 		top: 0;
 	}
 }

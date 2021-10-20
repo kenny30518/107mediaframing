@@ -43,5 +43,4 @@ $(document).on("click", ".burgerwrapper", function() {
 
 $('.book').on('click', function () {
   $(this).toggleClass('book--expanded');
-  $('.wrapper2').toggleClass('deactive');
 });

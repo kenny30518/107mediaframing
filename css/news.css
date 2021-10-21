@@ -348,6 +348,18 @@ a:hover{
     text-decoration: underline;
 }
 
+.more-button4{
+    cursor: pointer;
+    color: #CD7844;
+    text-decoration: underline;
+}
+
+.close4{
+	cursor: pointer;
+	color: #CD7844;
+    text-decoration: underline;
+}
+
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
   .leftcolumn, .rightcolumn {

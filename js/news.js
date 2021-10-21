@@ -69,6 +69,24 @@ closeButton3.addEventListener('click', function(){
     document.querySelector('.close3').classList.toggle('show');
 })
 
+//expend4
+const moreButton4 = document.querySelector('.more-button4');
+moreButton4.addEventListener('click', function(){
+    document.querySelector('.more-text4').classList.toggle('show');
+    document.querySelector('.more-button4').classList.toggle('show');
+    document.querySelector('.dots4').classList.toggle('show');
+    document.querySelector('.close4').classList.toggle('show');
+})
+
+//close4
+const closeButton4 = document.querySelector('.close4');
+closeButton4.addEventListener('click', function(){
+    document.querySelector('.more-text4').classList.toggle('show');
+    document.querySelector('.more-button4').classList.toggle('show');
+    document.querySelector('.dots4').classList.toggle('show');
+    document.querySelector('.close4').classList.toggle('show');
+})
+
 //burger animation
 var tl = new TimelineMax({paused: true});
 

@@ -252,8 +252,8 @@ function change_text10(){
 }
 
 function change_text11(){
-    document.getElementById("title").innerHTML = "ㄏㄚˊ士奇";
-    document.getElementById("introduce").innerHTML = "我們是ㄏㄚˊ士奇，常說馬路如虎口，但是道路上發生的車禍還是層出不窮，尤其是機車騎士，發生車禍造成的傷害都是我們無法預料的，為了降低事故甚至憾事的發生，我們將製作相關有趣風格的知識型短片，希望大家能對防衛性駕駛重新產生興趣，並且重視這件事情。";
+    document.getElementById("title").innerHTML = "ㄏㄚˊ士騎";
+    document.getElementById("introduce").innerHTML = "我們是ㄏㄚˊ士騎，常說馬路如虎口，但是道路上發生的車禍還是層出不窮，尤其是機車騎士，發生車禍造成的傷害都是我們無法預料的，為了降低事故甚至憾事的發生，我們將製作相關有趣風格的知識型短片，希望大家能對防衛性駕駛重新產生興趣，並且重視這件事情。";
     document.getElementById("fb").href = "https://www.facebook.com/profile.php?id=100070647199484";
     document.getElementById("ig").href = "https://www.instagram.com/husky_moto_rider/";
     document.getElementById("fb").style.display = "block";

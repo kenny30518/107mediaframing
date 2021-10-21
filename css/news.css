@@ -188,8 +188,7 @@ a:hover{
 }
 
 .leftcolumn {
-  float: left;
-  width: 75%;
+  width: 100%;
 }
 
 /* Right column */
@@ -207,8 +206,13 @@ a:hover{
 }
 
 /* Add a card effect for articles */
+.card-wrapper{
+	display: flex;
+	flex-direction: column;
+}
+
 .card {
-  padding: 20px;
+  padding: 20px 0;
   margin-top: 20px;
   color: #526D68;
 }
@@ -242,8 +246,44 @@ a:hover{
     letter-spacing: 5px;
 }
 
+.flex-box{
+	display: flex;
+	flex-direction: row;
+	margin: 40px 0;
+}
+
+.links-card{
+	color: #526D68;
+}
+
+.links{
+	margin: 0 5px;
+}
+
+.links-card h3{
+	letter-spacing: 5px;
+}
+
+.links-card p{
+	font-weight: 300;
+}
+
+.links a{
+	text-decoration: none;
+	color: #fff;
+	padding: 10px 20px;
+	background: #526D68;
+	border: 2px solid #526D68;
+	transition: 0.5s ease-in-out;
+}
+
+.links a:hover{
+	color: #526D68;
+	background: #fff;
+}
+
 .row{
-	padding: 50px 200px;
+	padding: 50px 250px;
 }
 
 /* Clear floats after the columns */
@@ -418,6 +458,18 @@ footer .copyrights{
 	margin-left: 10px;
 }
 
+@media only screen and (max-width: 1366px){
+	.row{
+		padding: 50px 150px;
+	}
+}
+
+@media only screen and (max-width: 1100px){
+	.row{
+		padding: 50px 100px;
+	}
+}
+
 @media only screen and (max-width: 992px){
 	.nav-links{
 		visibility: hidden;
@@ -451,6 +503,22 @@ footer .copyrights{
 
 	footer{
 		z-index: 3;
+	}
+}
+
+@media (max-width: 950px){
+	.row{
+		padding: 30px;
+	}
+
+	.flex-box{
+		display: flex;
+		flex-direction: column;
+		margin: 0 0;
+	}
+
+	.links{
+		margin: 20px 0;
 	}
 }
 

@@ -9,11 +9,11 @@ body{
 	overflow-x: hidden;
 	overflow-y: scroll;
 	height: 100vh;
-	cursor: url('../image/cursor.cur'), auto;
+	cursor: url('../image/cursor.svg'), auto;
 }
 
 a:hover{
-	cursor: url('../image/hover.cur'), auto;
+	cursor: url('../image/hover.svg'), auto;
 }
 
 .loading{
@@ -477,6 +477,7 @@ a:hover{
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+	font-weight: 300;
 }
 
 .copyrights p{

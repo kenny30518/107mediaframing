@@ -8,11 +8,11 @@
 body{
 	overflow: hidden;
 	height: 100vh;
-	cursor: url('../image/cursor.cur'), auto;
+	cursor: url('../image/cursor.svg'), auto;
 }
 
 a:hover{
-	cursor: url('../image/hover.cur'), auto;
+	cursor: url('../image/hover.svg'), auto;
 }
 
 .loading{
@@ -65,7 +65,7 @@ a:hover{
     display: flex;
     justify-content: center;
     transition: 0.4s;
-    cursor: url('../image/hover.cur'), auto;
+    cursor: url('../image/hover.svg'), auto;
 }
 
 .header.active{

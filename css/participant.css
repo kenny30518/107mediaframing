@@ -9,11 +9,11 @@ body{
 	background-position: center;
 	background-color: black;
 	overflow-x: hidden;
-	cursor: url('../image/cursor.cur'), auto;
+	cursor: url('../image/cursor.svg'), auto;
 }
 
 a:hover{
-	cursor: url('../image/hover.cur'), auto;
+	cursor: url('../image/hover.svg'), auto;
 }
 
 .loading{
@@ -310,7 +310,7 @@ section{
 	list-style: none;
 	display: inline-block;
 	margin: 10px 10px;
-	cursor: url('../image/hover.cur'), auto;
+	cursor: url('../image/hover.svg'), auto;
 	transition: 0.5s;
 	height: 95px;
 	background: rgba(255,255,255,0.1);

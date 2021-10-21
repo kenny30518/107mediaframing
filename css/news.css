@@ -12,11 +12,12 @@ html{
 body{
 	overflow-x: hidden;
 	background: #8ab0b0;
-	cursor: url('../image/cursor.cur'), auto;
+	cursor: url("../image/cursor.svg"), auto;
+	min-height: 100vh;
 }
 
 a:hover{
-	cursor: url('../image/hover.cur'), auto;
+	cursor: url('../image/hover.svg'), auto;
 }
 
 .loading{
@@ -60,12 +61,11 @@ a:hover{
 .header{
 	height: 8vh;
 	width: 100%;
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     display: flex;
     justify-content: flex-end;
-    position: absolute;
 }
 
 #headerContainer{
@@ -186,214 +186,45 @@ a:hover{
 	margin: 5px;
 }
 
-.big-container{
-	position: relative;
-	width: 100%;
-	min-height: 100vh;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding: 0 50px;
+.leftcolumn {
+  float: left;
+  width: 75%;
 }
 
-.heading-section{
-	text-align: center;
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
 }
 
-.big-container .row-container{
-	width: 85%;
-	margin: auto;
-}
-
-.big-container .row-container .heading-section{
-	width: 60%;
-	text-align: center;
-	margin: auto;
-}
-
-.big-container .row-container .heading-section h1{
-	padding-top: 30px;
-	font-size: 42px;
-}
-
-.big-container .row-container .heading-section p{
-	margin-top: 15px;
-	color: #3d3d3d;
-	font-size: 17px;
-	line-height: 1.5;
-}
-
-.content-section{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin: auto;
-}
-
-.content-section .card{
-	flex: 1;
-	overflow: hidden;
-	margin: 40px 20px;
-}
-
-.content-section .card img{
-	border-radius: 10px;
-	width: 100%;
-	height: auto;
-}
-
-.content-section .card h4{
-	margin-top: 20px;
-}
-
-.content-section .card p{
-	font-size: 15px;
-	margin-top: 10px;
-	color: #3d3d3d;
-	line-height: 1.5;
-	text-align: justify;
-}
-
-.big-wrapper{
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-}
-.mr2 {
-  margin-right: 1rem;
-}
-.ml2 {
-  margin-left: 1rem;
-}
-.article-title {
-  font-size: 2.5rem;
-  line-height: 1;
- font-family: 'Roboto Condensed', sans-serif;
-  text-align: center;
-  letter-spacing: 0.025em;
-  transition: font-size 0.45s ease-in-out, color 0.3s ease-out;
-}
-.header-image {
-  height: 220px;
-  background-image: url(../image/milk.jpg);
-  background-size: cover;
-  background-position: center;
-  margin-bottom: 3rem;
-  position: relative;
-  transition: all 0.45s ease-in-out;
-}
-.overlay {
-  transition: all 0.3s ease-in-out;
-  background: ;
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-.title-wrap {
-  transform: translateY(0);
-  transition: transform 0.45s ease-in;
-}
-.drop-cap {
-  font-size: 55px;
-  line-height: 28px;
-}
-.wrapper {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.wrapper2{
-	height: 100vh;
-	display: flex;
-  	align-items: center;
-	justify-content: center;
-}
-.wrapper2.deactive{
-	display: none;
-}
-.book__cover-exerpt {
-  color: #6a6a6a;
-  padding: 1rem 1.5rem;
-  line-height: 1.6;
-  text-align: center;
-  opacity: 1;
-  max-width: 370px;
-  margin: 0 auto;
-  display: block;
-  transition: all 0.25s ease-in-out;
-}
- 
-.book__cover {
-  height: 100%;
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
   width: 100%;
+  padding: 20px;
 }
-.book__content {
-  text-align: justify;
-  word-wrap: break-word;
-  font-size: 1.1rem;
-  opacity: 0;
-  transition: all 1.5s ease-in-out;
-  max-width: 750px;
-  margin: 0 auto 6rem;
-  padding: 0 2rem;
+
+/* Add a card effect for articles */
+.card {
+  background-color: #8ab0b0;
+  padding: 20px;
+  margin-top: 20px;
 }
-.book__content p {
-  line-height: 1.8;
-  color: #3a3a3a;
-  margin-bottom: 2.5rem;
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
-.book {
-  overflow: hidden;
-  background: white;
-  height: 580px;
-  width: 400px;
-  box-shadow: 0 20px 30px -10px #ccc;
-  transition: all 0.5s ease-in-out;
-}
-.book:hover {
-  box-shadow: 0 6px 50px 10px #cfcfcf;
-}
-.book--expanded {
-	position: fixed;
-  height: 100%;
-  width: 100%;
-  overflow-y: scroll;
-}
-.book--expanded .overlay {
-  opacity: 0.95;
-}
-.book--expanded .article-title {
-  color: white;
-  font-size: 64px;
-  letter-spacing: 0.05em;
-}
-.book--expanded .title-wrap {
-  transform: translateY(-300px);
-  color: white;
-}
-.book--expanded .book__cover-exerpt {
-  opacity: 0;
-}
-.book--expanded .book__cover {
-  height: 460px;
-  margin-bottom: 6rem;
-}
-.book--expanded .book__content {
-  opacity: 1;
-}
-.book--expanded .header-image {
-  height: 100%;
-}
-span{
-   margin-left: -35px;
-}
-span .fa {
-   font-size: 17px;
-   margin-left: 20px;
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
 }
 
 footer{
@@ -493,6 +324,7 @@ footer .copyrights{
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+	font-weight: 300;
 }
 
 .copyrights p{

@@ -15,10 +15,61 @@ function show(){
     document.querySelector('.data').classList.toggle('active');
 }
 
-function expend1(){
-    document.querySelector('.card p').innerHTML = "近幾年越來越多人關心糧食議題，其中也包含我們常聽見、看見的「小農」。什麼是小農？對於大學生來說，我們關注的是小農哪個面向？我們從大學生愛用的社群 Dcard 中發現，大學生們會在意自己所吃或購買的食物之品質。近年許多大學生前往咖啡廳或是自行購買鮮乳時，會特別選擇小農經典類型的飲品，或有特別標示「小農」、「品質把關」字樣的商品。就像小農鮮乳拿鐵對於大學生的吸引力勝過一般的鮮乳拿鐵！讓我們最新風向帶著大家進入 Dcard 一探大學生與小農之間的關聯吧！";
-}
+//expend
+const moreButton = document.querySelector('.more-button');
+moreButton.addEventListener('click', function(){
+    document.querySelector('.more-text').classList.toggle('show');
+    document.querySelector('.more-button').classList.toggle('show');
+    document.querySelector('.dots').classList.toggle('show');
+    document.querySelector('.close').classList.toggle('show');
+})
 
+//close
+const closeButton = document.querySelector('.close');
+closeButton.addEventListener('click', function(){
+    document.querySelector('.more-text').classList.toggle('show');
+    document.querySelector('.more-button').classList.toggle('show');
+    document.querySelector('.dots').classList.toggle('show');
+    document.querySelector('.close').classList.toggle('show');
+})
+
+//expend2
+const moreButton2 = document.querySelector('.more-button2');
+moreButton2.addEventListener('click', function(){
+    document.querySelector('.more-text2').classList.toggle('show');
+    document.querySelector('.more-button2').classList.toggle('show');
+    document.querySelector('.dots2').classList.toggle('show');
+    document.querySelector('.close2').classList.toggle('show');
+})
+
+//close2
+const closeButton2 = document.querySelector('.close2');
+closeButton2.addEventListener('click', function(){
+    document.querySelector('.more-text2').classList.toggle('show');
+    document.querySelector('.more-button2').classList.toggle('show');
+    document.querySelector('.dots2').classList.toggle('show');
+    document.querySelector('.close2').classList.toggle('show');
+})
+
+//expend3
+const moreButton3 = document.querySelector('.more-button3');
+moreButton3.addEventListener('click', function(){
+    document.querySelector('.more-text3').classList.toggle('show');
+    document.querySelector('.more-button3').classList.toggle('show');
+    document.querySelector('.dots3').classList.toggle('show');
+    document.querySelector('.close3').classList.toggle('show');
+})
+
+//close3
+const closeButton3 = document.querySelector('.close3');
+closeButton3.addEventListener('click', function(){
+    document.querySelector('.more-text3').classList.toggle('show');
+    document.querySelector('.more-button3').classList.toggle('show');
+    document.querySelector('.dots3').classList.toggle('show');
+    document.querySelector('.close3').classList.toggle('show');
+})
+
+//burger animation
 var tl = new TimelineMax({paused: true});
 
 tl.to(".item1",0.8,{
@@ -45,6 +96,13 @@ $(document).on("click", ".burgerwrapper", function() {
         tl.reversed(!tl.reversed());
 });
 
-$('.book').on('click', function () {
-  $(this).toggleClass('book--expanded');
-});
+
+
+
+
+
+
+
+
+
+

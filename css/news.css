@@ -130,6 +130,7 @@ a:hover{
 	justify-content: center;
 	align-items: center;
 	transition: 0.8s ease-in-out;
+	z-index: -1;
 }
 
 .menu.active{
@@ -241,15 +242,6 @@ a:hover{
     letter-spacing: 5px;
 }
 
-.expend{
-	color: #C67544;
-	text-decoration: underline;
-}
-
-.expend:hover{
-	cursor: url("image/hover.svg"), auto;
-}
-
 .row{
 	padding: 50px 200px;
 }
@@ -259,6 +251,46 @@ a:hover{
   content: "";
   display: table;
   clear: both;
+}
+
+.show{
+    display: none;
+}
+
+.more-button{
+    cursor: pointer;
+    color: #CD7844;
+    text-decoration: underline;
+}
+
+.close{
+	cursor: pointer;
+	color: #CD7844;
+    text-decoration: underline;
+}
+
+.more-button2{
+    cursor: pointer;
+    color: #CD7844;
+    text-decoration: underline;
+}
+
+.close2{
+	cursor: pointer;
+	color: #CD7844;
+    text-decoration: underline;
+}
+
+.more-button3{
+    cursor: pointer;
+    color: #CD7844;
+    text-decoration: underline;
+}
+
+.close3{
+	cursor: pointer;
+	color: #CD7844;
+    text-decoration: underline;
 }
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */

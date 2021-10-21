@@ -187,6 +187,21 @@ a:hover{
 	margin: 5px;
 }
 
+.title h2{
+	font-size: 2.5em;
+	letter-spacing: 7px;
+	font-weight: 700;
+	color: #305351;
+}
+
+.title p{
+	font-size: 1.3em;
+	font-weight: 700;
+	letter-spacing: 10px;
+	padding-top: 20px;
+	padding-left: 25px; 
+}
+
 .leftcolumn {
   width: 100%;
 }

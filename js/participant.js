@@ -268,7 +268,7 @@ function change_text12(){
     document.getElementById("title").innerHTML = "沈淪新機";
     document.getElementById("introduce").innerHTML = "我們是世新大學的資傳系畢業製作，手機成癮在現代成為許多人的問題，我們針對這個問題去研究，並找出相關的解決方案。";
     document.getElementById("fb").href = "https://www.facebook.com/沈淪新機-104273178610507/";
-    document.getElementById("ig").href = "https://www.instagram.com/iiiint_/";
+    document.getElementById("ig").href = "https://www.instagram.com/iiiinnt__110/";
     document.getElementById("fb").style.display = "block";
     document.getElementById("yt").style.display = "none";
     document.getElementById("pd").style.display = "none";

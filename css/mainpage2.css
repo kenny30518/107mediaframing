@@ -498,6 +498,10 @@ a:hover{
 	text-align: center;
 }
 
+.slide-container{
+	max-width: 1600px;
+}
+
 .slick-slide{
 	margin: 0px 20px;
 }

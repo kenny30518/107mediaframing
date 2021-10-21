@@ -165,7 +165,7 @@ $( window ).resize(function() {
     }
 });
 
-/*
+
 //slider//
 $(document).ready(function(){
 
@@ -199,7 +199,7 @@ $(document).ready(function(){
 	  ]
 	});
 });
-*/
+
 
 
 

@@ -503,6 +503,8 @@ a:hover{
 }
 
 .slick-slide img{
+	border-radius: 10px;
+	border: 4px solid #fff;
 	width: 100%;
 }
 

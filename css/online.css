@@ -118,7 +118,14 @@ a:hover{
 	height: 100vh;
 }
 
-.video{
+.s1 video{
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	object-fit: cover;	
+}
+
+/*.video{
 	width: 100vw;
 	height: 100vh;
 	object-fit: cover;
@@ -128,7 +135,7 @@ a:hover{
 	top: 0;
 	bottom: 0;
 	z-index: -1;
-}
+}*/
 
 .left{
 	position: absolute;

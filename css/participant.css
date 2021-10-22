@@ -582,6 +582,15 @@ section{
 	.content{
 		top: initial;
 	}
+
+	.content .textBox{
+		margin-right: 150px;
+	}
+
+	.content .textBox p {
+    	font-size: 0.9em;
+    }
+
 	.thumb li{
 		height: 65px;
 	}

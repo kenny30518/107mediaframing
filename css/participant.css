@@ -578,6 +578,24 @@ section{
 	}
 }
 
+@media (max-height: 600px){
+	.content{
+		top: initial;
+	}
+	.thumb li{
+		height: 65px;
+	}
+
+	.thumb li img{
+		max-width: 60px;
+	}
+
+	.thumb li:before{
+		font-size: 4rem;
+		top: -80px;
+	}
+}
+
 @media (max-height: 500px){
 	.data_wrapper{
 		flex-direction: row;

@@ -288,7 +288,7 @@ a:hover{
 	transform-style: preserve-3d;
 	-webkit-transform-style: preserve-3d;
 	transition: transform 1s;
-	cursor: url('../image/hover.cur'), auto;
+	cursor: url('../image/hover.svg'), auto;
 }
 
 .thecard img{

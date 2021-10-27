@@ -5,10 +5,6 @@
 	font-family: 'Noto Sans TC', sans-serif;
 }
 
-html{
-	scroll-behavior: smooth;
-}
-
 body{
 	overflow-x: hidden;
 	background: #F4F1E6;
@@ -185,6 +181,30 @@ a:hover{
 	width: 25px;
 	height: 2px;
 	margin: 5px;
+}
+
+.scrollToTop{
+	position: fixed;
+	bottom: 800px;
+	right: 40px;
+	width: 60px;
+	height: 60px;
+	z-index: 9997;
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.5s;
+	cursor: pointer;
+}
+
+.scrollToTop.active{
+	bottom: 40px;
+	opacity: 1;
+	visibility: visible;
+}
+
+.fa-arrow-alt-circle-up{
+	font-size: 60px;
+	color: #555656;
 }
 
 .title h2{

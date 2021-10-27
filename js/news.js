@@ -9,6 +9,33 @@ $(window).on('load', function(){
     }
 });
 
+//burger animation
+var tl = new TimelineMax({paused: true});
+
+tl.to(".item1",0.8,{
+    y: 6,
+    rotation: 45,
+    ease: Expo.easeInOut
+});
+
+tl.to(".item2",0.8,{
+    opacity: 0,
+    ease: Expo.easeInOut,
+    delay: -0.8
+});
+
+tl.to(".item3",0.8,{
+    y: -8,
+    rotation: -225,
+    ease: Expo.easeInOut,
+    delay: -0.8
+});
+
+tl.reverse();
+$(document).on("click", ".burgerwrapper", function() {
+        tl.reversed(!tl.reversed());
+});
+
 //scroll to top animation
 $('.scrollToTop a').on('click', function(e){
     if(this.hash !== ''){
@@ -17,7 +44,7 @@ $('.scrollToTop a').on('click', function(e){
         const hash = this.hash;
         $('html, body').animate({
             scrollTop: $(hash).offset().top
-        });
+        },800);
     }
 });
 
@@ -104,33 +131,6 @@ closeButton4.addEventListener('click', function(){
     document.querySelector('.dots4').classList.toggle('show');
     document.querySelector('.close4').classList.toggle('show');
 })
-
-//burger animation
-var tl = new TimelineMax({paused: true});
-
-tl.to(".item1",0.8,{
-    y: 6,
-    rotation: 45,
-    ease: Expo.easeInOut
-});
-
-tl.to(".item2",0.8,{
-    opacity: 0,
-    ease: Expo.easeInOut,
-    delay: -0.8
-});
-
-tl.to(".item3",0.8,{
-    y: -8,
-    rotation: -225,
-    ease: Expo.easeInOut,
-    delay: -0.8
-});
-
-tl.reverse();
-$(document).on("click", ".burgerwrapper", function() {
-        tl.reversed(!tl.reversed());
-});
 
 
 

@@ -172,7 +172,7 @@ function change_text4(){
 
 function change_text5(){
     document.getElementById("title").innerHTML = "拾刻．時客 ";
-    document.getElementById("introduce").innerHTML = "以充滿愛與回憶卻不知如何表達的「拾刻家族」帶入主題；以網站提供大家把話語、情感寄送到未來某刻；以影音探索不同故事的深刻回憶；以社群吸引你我他並創造屬於自己的時空膠囊。「拾刻·時客，為你紀錄每個時刻！」";
+    document.getElementById("introduce").innerHTML = "以充滿愛與回憶卻不知如何表達的「時刻家族」帶入主題；以網站提供大家把話語、情感寄送到未來某刻；以影音探索不同故事的深刻回憶；以社群吸引你我他並創造屬於自己的時空膠囊。「拾刻·時客，為你紀錄每個時刻！」";
     document.getElementById("fb").href = "https://www.facebook.com/timecapture.ics";
     document.getElementById("ig").href = "https://www.instagram.com/timecapture.ics/";
     document.getElementById("yt").href = "https://www.youtube.com/channel/UCfJxOKQd2DOC7X9ThLhCtHA";

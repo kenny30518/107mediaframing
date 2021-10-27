@@ -570,6 +570,16 @@ footer .copyrights{
 }
 
 @media (max-width: 830px){
+	.scrollToTop{
+		right: 10px;
+		width: 45px;
+		height: 45px;
+	}
+
+	.fa-arrow-alt-circle-up{
+		font-size: 45px;
+	}
+	
 	footer .copyrights{
 		margin-top: 0;
 		flex-direction: column;

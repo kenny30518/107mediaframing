@@ -10,7 +10,6 @@ body{
 	background: #8ab0b0;
 	cursor: url('../image/cursor.svg'), auto;
 	min-height: 100vh;
-	scroll-behavior: none;
 }
 
 a:hover{

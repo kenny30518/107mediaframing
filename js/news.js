@@ -96,6 +96,7 @@ closeButton2.addEventListener('click', function(){
     document.querySelector('.close2').classList.toggle('show');
 })
 
+/*
 //expend3
 const moreButton3 = document.querySelector('.more-button3');
 moreButton3.addEventListener('click', function(){
@@ -130,12 +131,153 @@ closeButton4.addEventListener('click', function(){
     document.querySelector('.more-button4').classList.toggle('show');
     document.querySelector('.dots4').classList.toggle('show');
     document.querySelector('.close4').classList.toggle('show');
+
+//expend5
+const moreButton5 = document.querySelector('.more-button5');
+moreButton5.addEventListener('click', function(){
+    document.querySelector('.more-text5').classList.toggle('show');
+    document.querySelector('.more-button5').classList.toggle('show');
+    document.querySelector('.dots5').classList.toggle('show');
+    document.querySelector('.close5').classList.toggle('show');
 })
 
+//close5
+const closeButton5 = document.querySelector('.close5');
+closeButton5.addEventListener('click', function(){
+    document.querySelector('.more-text5').classList.toggle('show');
+    document.querySelector('.more-button5').classList.toggle('show');
+    document.querySelector('.dots5').classList.toggle('show');
+    document.querySelector('.close5').classList.toggle('show');
+})
 
+//expend6
+const moreButton6 = document.querySelector('.more-button6');
+moreButton6.addEventListener('click', function(){
+    document.querySelector('.more-text6').classList.toggle('show');
+    document.querySelector('.more-button6').classList.toggle('show');
+    document.querySelector('.dots6').classList.toggle('show');
+    document.querySelector('.close6').classList.toggle('show');
+})
 
+//close6
+const closeButton6 = document.querySelector('.close6');
+closeButton6.addEventListener('click', function(){
+    document.querySelector('.more-text6').classList.toggle('show');
+    document.querySelector('.more-button6').classList.toggle('show');
+    document.querySelector('.dots6').classList.toggle('show');
+    document.querySelector('.close6').classList.toggle('show');
+})
+*/
 
+//expend7
+const moreButton7 = document.querySelector('.more-button7');
+moreButton7.addEventListener('click', function(){
+    document.querySelector('.more-text7').classList.toggle('show');
+    document.querySelector('.more-button7').classList.toggle('show');
+    document.querySelector('.dots7').classList.toggle('show');
+    document.querySelector('.close7').classList.toggle('show');
+})
 
+//close7
+const closeButton7 = document.querySelector('.close7');
+closeButton7.addEventListener('click', function(){
+    document.querySelector('.more-text7').classList.toggle('show');
+    document.querySelector('.more-button7').classList.toggle('show');
+    document.querySelector('.dots7').classList.toggle('show');
+    document.querySelector('.close7').classList.toggle('show');
+})
+
+/*
+//expend8
+const moreButton8 = document.querySelector('.more-button8');
+moreButton8.addEventListener('click', function(){
+    document.querySelector('.more-text8').classList.toggle('show');
+    document.querySelector('.more-button8').classList.toggle('show');
+    document.querySelector('.dots8').classList.toggle('show');
+    document.querySelector('.close8').classList.toggle('show');
+})
+
+//close8
+const closeButton8 = document.querySelector('.close8');
+closeButton8.addEventListener('click', function(){
+    document.querySelector('.more-text8').classList.toggle('show');
+    document.querySelector('.more-button8').classList.toggle('show');
+    document.querySelector('.dots8').classList.toggle('show');
+    document.querySelector('.close8').classList.toggle('show');
+})
+
+//expend9
+const moreButton9 = document.querySelector('.more-button9');
+moreButton8.addEventListener('click', function(){
+    document.querySelector('.more-text9').classList.toggle('show');
+    document.querySelector('.more-button9').classList.toggle('show');
+    document.querySelector('.dots9').classList.toggle('show');
+    document.querySelector('.close9').classList.toggle('show');
+})
+
+//close9
+const closeButton9 = document.querySelector('.close9');
+closeButton9.addEventListener('click', function(){
+    document.querySelector('.more-text9').classList.toggle('show');
+    document.querySelector('.more-button9').classList.toggle('show');
+    document.querySelector('.dots9').classList.toggle('show');
+    document.querySelector('.close9').classList.toggle('show');
+})
+
+//expend10
+const moreButton10 = document.querySelector('.more-button10');
+moreButton10.addEventListener('click', function(){
+    document.querySelector('.more-text10').classList.toggle('show');
+    document.querySelector('.more-button10').classList.toggle('show');
+    document.querySelector('.dots10').classList.toggle('show');
+    document.querySelector('.close10').classList.toggle('show');
+})
+
+//close10
+const closeButton10 = document.querySelector('.close10');
+closeButton10.addEventListener('click', function(){
+    document.querySelector('.more-text10').classList.toggle('show');
+    document.querySelector('.more-button10').classList.toggle('show');
+    document.querySelector('.dots10').classList.toggle('show');
+    document.querySelector('.close10').classList.toggle('show');
+})
+
+//expend11
+const moreButton11 = document.querySelector('.more-button11');
+moreButton11.addEventListener('click', function(){
+    document.querySelector('.more-text11').classList.toggle('show');
+    document.querySelector('.more-button11').classList.toggle('show');
+    document.querySelector('.dots11').classList.toggle('show');
+    document.querySelector('.close11').classList.toggle('show');
+})
+
+//close11
+const closeButton11 = document.querySelector('.close11');
+closeButton11.addEventListener('click', function(){
+    document.querySelector('.more-text11').classList.toggle('show');
+    document.querySelector('.more-button11').classList.toggle('show');
+    document.querySelector('.dots11').classList.toggle('show');
+    document.querySelector('.close11').classList.toggle('show');
+})
+
+//expend12
+const moreButton12 = document.querySelector('.more-button12');
+moreButton12.addEventListener('click', function(){
+    document.querySelector('.more-text12').classList.toggle('show');
+    document.querySelector('.more-button12').classList.toggle('show');
+    document.querySelector('.dots12').classList.toggle('show');
+    document.querySelector('.close12').classList.toggle('show');
+})
+
+//close12
+const closeButton12 = document.querySelector('.close12');
+closeButton12.addEventListener('click', function(){
+    document.querySelector('.more-text12').classList.toggle('show');
+    document.querySelector('.more-button12').classList.toggle('show');
+    document.querySelector('.dots12').classList.toggle('show');
+    document.querySelector('.close12').classList.toggle('show');
+})
+*/
 
 
 

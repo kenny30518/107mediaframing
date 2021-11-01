@@ -333,49 +333,145 @@ a:hover{
 }
 
 .more-button{
-    cursor: pointer;
+    cursor: url('../image/hover.svg'), auto;
     color: #CD7844;
     text-decoration: underline;
 }
 
 .close{
-	cursor: pointer;
+	cursor: url('../image/hover.svg'), auto;
 	color: #CD7844;
     text-decoration: underline;
 }
 
 .more-button2{
-    cursor: pointer;
+    cursor: url('../image/hover.svg'), auto;
     color: #CD7844;
     text-decoration: underline;
 }
 
 .close2{
-	cursor: pointer;
+	cursor: url('../image/hover.svg'), auto;
 	color: #CD7844;
     text-decoration: underline;
 }
 
 .more-button3{
-    cursor: pointer;
+    cursor: url('../image/hover.svg'), auto;
     color: #CD7844;
     text-decoration: underline;
 }
 
 .close3{
-	cursor: pointer;
+	cursor: url('../image/hover.svg'), auto;
 	color: #CD7844;
     text-decoration: underline;
 }
 
 .more-button4{
-    cursor: pointer;
+    cursor: url('../image/hover.svg'), auto;
     color: #CD7844;
     text-decoration: underline;
 }
 
 .close4{
-	cursor: pointer;
+	cursor: url('../image/hover.svg'), auto;
+	color: #CD7844;
+    text-decoration: underline;
+}
+
+.more-button5{
+    cursor: url('../image/hover.svg'), auto;
+    color: #CD7844;
+    text-decoration: underline;
+}
+
+.close5{
+	cursor: url('../image/hover.svg'), auto;
+	color: #CD7844;
+    text-decoration: underline;
+}
+
+.more-button6{
+    cursor: url('../image/hover.svg'), auto;
+    color: #CD7844;
+    text-decoration: underline;
+}
+
+.close6{
+	cursor: url('../image/hover.svg'), auto;
+	color: #CD7844;
+    text-decoration: underline;
+}
+
+.more-button7{
+    cursor: url('../image/hover.svg'), auto;
+    color: #CD7844;
+    text-decoration: underline;
+}
+
+.close7{
+	cursor: url('../image/hover.svg'), auto;
+	color: #CD7844;
+    text-decoration: underline;
+}
+
+.more-button8{
+    cursor: url('../image/hover.svg'), auto;
+    color: #CD7844;
+    text-decoration: underline;
+}
+
+.close8{
+	cursor: url('../image/hover.svg'), auto;
+	color: #CD7844;
+    text-decoration: underline;
+}
+
+.more-button9{
+    cursor: url('../image/hover.svg'), auto;
+    color: #CD7844;
+    text-decoration: underline;
+}
+
+.close9{
+	cursor: url('../image/hover.svg'), auto;
+	color: #CD7844;
+    text-decoration: underline;
+}
+
+.more-button10{
+    cursor: url('../image/hover.svg'), auto;
+    color: #CD7844;
+    text-decoration: underline;
+}
+
+.close10{
+	cursor: url('../image/hover.svg'), auto;
+	color: #CD7844;
+    text-decoration: underline;
+}
+
+.more-button11{
+    cursor: url('../image/hover.svg'), auto;
+    color: #CD7844;
+    text-decoration: underline;
+}
+
+.close11{
+	cursor: url('../image/hover.svg'), auto;
+	color: #CD7844;
+    text-decoration: underline;
+}
+
+.more-button12{
+    cursor: url('../image/hover.svg'), auto;
+    color: #CD7844;
+    text-decoration: underline;
+}
+
+.close12{
+	cursor: url('../image/hover.svg'), auto;
 	color: #CD7844;
     text-decoration: underline;
 }
@@ -579,7 +675,7 @@ footer .copyrights{
 	.fa-arrow-alt-circle-up{
 		font-size: 45px;
 	}
-	
+
 	footer .copyrights{
 		margin-top: 0;
 		flex-direction: column;

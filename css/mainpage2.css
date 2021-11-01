@@ -741,6 +741,7 @@ footer .copyrights{
 
 @media (max-width: 830px){
 	.lower{
+		display: none;
 		left: 0;
 		right: 0;
 		margin-left: 0;
@@ -784,8 +785,7 @@ footer .copyrights{
 		background: url(../image/phone_s1.svg);
 		background-repeat: no-repeat;
 		background-size: cover;
-		background-position: center;
-		height: 102vh;	
+		background-position: center;	
 	}
 
 	.s1 .heading p{
@@ -815,7 +815,7 @@ footer .copyrights{
 	    right: 0;
 	    margin-left: 0;
 	    margin-right: 30px;
-	    bottom: 30px;
+	    bottom: -120px;
 	    text-align: center;
 	    letter-spacing: 6px;
 	    margin-top: 0;

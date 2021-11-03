@@ -318,7 +318,7 @@ a:hover{
 }
 
 .row{
-	padding: 50px 250px;
+	padding: 50px 320px;
 }
 
 /* Clear floats after the columns */
@@ -644,16 +644,6 @@ footer .copyrights{
 		flex-direction: column;
 	}
 
-	footer{
-		z-index: 3;
-	}
-}
-
-@media (max-width: 950px){
-	.row{
-		padding: 30px;
-	}
-
 	.flex-box{
 		display: flex;
 		flex-direction: column;
@@ -662,6 +652,16 @@ footer .copyrights{
 
 	.links{
 		margin: 20px 0;
+	}
+
+	footer{
+		z-index: 3;
+	}
+}
+
+@media (max-width: 950px){
+	.row{
+		padding: 30px;
 	}
 }
 

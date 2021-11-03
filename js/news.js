@@ -114,6 +114,7 @@ closeButton3.addEventListener('click', function(){
     document.querySelector('.dots3').classList.toggle('show');
     document.querySelector('.close3').classList.toggle('show');
 })
+*/
 
 //expend4
 const moreButton4 = document.querySelector('.more-button4');
@@ -131,6 +132,7 @@ closeButton4.addEventListener('click', function(){
     document.querySelector('.more-button4').classList.toggle('show');
     document.querySelector('.dots4').classList.toggle('show');
     document.querySelector('.close4').classList.toggle('show');
+})
 
 //expend5
 const moreButton5 = document.querySelector('.more-button5');
@@ -149,7 +151,7 @@ closeButton5.addEventListener('click', function(){
     document.querySelector('.dots5').classList.toggle('show');
     document.querySelector('.close5').classList.toggle('show');
 })
-
+/*
 //expend6
 const moreButton6 = document.querySelector('.more-button6');
 moreButton6.addEventListener('click', function(){

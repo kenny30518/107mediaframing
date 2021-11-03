@@ -244,11 +244,12 @@ function change_text10(){
     document.getElementById("introduce").innerHTML = "我們是廟嶼，宮廟的「廟」島嶼的「嶼」，專門介紹宮廟文化的科普和冷知識的推廣，以宮廟冷知識作為主軸製作網頁和相關文章推廣宮廟文化，使年輕一輩的社會大眾對其有更深入的認識，重新對宮廟文化引起興趣。";
     document.getElementById("fb").href = "https://www.facebook.com/%E5%BB%9F%E5%B6%BC-Temple-Islands-107538774931012";
     document.getElementById("ig").href = "https://www.instagram.com/templeislands/";
+    document.getElementById("web").href = "https://templesisland.com/";
     document.getElementById("fb").style.display = "block";
     document.getElementById("yt").style.display = "none";
     document.getElementById("pd").style.display = "none";
     document.getElementById("sp").style.display = "none";
-    document.getElementById("web").style.display = "none";
+    document.getElementById("web").style.display = "block";
 }
 
 function change_text11(){

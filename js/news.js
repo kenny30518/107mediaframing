@@ -209,7 +209,7 @@ closeButton8.addEventListener('click', function(){
 
 //expend9
 const moreButton9 = document.querySelector('.more-button9');
-moreButton8.addEventListener('click', function(){
+moreButton9.addEventListener('click', function(){
     document.querySelector('.more-text9').classList.toggle('show');
     document.querySelector('.more-button9').classList.toggle('show');
     document.querySelector('.dots9').classList.toggle('show');

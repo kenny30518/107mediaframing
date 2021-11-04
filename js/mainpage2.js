@@ -172,9 +172,9 @@ $(document).ready(function(){
 	$('.pictures').slick({
 	  dots: false,
 	  arrows: false,
-	  centerMode: true,
+	  centerMode: false,
 	  autoplay: true,
-	  autoplaySpeed: 2000,
+	  autoplaySpeed: 1500,
 	  centerPadding: '60px',
 	  slidesToShow: 3,
 	  responsive: [

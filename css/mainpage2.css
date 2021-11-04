@@ -682,6 +682,10 @@ footer .copyrights{
 		text-align: center;
 		margin: 0 auto;
 	}
+
+	.slide-container{
+		max-width: 1200px;
+	}
 }
 
 @media (max-width: 1366px){

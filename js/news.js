@@ -151,7 +151,6 @@ closeButton5.addEventListener('click', function(){
     document.querySelector('.dots5').classList.toggle('show');
     document.querySelector('.close5').classList.toggle('show');
 })
-/*
 //expend6
 const moreButton6 = document.querySelector('.more-button6');
 moreButton6.addEventListener('click', function(){
@@ -169,7 +168,6 @@ closeButton6.addEventListener('click', function(){
     document.querySelector('.dots6').classList.toggle('show');
     document.querySelector('.close6').classList.toggle('show');
 })
-*/
 
 //expend7
 const moreButton7 = document.querySelector('.more-button7');

@@ -292,6 +292,10 @@ a:hover{
 	margin-bottom: 20px;
 }
 
+#parking .content a{
+	color: #272828;
+}
+
 footer{
 	overflow-x: hidden;
 	width: 100%;

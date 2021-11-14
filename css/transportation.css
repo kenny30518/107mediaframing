@@ -660,7 +660,60 @@ footer .copyrights{
 	}
 }
 
+@media (max-width: 470px){
+	.bigWrapper{
+		margin: 0 25px;
+	}
 
+	.bigWrapper .content p{
+		font-size: 13px;
+	}
+
+	.PPP{
+		width: 259px;
+		height: 126px;
+	}
+
+	.title{
+		padding-bottom: 0;
+	}
+
+	.title h1{
+		font-size: 4rem;
+	}
+
+	.upper .address{
+		align-items: baseline;
+	}
+
+	.upper .address .fa-map-marker-alt{
+		font-size: 15px;
+	}
+
+	.addressWords h4{
+		font-size: 12px;
+	}
+
+	.mapWrapper{
+		margin: 50px 0;
+	}
+
+	.trafficNav ul li a{
+		padding: 5px 10px;
+	}
+
+	.name{
+		padding: 10px 0;
+	}
+
+	.name h1{
+		font-size: 20px;
+	}
+
+	.text{
+		line-height: 25px;
+	}
+}
 
 
 

@@ -33,7 +33,7 @@ tl.to(".item3",0.8,{
 
 tl.reverse();
 $(document).on("click", ".burgerwrapper", function() {
-        tl.reversed(!tl.reversed());
+    tl.reversed(!tl.reversed());
 });
 
 //change content by screen width
@@ -64,3 +64,27 @@ $('.trafficNav ul li a').on('click', function(e){
         },800);
     }
 });
+
+//scroll to top animation
+$('.scrollToTop a').on('click', function(e){
+    if(this.hash !== ''){
+        e.preventDefault();
+
+        const hash = this.hash;
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top
+        },800);
+    }
+});
+
+//show and hide scroll to top icon
+window.addEventListener('scroll', function(){
+    var scroll = document.querySelector('.scrollToTop');
+    scroll.classList.toggle("active", window.scrollY > 500)
+})
+
+//burger animation
+function show(){
+    document.querySelector('.menu').classList.toggle('active');
+    document.querySelector('.data').classList.toggle('active');
+}

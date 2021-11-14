@@ -52,3 +52,15 @@ $( window ).resize(function() {
         document.getElementById("railContent").innerHTML = "<p>觀眾自捷運淡水信義線（紅線）至中山站下車，於 2 號出口出站後，<br/>步行至，往前行走約 200 公尺，右手邊出現世新資傳畢展看板，<br/>即抵達PPP時尚藝文空間。</p>";
     }
 });
+
+//Smooth scroll effect
+$('.trafficNav ul li a').on('click', function(e){
+    if(this.hash !== ''){
+        e.preventDefault();
+
+        const hash = this.hash;
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top
+        },800);
+    }
+});

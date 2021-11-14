@@ -634,6 +634,7 @@ footer .copyrights{
 
 	#parking .content{
 		flex-direction: column;
+		letter-spacing: 3px;
 	}
 
 	footer .copyrights{
@@ -712,6 +713,10 @@ footer .copyrights{
 
 	.text{
 		line-height: 25px;
+	}
+
+	.spacing{
+		letter-spacing: 1px;
 	}
 }
 

@@ -125,19 +125,22 @@ function change_text1(){
     document.getElementById("pd").style.display = "none";
     document.getElementById("pd").style.display = "none";
     document.getElementById("sp").style.display = "none";
+    document.getElementById("line").style.display = "none";
     document.getElementById("web").style.display = "none";
 }
 
 function change_text2(){
     document.getElementById("title").innerHTML = "蔬情";
-    document.getElementById("introduce").innerHTML = "「讓我們把最蔬情的故事，說給你聽。」希望藉由平台推廣小農產品，透過影音刻畫人物故事，使情感成為一個成功的包裝品牌，更樂見小農們藉由願意分享自身故事獲取一些寶貴心得。";
+    document.getElementById("introduce").innerHTML = "「讓我們把最蔬情的故事，說給你聽。」希望藉由平台推廣小農產品，透過影音刻畫人物故事，使情感成為一個成功的包裝，更樂見小農們藉由願意分享自身故事獲取一些寶貴心得。";
     document.getElementById("fb").href = "https://www.facebook.com/farminlove2021";
     document.getElementById("ig").href = "https://www.instagram.com/farminlove2021/";
     document.getElementById("yt").href = "https://www.youtube.com/channel/UCqzttcoP691_7RkIovTlAoA";
+    document.getElementById("line").href = "https://lin.ee/0hl3pbx";
     document.getElementById("web").href = "https://farm-inlove.com/";
     document.getElementById("fb").style.display = "block";
     document.getElementById("yt").style.display = "block";
     document.getElementById("pd").style.display = "none";
+    document.getElementById("line").style.display = "block";
     document.getElementById("sp").style.display = "none";
     document.getElementById("web").style.display = "block";
 }
@@ -155,24 +158,26 @@ function change_text3(){
     document.getElementById("yt").style.display = "block";
     document.getElementById("pd").style.display = "block";
     document.getElementById("sp").style.display = "block";
+    document.getElementById("line").style.display = "none";
     document.getElementById("web").style.display = "block";
 }
 
 function change_text4(){
     document.getElementById("title").innerHTML = "涉群危基";
-    document.getElementById("introduce").innerHTML = "這是一個被監控的社會我們遊走在看似自由的網路世界然而危機步步逼近.......大家好我們是涉群危基個人的資料和網路的足跡如今已經比石油等等的資源還要重要了你還在把個人資料無條件的送出去嗎？涉群危基帶你瞭解監控資本主義和個資的重要";
+    document.getElementById("introduce").innerHTML = "這是一個被監控的社會我們遊走在看似自由的網路世界然而危機步步逼近.......沒有基礎怎麼可以大家好我們是涉群危基個人的資料和網路的足跡如今已經比石油等等的資源還要重要了你還在把個人資料無條件的送出去嗎？涉群危基帶你瞭解監控資本主義和個資的重要";
     document.getElementById("ig").href = "https://instagram.com/ics_social_crisis?utm_medium=copy_link";
     document.getElementById("web").href = "https://icssocialcrisis.wordpress.com/";
     document.getElementById("fb").style.display = "none";
     document.getElementById("yt").style.display = "none";
     document.getElementById("pd").style.display = "none";
     document.getElementById("sp").style.display = "none";
+    document.getElementById("line").style.display = "none";
     document.getElementById("web").style.display = "block";
 }
 
 function change_text5(){
     document.getElementById("title").innerHTML = "拾刻．時客 ";
-    document.getElementById("introduce").innerHTML = "以充滿愛與回憶卻不知如何表達的「時刻家族」帶入主題；以網站提供大家把話語、情感寄送到未來某刻；以影音探索不同故事的深刻回憶；以社群吸引你我他並創造屬於自己的時空膠囊。「拾刻·時客，為你紀錄每個時刻！」";
+    document.getElementById("introduce").innerHTML = "以充滿愛與回憶卻不知如何表達的「時刻家族」帶入主題；以網站提供大家把話語、情感寄送到未來；以影音紀錄城市中不同故事的回憶；以社群經營與時客們交流。「拾刻 · 時客，為你紀錄每個時刻！」";
     document.getElementById("fb").href = "https://www.facebook.com/timecapture.ics";
     document.getElementById("ig").href = "https://www.instagram.com/timecapture.ics/";
     document.getElementById("yt").href = "https://www.youtube.com/channel/UCfJxOKQd2DOC7X9ThLhCtHA";
@@ -181,6 +186,7 @@ function change_text5(){
     document.getElementById("yt").style.display = "block";
     document.getElementById("pd").style.display = "none";
     document.getElementById("sp").style.display = "none";
+    document.getElementById("line").style.display = "none";
     document.getElementById("web").style.display = "block";
 }
 
@@ -194,6 +200,7 @@ function change_text6(){
     document.getElementById("yt").style.display = "none";
     document.getElementById("pd").style.display = "none";
     document.getElementById("sp").style.display = "none";
+    document.getElementById("line").style.display = "none";
     document.getElementById("web").style.display = "block";
 }
 
@@ -210,12 +217,13 @@ function change_text7(){
     document.getElementById("yt").style.display = "block";
     document.getElementById("pd").style.display = "block";
     document.getElementById("sp").style.display = "block";
+    document.getElementById("line").style.display = "none";
     document.getElementById("web").style.display = "block";
 }
 
 function change_text8(){
     document.getElementById("title").innerHTML = "桌點子";
-    document.getElementById("introduce").innerHTML = "我們致力創造一個線上桌遊整合平台，結合桌遊測驗及線上論壇，讓你在選擇桌遊及理解桌遊上不再有選擇困難!!「桌點子，激發你的新點子!」";
+    document.getElementById("introduce").innerHTML = "我們致力創造一個線上桌遊整合平台，結合桌遊測驗及線上論壇，讓你在玩桌遊時不再有選擇困難!!「桌點子，激發你的新點子!」";
     document.getElementById("fb").href = "https://www.facebook.com/Tdot-%E6%A1%8C%E9%BB%9E%E5%AD%90-108555258175268/?ref=page_internal";
     document.getElementById("ig").href = "https://www.instagram.com/t.dot_107/";
     document.getElementById("yt").href = "https://www.youtube.com/channel/UCMs_CWhgBNHjc5rxblcdz2w/videos";
@@ -224,18 +232,20 @@ function change_text8(){
     document.getElementById("yt").style.display = "block";
     document.getElementById("pd").style.display = "none";
     document.getElementById("sp").style.display = "none";
+    document.getElementById("line").style.display = "none";
     document.getElementById("web").style.display = "block";
 }
 
 function change_text9(){
     document.getElementById("title").innerHTML = "蜘網";
-    document.getElementById("introduce").innerHTML = "訊息滴滴滴滴滴滴滴滴……<br>當然是沒有那個耐心一條條看完<br>新聞Boomboomboomboom……<br>怎麽會有那個時間瞭解所有啊！<br>沒關係，蜘網整合論壇和聊天，推出新功能！";
+    document.getElementById("introduce").innerHTML = "訊息滴滴滴滴滴滴滴滴……<br/>當然是沒有那個耐心一條條看完<br/>新聞Boomboomboomboom……<br/>怎麽會有那個時間瞭解所有啊！<br/>沒關係，蜘網整合論壇和聊天，推出新功能！";
     document.getElementById("ig").href = "https://www.instagram.com/z.cullet_/";
     document.getElementById("yt").href = "";
     document.getElementById("fb").style.display = "none";
     document.getElementById("yt").style.display = "none";
     document.getElementById("pd").style.display = "none";
     document.getElementById("sp").style.display = "none";
+    document.getElementById("line").style.display = "none";
     document.getElementById("web").style.display = "none";
 }
 
@@ -249,6 +259,7 @@ function change_text10(){
     document.getElementById("yt").style.display = "none";
     document.getElementById("pd").style.display = "none";
     document.getElementById("sp").style.display = "none";
+    document.getElementById("line").style.display = "none";
     document.getElementById("web").style.display = "block";
 }
 
@@ -262,6 +273,7 @@ function change_text11(){
     document.getElementById("yt").style.display = "block";
     document.getElementById("pd").style.display = "none";
     document.getElementById("sp").style.display = "none";
+    document.getElementById("line").style.display = "none";
     document.getElementById("web").style.display = "none";
 }
 
@@ -270,10 +282,12 @@ function change_text12(){
     document.getElementById("introduce").innerHTML = "我們是世新大學的資傳系畢業製作，手機成癮在現代成為許多人的問題，我們針對這個問題去研究，並找出相關的解決方案。";
     document.getElementById("fb").href = "https://www.facebook.com/沈淪新機-104273178610507/";
     document.getElementById("ig").href = "https://www.instagram.com/iiiinnt__110/";
+    document.getElementById("yt").href = "https://youtube.com/channel/UC6rYcWdWMRmTy30-uwYP_7g";
     document.getElementById("fb").style.display = "block";
-    document.getElementById("yt").style.display = "none";
+    document.getElementById("yt").style.display = "block";
     document.getElementById("pd").style.display = "none";
     document.getElementById("sp").style.display = "none";
+    document.getElementById("line").style.display = "none";
     document.getElementById("web").style.display = "none";
 }
 
@@ -287,5 +301,6 @@ function change_text13(){
     document.getElementById("yt").style.display = "block";
     document.getElementById("pd").style.display = "none";
     document.getElementById("sp").style.display = "none";
+    document.getElementById("line").style.display = "none";
     document.getElementById("web").style.display = "none";
 }

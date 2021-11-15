@@ -382,6 +382,10 @@ section{
 	display: none;
 }
 
+#line{
+	display: none;
+}
+
 #fb{
 	display: block;
 }

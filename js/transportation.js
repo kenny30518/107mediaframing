@@ -105,3 +105,89 @@ function show(){
     document.querySelector('.menu').classList.toggle('active');
     document.querySelector('.data').classList.toggle('active');
 }
+
+var url = [
+  ['https://goo.gl/maps/1sAegCmFEWmFEG9Y7'],
+  ['https://goo.gl/maps/8udqGagCySYQqzmd7'],
+  ['https://goo.gl/maps/jEcZxGQSbTxi9JEj8'],
+  ['https://goo.gl/maps/QFgnGBpCryQSWBFF6'],
+  ['https://goo.gl/maps/bpuw1QA41HdqJjbF8'],
+  ['https://goo.gl/maps/tomKNPRVKGymk7EU6'],
+  ['https://goo.gl/maps/ZXnwrGiPZuFaUXzDA'],
+  ['https://goo.gl/maps/X41REEWFcyMnHbE78']
+];
+
+var locations = [
+      ['中山北路二段42巷臨時公有收費停車場', 25.054624239322195, 121.52134100746444],
+      ['台壽金融總部大樓停車場', 25.054791742098374, 121.5222702120999],
+      ['台灣聯通停車場-國賓場', 25.056986367188102, 121.52245651321016],
+      ['NPD中山新光大樓停車場', 25.05542214477433, 121.52178865681292],
+      ['全方位停車場 南西站', 25.052592700758446, 121.52171417335363],
+      ['應安168停車聯盟', 25.051477799551048, 121.5208597400119],
+      ['Times 南京西路64巷機車停車場', 25.052418479287187, 121.5182208986927],
+      ['ViVi PARK中山美學停車場', 25.05192355833682, 121.51999458283728]
+    ];
+
+var stylers = [
+  {
+    "featureType": "landscape.man_made",
+    "elementType": "geometry",
+    "stylers": [
+      { "visibility": "off" }
+    ]
+  },{
+    "featureType": "poi.business",
+    "elementType": "labels",
+    "stylers": [
+      { "visibility": "off" }
+    ]
+  }
+]
+
+//Google map API
+function initMap(){
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 17,
+      center: new google.maps.LatLng(25.053902494573, 121.52212832828542),
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+      styles: stylers,
+    });
+
+    const PPPmarker = new google.maps.Marker({
+      position: new google.maps.LatLng(25.053902494573, 121.52212832828542),
+      map: map,
+      icon: "image/title.ico",
+    });
+
+    var infowindow = new google.maps.InfoWindow();
+
+    var marker, i;
+
+    for (i = 0; i < locations.length; i++) {  
+      marker = new google.maps.Marker({
+        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+        map: map,
+                icon: "https://developers.google.com/maps/documentation/javascript/examples/full/images/parking_lot_maps.png"
+      });
+
+      google.maps.event.addListener(marker, 'click', (function(marker, i) {
+        return function() {
+          infowindow.setContent(locations[i][0]+"<br/><a href="+url[i]+" target=\"_blank\"\">在Google地圖上查看</a>");
+          infowindow.open(map, marker);
+        }
+      })(marker, i));
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

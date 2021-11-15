@@ -400,14 +400,19 @@ svg{
 }
 
 #parking .content{
-	letter-spacing: 7px;
+	letter-spacing: 2px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: flex-start;
+	margin-bottom: 40px;
 }
 
-#parking .content i{
+#parking .name{
+	border-bottom: none;
+}
+
+/*#parking .content i{
 	color: #9a4f4e;
 }
 
@@ -417,6 +422,15 @@ svg{
 
 #parking .content a{
 	color: #272828;
+}*/
+
+#map{
+	border: 5px solid #526D68;
+  	height: 600px;
+  	/* The height is 400 pixels */
+  	width: 100%;
+ 	/* The width is the width of the web page */
+ 	border-radius: 10px;	
 }
 
 footer{
@@ -577,6 +591,10 @@ footer .copyrights{
     	margin-left: 0;
     	margin-top: 50px;
 	}
+
+	#map{
+		height: 500px;
+	}
 }
 
 @media (max-width: 830px){
@@ -637,6 +655,10 @@ footer .copyrights{
 		letter-spacing: 3px;
 	}
 
+	#map{
+		height: 400px;
+	}
+
 	footer .copyrights{
 		margin-top: 0;
 		flex-direction: column;
@@ -658,6 +680,10 @@ footer .copyrights{
 @media (max-width: 530px){
 	.addressWords h4{
 		font-size: 20px;
+	}
+
+	#map{
+		height: 300px;
 	}
 }
 

@@ -156,7 +156,7 @@ function initMap(){
     const PPPmarker = new google.maps.Marker({
       position: new google.maps.LatLng(25.053902494573, 121.52212832828542),
       map: map,
-      icon: "image/title.ico",
+      icon: {url:"image/PPP.jpeg", scaledSize: new google.maps.Size(40, 40)},
     });
 
     var infowindow = new google.maps.InfoWindow();
@@ -167,13 +167,20 @@ function initMap(){
       marker = new google.maps.Marker({
         position: new google.maps.LatLng(locations[i][1], locations[i][2]),
         map: map,
-                icon: "https://developers.google.com/maps/documentation/javascript/examples/full/images/parking_lot_maps.png"
+        icon: "https://developers.google.com/maps/documentation/javascript/examples/full/images/parking_lot_maps.png"
       });
 
       google.maps.event.addListener(marker, 'click', (function(marker, i) {
         return function() {
           infowindow.setContent(locations[i][0]+"<br/><a href="+url[i]+" target=\"_blank\"\">在Google地圖上查看</a>");
           infowindow.open(map, marker);
+        }
+      })(marker, i));
+
+      google.maps.event.addListener(PPPmarker, 'click', (function() {
+        return function() {
+          infowindow.setContent("PPP時尚藝文空間<br/><a href=\"https://goo.gl/maps/mmWasdwEmP58s9Su6\" target=\"_blank\"\">在Google地圖上查看</a>");
+          infowindow.open(map, PPPmarker);
         }
       })(marker, i));
     }

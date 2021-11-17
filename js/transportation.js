@@ -152,9 +152,19 @@ var stylers = [
 
 //Google map API
 function initMap(){
+    var centerLat, centerLng;
+
+    if ($( window ).width() <= 830) {
+      centerLat = "25.053902494573";
+      centerLnt = "121.52212832828542";
+    }else{
+      centerLat = "25.05359167676702";
+      centerLnt = "121.52091296179978";
+    }
+
     var map = new google.maps.Map(document.getElementById('map'), {
       zoom: 17,
-      center: new google.maps.LatLng(25.05359167676702, 121.52091296179978),
+      center: new google.maps.LatLng(centerLat, centerLnt),
       mapTypeId: google.maps.MapTypeId.ROADMAP,
       styles: stylers,
     });

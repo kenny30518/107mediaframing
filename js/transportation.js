@@ -141,6 +141,12 @@ var stylers = [
     "stylers": [
       { "visibility": "off" }
     ]
+  },{
+    "featureType": "poi.sports_complex",
+    "elementType": "labels",
+    "stylers": [
+      { "visibility": "off" }
+    ]
   }
 ]
 
@@ -148,7 +154,7 @@ var stylers = [
 function initMap(){
     var map = new google.maps.Map(document.getElementById('map'), {
       zoom: 17,
-      center: new google.maps.LatLng(25.053902494573, 121.52212832828542),
+      center: new google.maps.LatLng(25.05359167676702, 121.52091296179978),
       mapTypeId: google.maps.MapTypeId.ROADMAP,
       styles: stylers,
     });
@@ -156,7 +162,7 @@ function initMap(){
     const PPPmarker = new google.maps.Marker({
       position: new google.maps.LatLng(25.053902494573, 121.52212832828542),
       map: map,
-      icon: {url:"image/PPP.jpeg", scaledSize: new google.maps.Size(40, 40)},
+      icon: {url:"image/ppp.svg", scaledSize: new google.maps.Size(50, 50)},
     });
 
     var infowindow = new google.maps.InfoWindow();
@@ -167,7 +173,7 @@ function initMap(){
       marker = new google.maps.Marker({
         position: new google.maps.LatLng(locations[i][1], locations[i][2]),
         map: map,
-        icon: "https://developers.google.com/maps/documentation/javascript/examples/full/images/parking_lot_maps.png"
+        icon: {url:"image/parking.svg", scaledSize: new google.maps.Size(30, 30)},
       });
 
       google.maps.event.addListener(marker, 'click', (function(marker, i) {

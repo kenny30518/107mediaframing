@@ -680,6 +680,10 @@ footer .copyrights{
 		font-size: 45px;
 	}
 
+	footer .content{
+		width: 100%;
+	}
+
 	footer .copyrights{
 		margin-top: 0;
 		flex-direction: column;

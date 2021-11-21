@@ -192,7 +192,7 @@ a:hover{
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
     -o-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
+    transition: all 1.5s ease-in-out;
     -webkit-transform: translateY(0px) rotateX(50deg) rotateZ(35deg);s
 	-moz-transform: translateY(0px) rotateX(50deg) rotateZ(35deg);
 	-ms-transform: translateY(0px) rotateX(50deg) rotateZ(35deg);
@@ -200,27 +200,49 @@ a:hover{
 	transform: translateY(0px) rotateX(50deg) rotateZ(35deg);
 }
 
+#test{
+	transition: 1s;
+	border: 0px #63564e;
+}
+
+#test:hover{
+	transform: translate(-5px,-5px);
+	fill: #5aa6a5;
+	border: 15px #63564e;
+}
+
+input{
+	margin-left: 50px;
+}
+
+input.toggle:checked ~ .map {
+	-webkit-transform: translateY(-200px) translateZ(-150px) rotateX(45deg) rotateZ(45deg);
+	-moz-transform: translateY(-150px) rotateX(45deg) rotateZ(45deg);
+	-ms-transform: translateY(-150px) rotateX(45deg) rotateZ(45deg);
+	-o-transform: translateY(-150px) rotateX(45deg) rotateZ(45deg);
+	transform: translateY(0px) rotateX(0deg) rotateZ(0deg);
+}
+
 .map:before{
 	content: '';
-	position: absolute;
-	/*top: ;
-	left: ;*/
-	width: 100%;
-	height: 30px;
-	background: #63564e;
-	transform-origin: bottom left;
-	transform: skew(60deg);
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    height: 3.19%;
+    background: #63564e;
+    transform-origin: bottom left;
+    transform: rotateY(0deg) rotateX(80deg) rotateZ(0deg);
 }
 
 .map:after{
 	content: '';
-	position: absolute;
-	right: -1px;
-	width: 30px;
-	height: 100%;
-	background: #63564e;
-	transform-origin: bottom left;
-	transform: skewY(60deg);
+    position: absolute;
+    width: 2.43%;
+    height: 100%;
+    background: #63564e;
+    transform-origin: bottom left;
+    transform: rotateY(90deg) rotateX(0deg) rotateZ(0deg);
 }
 
 footer{

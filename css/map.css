@@ -226,9 +226,11 @@ a:hover{
 	cursor: url('../image/hover.svg'), auto;
 }
 
+.mapWrapper{
+	margin: 50px 550px;
+}
+
 .map{
-	max-width: 1600px;
-	margin: 50px 300px;
 	-webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
     -ms-transform-style: preserve-3d;
@@ -284,8 +286,6 @@ a:hover{
 }
 
 .map2{
-	max-width: 1600px;
-	margin: 50px 300px;
 	-webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
     -ms-transform-style: preserve-3d;
@@ -437,19 +437,33 @@ footer .copyrights{
 }
 
 @media (max-width: 1600px){
-
+	.mapWrapper{
+		margin: 50px 400px;
+	}
 }
 
 @media (max-width: 1441px),(max-height: 800px){
-
+	.mapWrapper{
+		margin: 50px 300px;
+	}
 }
 
 @media (max-width: 1300px){
-
+	.mapWrapper{
+		margin: 50px 400px;
+	}
 }
 
 @media (max-width: 1170px){
+	.mapWrapper{
+		margin: 50px 250px;
+	}
+}
 
+@media (max-width:  992px){
+	.mapWrapper{
+		margin: 50px 200px;
+	}
 }
 
 @media (max-width: 830px){
@@ -475,6 +489,10 @@ footer .copyrights{
 		display: inherit;
 	}
 
+	.mapWrapper{
+		margin: 50px 150px;
+	}
+
 	footer .content{
 		width: 100%;
 	}
@@ -497,12 +515,16 @@ footer .copyrights{
 	}
 }
 
-@media (max-width: 530px){
-
+@media (max-width: 580px){
+	.mapWrapper{
+		margin: 50px 80px;
+	}
 }
 
 @media (max-width: 470px){
-	
+	.mapWrapper{
+		margin: 50px 50px;
+	}
 }
 
 

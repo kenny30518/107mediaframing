@@ -36,6 +36,7 @@ $(document).on("click", ".burgerwrapper", function() {
     tl.reversed(!tl.reversed());
 });
 
+//Floor switch button
 $('#secondFloor').on('click',function(){
     $('#secondFloor').css('color','#769E89');
     $('#firstFloor').css('color','transparent');

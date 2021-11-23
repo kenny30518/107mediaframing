@@ -36,6 +36,34 @@ $(document).on("click", ".burgerwrapper", function() {
     tl.reversed(!tl.reversed());
 });
 
+$('#secondFloor').on('click', function(){
+    $('#secondFloor').addClass('clicked');
+});
+
+$('#secondFloor').on('click',function(){
+    if ($('#secondFloor').hasClass('clicked')) {
+        var tl2 = new TimelineMax();
+
+        tl2.to(".map2",{
+            keyframes: [
+                {duration: 0.2, xPercent: 20,},
+                {duration: 0.2, yPercent: -20},
+            ]
+        }).to(".map2",0.2,{
+            zIndex: -1
+        },"+=1").to(".map2",{
+            keyframes: [
+                {duration: 0.2, xPercent: 0,},
+                {duration: 0.2, yPercent: 20},
+            ]
+        },"+=0.2").to(".map",{
+            keyframes: [
+                {duration: 0.2, xPercent: 0,},
+                {duration: 0.2, yPercent: -60},
+            ]
+        },"-=0.2");
+    }
+})
 
 //Smooth scroll effect
 $('.trafficNav ul li a').on('click', function(e){
@@ -74,6 +102,31 @@ function show(){
     document.querySelector('.menu').classList.toggle('active');
     document.querySelector('.data').classList.toggle('active');
 }
+
+$(window).on('load', function(){
+    document.querySelector('.map').classList.toggle('active');
+    document.querySelector('.map2').classList.toggle('active');
+});
+
+/*
+//position fixed stop point
+function checkOffset() {
+    if($('.floor').offset().top + $('.floor').height() >= $('.map').offset().top){
+        $('.floor').css('position', 'absolute');
+    }
+    if($(document).scrollTop() < $('.map').offset().top){
+        $('.floor').css('position', 'fixed');
+    }
+}
+
+$(document).scroll(function() {
+    checkOffset();
+});
+*/
+
+
+
+
 
 
 

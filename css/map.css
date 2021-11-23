@@ -182,6 +182,50 @@ a:hover{
 	margin: 5px;
 }
 
+.floor{
+	position: fixed;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.floor p:nth-child(1):before{
+	position: fixed;
+	content: '1F';
+	color: #769E89;
+	transition: 0.5s;
+	width: 0%;
+	overflow: hidden;
+}
+
+.floor p:nth-child(1):hover:before{
+	width: 100%;
+}
+
+.floor p:nth-child(2):before{
+	position: fixed;
+	content: 'B1';
+	color: #769E89;
+	transition: 0.5s;
+	width: 0%;
+	overflow: hidden;
+}
+
+.floor p:nth-child(2):hover:before{
+	width: 100%;
+}
+
+.floor p{
+	font-size: 6em;
+    color: transparent;
+    -webkit-text-stroke: 3px #769E89;
+    margin-bottom: 0;
+    padding-left: 10px;
+}
+
+.floor p:hover{
+	cursor: url('../image/hover.svg'), auto;
+}
+
 .map{
 	max-width: 1600px;
 	margin: 50px 300px;
@@ -189,38 +233,24 @@ a:hover{
     -moz-transform-style: preserve-3d;
     -ms-transform-style: preserve-3d;
     transform-style: preserve-3d;
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 1.5s ease-in-out;
+    -moz-transition: all 1.5s ease-in-out;
+    -o-transition: all 1.5s ease-in-out;
     transition: all 1.5s ease-in-out;
-    -webkit-transform: translateY(0px) rotateX(50deg) rotateZ(35deg);s
-	-moz-transform: translateY(0px) rotateX(50deg) rotateZ(35deg);
-	-ms-transform: translateY(0px) rotateX(50deg) rotateZ(35deg);
-	-o-transform: translateY(0px) rotateX(50deg) rotateZ(35deg);
-	transform: translateY(0px) rotateX(50deg) rotateZ(35deg);
-}
-
-#test{
-	transition: 1s;
-	border: 0px #63564e;
-}
-
-#test:hover{
-	transform: translate(-5px,-5px);
-	fill: #5aa6a5;
-	border: 15px #63564e;
-}
-
-input{
-	margin-left: 50px;
-}
-
-input.toggle:checked ~ .map {
-	-webkit-transform: translateY(-200px) translateZ(-150px) rotateX(45deg) rotateZ(45deg);
+    -webkit-transform: translateY(-200px) translateZ(-150px) rotateX(45deg) rotateZ(45deg);
 	-moz-transform: translateY(-150px) rotateX(45deg) rotateZ(45deg);
 	-ms-transform: translateY(-150px) rotateX(45deg) rotateZ(45deg);
 	-o-transform: translateY(-150px) rotateX(45deg) rotateZ(45deg);
-	transform: translateY(0px) rotateX(0deg) rotateZ(0deg);
+	transform: translateY(50%) rotateX(0deg) rotateZ(0deg);
+	position: relative;
+}
+
+.map.active {
+	-webkit-transform: translateY(0px) rotateX(50deg) rotateZ(35deg);
+	-moz-transform: translateY(0px) rotateX(50deg) rotateZ(35deg);
+	-ms-transform: translateY(0px) rotateX(50deg) rotateZ(35deg);
+	-o-transform: translateY(0px) rotateX(50deg) rotateZ(35deg);
+	transform: translateY(50%) rotateX(50deg) rotateZ(35deg);
 }
 
 .map:before{
@@ -236,6 +266,55 @@ input.toggle:checked ~ .map {
 }
 
 .map:after{
+	content: '';
+    position: absolute;
+    width: 2.43%;
+    height: 100%;
+    background: #63564e;
+    transform-origin: bottom left;
+    transform: rotateY(90deg) rotateX(0deg) rotateZ(0deg);
+}
+
+.map2.active {
+	-webkit-transform: translateY(0px) rotateX(50deg) rotateZ(35deg);
+	-moz-transform: translateY(0px) rotateX(50deg) rotateZ(35deg);
+	-ms-transform: translateY(0px) rotateX(50deg) rotateZ(35deg);
+	-o-transform: translateY(0px) rotateX(50deg) rotateZ(35deg);
+	transform: translateY(-110%) rotateX(50deg) rotateZ(35deg);
+}
+
+.map2{
+	max-width: 1600px;
+	margin: 50px 300px;
+	-webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: all 1.5s ease-in-out;
+    -moz-transition: all 1.5s ease-in-out;
+    -o-transition: all 1.5s ease-in-out;
+    transition: all 1.5s ease-in-out;
+    -webkit-transform: translateY(-200px) translateZ(-150px) rotateX(45deg) rotateZ(45deg);
+	-moz-transform: translateY(-150px) rotateX(45deg) rotateZ(45deg);
+	-ms-transform: translateY(-150px) rotateX(45deg) rotateZ(45deg);
+	-o-transform: translateY(-150px) rotateX(45deg) rotateZ(45deg);
+	transform: translateY(-110%) rotateX(0deg) rotateZ(0deg);
+	position: relative;
+}
+
+.map2:before{
+	content: '';
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    height: 3.19%;
+    background: #63564e;
+    transform-origin: bottom left;
+    transform: rotateY(0deg) rotateX(80deg) rotateZ(0deg);
+}
+
+.map2:after{
 	content: '';
     position: absolute;
     width: 2.43%;

@@ -147,7 +147,7 @@ function change_text2(){
 
 function change_text3(){
     document.getElementById("title").innerHTML = "長大才不會懂";
-    document.getElementById("introduce").innerHTML = "「你真的知道嗎？網路上說的是真的嗎？」<br>在台灣性教育屬於普遍被迴避的課題，許多人都是長大之後才從各種不同的管道獲取性知識，而我們所架設的平台會提供獲取正確性知識的管道，並試圖讓台灣在面臨「性」時的態度能逐漸開放且健康。";
+    document.getElementById("introduce").innerHTML = "「你真的知道嗎？網路上說的是真的嗎？」在台灣性教育屬於普遍被迴避的課題，許多人都是長大之後才從各種不同的管道獲取性知識，而我們所架設的平台會提供獲取正確性知識的管道，並試圖讓台灣在面臨「性」時的態度能逐漸開放且健康。#你真的懂了嗎？";
     document.getElementById("fb").href = "https://www.facebook.com/%E9%95%B7%E5%A4%A7%E6%89%8D%E4%B8%8D%E6%9C%83%E6%87%82-105418818385188/";
     document.getElementById("ig").href = "https://www.instagram.com/idk_0120/?utm_medium=copy_link";
     document.getElementById("yt").href = "https://www.youtube.com/channel/UC6D983LvFPvn19Iy4o0cAoQ";

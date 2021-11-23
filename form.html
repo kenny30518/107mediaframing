@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<html lang="zh-TW">
+
+<head>
+    <title>API test</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- 連結Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- CSS 格式修改 -->
+    <style>
+        .container-contact {
+            padding: 20px;
+            text-align: center;
+            color: white;
+            background-color: #F4F1E6;
+            width: 100%;
+        }
+        
+        .container-contact h3 {
+            color: #526D68;
+            font-size: 30px;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .questions {
+            color: #526D68;
+            font-weight: bold;
+        }
+
+        #fav{
+            appearance: auto;
+            padding: 0.475rem 0.75rem;
+        }
+
+        .btn {
+            width: 100%;
+            font-size: 20px;
+            margin: 20px 0px 20px 0px;
+            border: 3px solid #526D68;
+            color: #526D68;
+            border-radius: 20px;
+            transition: 1s;
+        }
+        
+        .btn:hover {
+            background: #526D68;
+            color: #fff;
+        }
+        
+        input, select {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-contact">
+        <h3>回饋區</h3>
+
+        <div class="row">
+            <!-- 第一欄位 -->
+            <div class="col-sm-2">
+
+            </div>
+            <!-- 第二欄位 -->
+            <div class="col-sm-8">
+                <form id="myForm">
+                    <div class="row questions">
+                        <div class="col-sm-4 form-group">
+                            <p>你從哪裡知道我們的展覽？</p>
+                        </div>                        
+                        <div class="col-sm-4 form-group">
+                            <p>你覺得可以給展覽打幾分(1-10分)？</p>
+                        </div>
+                        <div class="col-sm-4 form-group">
+                            <p>你最喜歡哪一組？</p>
+                        </div>                           
+                    </div>
+                    <div class="row">
+                        <!-- 第二個輸入 - Account -->
+                        <div class="col-sm-4 form-group">
+                            <input class="form-control" id="reason" placeholder="輸入文字" type="text" required>
+                        </div>
+                        <!-- 第三個輸入 - password -->
+                        <div class="col-sm-4 form-group">
+                            <input class="form-control" id="score" placeholder="請輸入1到10之間的數" type="number" min="1" max="10" required>
+                        </div>
+                        <div class="col-sm-4 form-group">
+                            <select id="fav" class="form-control" name = "dropdown">
+                                <option value = "人造風向" selected>人造風向</option>
+                                <option value = "蔬情">蔬情</option>
+                                <option value = "長大才不會懂">長大才不會懂</option>
+                                <option value = "涉群危基">涉群危基</option>
+                                <option value = "拾刻．時客">拾刻．時客</option>
+                                <option value = "留聲跡">留聲跡</option>
+                                <option value = "袂記">袂記</option>
+                                <option value = "桌點子">桌點子</option>
+                                <option value = "蜘網">蜘網</option>
+                                <option value = "廟嶼">廟嶼</option>
+                                <option value = "ㄏㄚˊ士騎">ㄏㄚˊ士騎</option>
+                                <option value = "沈淪新機">沈淪新機</option>
+                                <option value = "球生">球生</option>
+                            </select>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-4">
+
+                        </div>
+                        <div class="col-sm-4 form-group">
+                            <div class="btn">提交</div>
+                        </div>
+                        <div class="col-sm-4">
+
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!-- 第三欄位 -->
+            <div class="col-sm-2">
+
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript程式 -->
+    <script>
+        let sendButton = document.querySelector('.btn');
+
+        function send() {
+            var currentTime = new Date();
+            let reason = document.querySelector('#reason').value;
+            let score = document.querySelector('#score').value;
+            let fav = $('#fav').find('option:selected').val();
+            if (score >= 1 & score <= 10){
+                $.ajax({
+                    url: "https://script.google.com/macros/s/AKfycbysNH69NL5z2kL-Ww-AQy_JQxvo3a9cZ1to04GV5a0GLkD5qisGuVhNIOXeI3dNbh0Nog/exec",
+                    data: {
+                        "currentTime": currentTime,
+                        "reason": reason,
+                        "score": score,
+                        "fav": fav
+                    },
+                    success: function(response) {
+                        if(response == "成功"){
+                            alert("提交成功，感謝您的回覆！！");
+                            document.getElementById("myForm").reset();
+                        }
+                    },
+                });
+            }else{
+                alert("評分必須介於1到10");
+                alert("您現在輸入的分數是：" + score);
+            }
+        };
+
+        sendButton.addEventListener('click', send);
+    </script>
+</body>
+
+</html>

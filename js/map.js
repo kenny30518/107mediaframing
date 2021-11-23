@@ -36,34 +36,59 @@ $(document).on("click", ".burgerwrapper", function() {
     tl.reversed(!tl.reversed());
 });
 
-$('#secondFloor').on('click', function(){
-    $('#secondFloor').addClass('clicked');
+$('#secondFloor').on('click',function(){
+    $('#secondFloor').css('color','#769E89');
+    $('#firstFloor').css('color','transparent');
+    document.getElementById('secondFloor').style.pointerEvents = "none";
+    var tl2 = new TimelineMax();
+
+    tl2.to(".map2",{
+        keyframes: [
+            {duration: 0.2, xPercent: 20,},
+            {duration: 0.2, yPercent: -20},
+        ]
+    }).to(".map2",0.2,{
+        zIndex: -1
+    },"+=1").to(".map2",{
+        keyframes: [
+            {duration: 0.2, xPercent: 0,},
+            {duration: 0.2, yPercent: 20},
+        ]
+    },"+=0.2").to(".map",{
+        keyframes: [
+            {duration: 0.2, xPercent: 0,},
+            {duration: 0.2, yPercent: -60},
+        ]
+    },"-=0.2");
+    document.getElementById('firstFloor').style.pointerEvents = "all";
 });
 
-$('#secondFloor').on('click',function(){
-    if ($('#secondFloor').hasClass('clicked')) {
-        var tl2 = new TimelineMax();
+$('#firstFloor').on('click',function(){
+    $('#firstFloor').css('color','#769E89');
+    $('#secondFloor').css('color','transparent');
+    document.getElementById('firstFloor').style.pointerEvents = "none";
+    var tl3 = new TimelineMax();
 
-        tl2.to(".map2",{
-            keyframes: [
-                {duration: 0.2, xPercent: 20,},
-                {duration: 0.2, yPercent: -20},
-            ]
-        }).to(".map2",0.2,{
-            zIndex: -1
-        },"+=1").to(".map2",{
-            keyframes: [
-                {duration: 0.2, xPercent: 0,},
-                {duration: 0.2, yPercent: 20},
-            ]
-        },"+=0.2").to(".map",{
-            keyframes: [
-                {duration: 0.2, xPercent: 0,},
-                {duration: 0.2, yPercent: -60},
-            ]
-        },"-=0.2");
-    }
-})
+    tl3.to(".map",{
+        keyframes: [
+            {duration: 0.2, xPercent: 0,},
+            {duration: 0.2, yPercent: 0,},
+        ]
+    }).to(".map2",0.2,{
+        keyframes: [
+            {duration: 0.2, xPercent: 20,},
+            {duration: 0.2, yPercent: -20},
+        ]
+    }).to(".map2",{
+        zIndex: 1
+    },"+=1").to(".map2",{
+        keyframes: [
+            {duration: 0.2, xPercent: 0,},
+            {duration: 0.2, yPercent: 0},
+        ]
+    },"-=0.2");
+    document.getElementById('secondFloor').style.pointerEvents = "all";
+});
 
 //Smooth scroll effect
 $('.trafficNav ul li a').on('click', function(e){

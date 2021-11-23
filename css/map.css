@@ -188,6 +188,11 @@ a:hover{
 	transform: translateY(-50%);
 }
 
+.floor p:nth-child(1){
+	color: #769E89;
+	pointer-events: none;
+}
+
 .floor p:nth-child(1):before{
 	position: fixed;
 	content: '1F';
@@ -227,7 +232,7 @@ a:hover{
 }
 
 .mapWrapper{
-	margin: 50px 550px;
+	margin: 10% 550px 0px;
 }
 
 .map{

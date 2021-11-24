@@ -232,6 +232,9 @@ a:hover{
 }
 
 .mapWrapper{
+	position: relative;
+	-webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
 	margin: 10% 550px 0px;
 }
 
@@ -257,7 +260,7 @@ a:hover{
 	-moz-transform: translateY(0px) rotateX(50deg) rotateZ(35deg);
 	-ms-transform: translateY(0px) rotateX(50deg) rotateZ(35deg);
 	-o-transform: translateY(0px) rotateX(50deg) rotateZ(35deg);
-	transform: translateY(50%) rotateX(50deg) rotateZ(35deg);
+	transform: translateY(50%) translateZ(300px) rotateX(50deg) rotateZ(35deg);
 }
 
 .map:before{
@@ -303,7 +306,7 @@ a:hover{
 	-moz-transform: translateY(-150px) rotateX(45deg) rotateZ(45deg);
 	-ms-transform: translateY(-150px) rotateX(45deg) rotateZ(45deg);
 	-o-transform: translateY(-150px) rotateX(45deg) rotateZ(45deg);
-	transform: translateY(-110%) rotateX(0deg) rotateZ(0deg);
+	transform: translateY(-110%) translateZ(600px) rotateX(0deg) rotateZ(0deg);
 	position: relative;
 }
 
@@ -327,6 +330,109 @@ a:hover{
     background: #63564e;
     transform-origin: bottom left;
     transform: rotateY(90deg) rotateX(0deg) rotateZ(0deg);
+}
+
+#farm{
+	transition: 1s;
+}
+
+#farm:hover{
+	fill: #b3bda2;
+}
+
+.popup-wrap {
+	width: 100%;
+	height: 100%;
+	display: none;
+	position: fixed;
+	z-index: 5;
+	top: 0px;
+	left: 0px;
+	content: '';
+	background: rgba(0, 0, 0, 0.85);
+}
+
+.popup-box {
+	width: 100%;
+	padding: 50px 75px;
+	transform: translate(-50%, -50%) scale(0.5);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.5);
+	border-radius: 10px;
+	background: #fff;
+	text-align: center;
+}
+
+.popup-box img {
+	max-width: 300px;
+}
+
+h2 {
+	font-size: 40px;
+	color: #1a1a1a;
+}
+
+.close-btn {
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	border-radius: 100%;
+	background: #d75f70;
+	font-weight: bold;
+	text-decoration: none;
+	color: #fff;
+	line-height: 40px;
+  	font-size: 32px;
+}
+
+.close-btn:hover {
+	text-decoration: none;
+	color: #fff;
+}
+
+.tour{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.tour .lang, .audio{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.tour p {
+	color: #fff;
+	border-radius: 5px;
+	font-size: 30px;	
+	padding: 10px 20px;
+	background-color: #769E89;
+	margin: 30px 10px 0;
+	box-shadow: 9px 8px 4px 0px rgb(0 0 0 / 50%);
+}
+
+.transform-in, .transform-out {
+	display: block;
+	-webkit-transition: all ease 0.5s;
+	transition: all ease 0.5s;
+}
+
+.transform-in {
+	-webkit-transform: translate(-50%, -50%) scale(1);
+	transform: translate(-50%, -50%) scale(1);
+}
+
+.transform-out {
+	-webkit-transform: translate(-50%, -50%) scale(0.5);
+	transform: translate(-50%, -50%) scale(0.5);
 }
 
 footer{

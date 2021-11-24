@@ -91,6 +91,24 @@ $('#firstFloor').on('click',function(){
     document.getElementById('secondFloor').style.pointerEvents = "all";
 });
 
+//pupup menu
+$(".btn1").click(function() {
+    var href = $(this).attr("href")
+    $(href).fadeIn(250);
+    $("popup-box").removeClass("transform-out").addClass("transform-in");
+    event.preventDefault();
+});
+
+$(".popup-close").click(function() {
+    closeWindow();
+});
+
+function closeWindow(){
+    $(".popup-wrap").fadeOut(200);
+    $(".popup-box").removeClass("transform-in").addClass("transform-out");
+    event.preventDefault();
+}
+
 //Smooth scroll effect
 $('.trafficNav ul li a').on('click', function(e){
     if(this.hash !== ''){
@@ -101,6 +119,14 @@ $('.trafficNav ul li a').on('click', function(e){
             scrollTop: $(hash).offset().top
         },800);
     }
+});
+
+$('#farmInLove .chinese').on('click',function(){
+    $('#farmInLoveAudioC').attr('controls','controls');
+});
+
+$('#farmInLove .english').on('click',function(){
+    $('#farmInLoveAudioE').attr('controls','controls');
 });
 
 /*

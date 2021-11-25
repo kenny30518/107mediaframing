@@ -121,6 +121,16 @@ $('.trafficNav ul li a').on('click', function(e){
     }
 });
 
+//audio control section
+$('.close-btn').on('click', function(){
+    $('#farmInLoveAudioC').removeAttr('controls','controls');
+    $('#farmInLoveAudioE').removeAttr('controls','controls');
+    $('audio').each(function(){
+        this.pause(); // Stop playing
+        this.currentTime = 0; // Reset time
+    });
+});
+
 $('#farmInLove .chinese').on('click',function(){
     $('#farmInLoveAudioC').attr('controls','controls');
 });

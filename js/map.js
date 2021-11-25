@@ -9,6 +9,32 @@ $(window).on('load', function(){
     }
 });
 
+var states = [
+      '#farmColor', '#socialColor', '#driveColor', '#bekiColor', 
+      '#templeColor', '#soundColor'
+    ],
+    
+    colors = [
+      '#b3bda2', '#4975A1', '#BD9F7A', '#C8BAAA', '#A65C4F', 
+      '#74736B'
+    ];
+
+function fillMap(state, color, time) {
+  setTimeout(
+    function() { 
+      $(state).css('fill', color);
+    }, time
+  );
+};
+
+$(function() {
+    setTimeout(function(){
+        for(var i = 0; i < 13; i++) {
+            fillMap(states[i], colors[i], (i+1)*500);
+        };
+    }, 1500);
+});
+
 //burger animation
 var tl = new TimelineMax({paused: true});
 
@@ -96,6 +122,37 @@ $(".btn1").click(function() {
     var href = $(this).attr("href")
     $(href).fadeIn(250);
     $("popup-box").removeClass("transform-out").addClass("transform-in");
+    if ($(this).attr('id') == 'farm') {
+        $('.leftSide h2').html("蔬情 Farm In Love");
+        $('.leftSide img').attr('src','image/farminlove.png');
+        $('#audioC').attr('src','audio/wave.mp3');
+        $('#audioE').attr('src','audio/wave.mp3');
+    }else if ($(this).attr('id') == 'social') {
+        $('.leftSide h2').html("涉群危基 Social Crisis");
+        $('.leftSide img').attr('src','image/socialcrisis.png');
+        $('#audioC').attr('src','audio/wave.mp3');
+        $('#audioE').attr('src','audio/sample.mp3');
+    }else if($(this).attr('id') == 'drive') {
+        $('.leftSide h2').html("ㄏㄚˊ士騎 Defensive Driving");
+        $('.leftSide img').attr('src','image/defensivedriving.png');
+        $('#audioC').attr('src','audio/sample.mp3');
+        $('#audioE').attr('src','audio/wave.mp3');
+    }else if($(this).attr('id') == 'beki') {
+        $('.leftSide h2').html("袂記 bē kì");
+        $('.leftSide img').attr('src','image/beki.png');
+        $('#audioC').attr('src','audio/sample.mp3');
+        $('#audioE').attr('src','audio/wave.mp3');
+    }else if($(this).attr('id') == 'temple') {
+        $('.leftSide h2').html("廟嶼 Temples Island");
+        $('.leftSide img').attr('src','image/templesisland.png');
+        $('#audioC').attr('src','audio/sample.mp3');
+        $('#audioE').attr('src','audio/wave.mp3');
+    }else if($(this).attr('id') == 'sound') {
+        $('.leftSide h2').html("留聲跡 Save And Sound");
+        $('.leftSide img').attr('src','image/saveandsound.png');
+        $('#audioC').attr('src','audio/sample.mp3');
+        $('#audioE').attr('src','audio/wave.mp3');
+    }
     event.preventDefault();
 });
 
@@ -123,14 +180,21 @@ $('.trafficNav ul li a').on('click', function(e){
 
 //audio control section
 $('.close-btn').on('click', function(){
-    $('#farmInLoveAudioC').removeAttr('controls','controls');
-    $('#farmInLoveAudioE').removeAttr('controls','controls');
     $('audio').each(function(){
+        $('audio').removeAttr('controls','controls');
         this.pause(); // Stop playing
         this.currentTime = 0; // Reset time
     });
 });
 
+function playTour(audioId){
+    $('audio').each(function(){
+        /*$('audio').removeAttr('controls','controls');*/
+        this.pause(); // Stop playing
+    });
+    $(audioId).attr('controls','controls');
+};
+/*
 $('#farmInLove .chinese').on('click',function(){
     $('#farmInLoveAudioC').attr('controls','controls');
 });
@@ -138,6 +202,7 @@ $('#farmInLove .chinese').on('click',function(){
 $('#farmInLove .english').on('click',function(){
     $('#farmInLoveAudioE').attr('controls','controls');
 });
+*/
 
 /*
 //scroll to top animation

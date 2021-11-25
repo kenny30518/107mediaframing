@@ -498,6 +498,12 @@ a:hover{
 	text-align: center;
 }
 
+.s3 .pictures a {
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+}
+
 .slide-container{
 	max-width: 1600px;
 	margin: 0 auto;

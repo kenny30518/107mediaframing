@@ -332,12 +332,16 @@ a:hover{
     transform: rotateY(90deg) rotateX(0deg) rotateZ(0deg);
 }
 
-#farm{
+#farmColor{
 	transition: 1s;
 }
 
-#farm:hover{
+#farmColor:hover{
 	fill: #b3bda2;
+}
+
+rect {
+	transition: 1s;
 }
 
 .popup-wrap {
@@ -362,7 +366,6 @@ a:hover{
 	box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.5);
 	border-radius: 10px;
 	background: #fff;
-	text-align: center;
 }
 
 .popup-box img {
@@ -370,7 +373,7 @@ a:hover{
 }
 
 h2 {
-	font-size: 40px;
+	font-size: 30px;
 	color: #1a1a1a;
 }
 
@@ -388,6 +391,7 @@ h2 {
 	color: #fff;
 	line-height: 40px;
   	font-size: 32px;
+  	text-align: center;
 }
 
 .close-btn:hover {
@@ -395,10 +399,20 @@ h2 {
 	color: #fff;
 }
 
+.contentWrapper{
+	display: flex;
+	justify-content: center;
+}
+
 .tour{
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.tour .intro {
+	width: 90%;
 }
 
 .tour .lang, .audio{
@@ -409,14 +423,17 @@ h2 {
 	margin-bottom: 20px;
 }
 
-.tour p {
+.lang p {
 	color: #fff;
 	border-radius: 5px;
 	font-size: 30px;	
 	padding: 10px 20px;
 	background-color: #769E89;
 	margin: 30px 10px 0;
-	box-shadow: 9px 8px 4px 0px rgb(0 0 0 / 50%);
+}
+
+.lang p:hover {
+	cursor: url('../image/hover.svg'), auto;
 }
 
 .transform-in, .transform-out {

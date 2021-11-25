@@ -238,6 +238,21 @@ a:hover{
 	margin: 10% 550px 0px;
 }
 
+.upperContent {
+	margin-bottom: 20%;
+}
+
+.upperContent h1 {
+	color: #769E89;
+}
+
+.upperContent p {
+	margin-top: 10%;
+	letter-spacing: 5px;
+	line-height: 45px;
+	color: #2A2B2B;
+}
+
 .map{
 	-webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
@@ -332,14 +347,6 @@ a:hover{
     transform: rotateY(90deg) rotateX(0deg) rotateZ(0deg);
 }
 
-#farmColor{
-	transition: 1s;
-}
-
-#farmColor:hover{
-	fill: #b3bda2;
-}
-
 rect {
 	transition: 1s;
 }
@@ -368,8 +375,14 @@ rect {
 	background: #fff;
 }
 
-.popup-box img {
-	max-width: 300px;
+.logo{
+	max-width: 500px;
+	max-height: 500px;
+}
+
+.logo img {
+	width: 100%;
+	height: 100%;
 }
 
 h2 {
@@ -401,7 +414,7 @@ h2 {
 
 .contentWrapper{
 	display: flex;
-	justify-content: center;
+	justify-content: space-evenly;
 }
 
 .tour{
@@ -409,10 +422,15 @@ h2 {
 	flex-direction: column;
 	justify-content: center;
 	align-items: flex-start;
+	max-width: 500px;
 }
 
 .tour .intro {
 	width: 90%;
+}
+
+.tour .intro p {
+	font-size: 25px;
 }
 
 .tour .lang, .audio{

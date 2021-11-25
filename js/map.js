@@ -10,12 +10,12 @@ $(window).on('load', function(){
 });
 
 var states = [
-      '#farmColor', '#socialColor', '#driveColor', '#bekiColor', 
+      '#farmColor', '#timeColor', '#ballColor', '#bekiColor', 
       '#templeColor', '#soundColor'
     ],
     
     colors = [
-      '#b3bda2', '#4975A1', '#BD9F7A', '#C8BAAA', '#A65C4F', 
+      '#b3bda2', '#D8C4A9', '#DB8662', '#C8BAAA', '#A65C4F', 
       '#74736B'
     ];
 
@@ -123,32 +123,32 @@ $(".btn1").click(function() {
     $(href).fadeIn(250);
     $("popup-box").removeClass("transform-out").addClass("transform-in");
     if ($(this).attr('id') == 'farm') {
-        $('.leftSide h2').html("蔬情 Farm In Love");
+        $('.intro h2').html("蔬情 Farm In Love");
         $('.leftSide img').attr('src','image/farminlove.png');
         $('#audioC').attr('src','audio/wave.mp3');
         $('#audioE').attr('src','audio/wave.mp3');
-    }else if ($(this).attr('id') == 'social') {
-        $('.leftSide h2').html("涉群危基 Social Crisis");
-        $('.leftSide img').attr('src','image/socialcrisis.png');
+    }else if ($(this).attr('id') == 'time') {
+        $('.intro h2').html("拾刻．時客 Time Capture");
+        $('.leftSide img').attr('src','image/timecapture.png');
         $('#audioC').attr('src','audio/wave.mp3');
         $('#audioE').attr('src','audio/sample.mp3');
-    }else if($(this).attr('id') == 'drive') {
-        $('.leftSide h2').html("ㄏㄚˊ士騎 Defensive Driving");
-        $('.leftSide img').attr('src','image/defensivedriving.png');
+    }else if($(this).attr('id') == 'ball') {
+        $('.intro h2').html("球生 Reverse by a Ball");
+        $('.leftSide img').attr('src','image/reversebyaball.png');
         $('#audioC').attr('src','audio/sample.mp3');
         $('#audioE').attr('src','audio/wave.mp3');
     }else if($(this).attr('id') == 'beki') {
-        $('.leftSide h2').html("袂記 bē kì");
+        $('.intro h2').html("袂記 bē kì");
         $('.leftSide img').attr('src','image/beki.png');
         $('#audioC').attr('src','audio/sample.mp3');
         $('#audioE').attr('src','audio/wave.mp3');
     }else if($(this).attr('id') == 'temple') {
-        $('.leftSide h2').html("廟嶼 Temples Island");
+        $('.intro h2').html("廟嶼 Temples Island");
         $('.leftSide img').attr('src','image/templesisland.png');
         $('#audioC').attr('src','audio/sample.mp3');
         $('#audioE').attr('src','audio/wave.mp3');
     }else if($(this).attr('id') == 'sound') {
-        $('.leftSide h2').html("留聲跡 Save And Sound");
+        $('.intro h2').html("留聲跡 Save And Sound");
         $('.leftSide img').attr('src','image/saveandsound.png');
         $('#audioC').attr('src','audio/sample.mp3');
         $('#audioE').attr('src','audio/wave.mp3');

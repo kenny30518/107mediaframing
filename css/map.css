@@ -238,16 +238,31 @@ a:hover{
 	margin: 10% 550px 0px;
 }
 
-.upperContent {
+.upperWrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 	margin-bottom: 20%;
 }
 
-.upperContent h1 {
+.leftTitle {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.leftTitle {
+	color: #526D68;
+	letter-spacing: 10px;
+	font-size: 50px;
+}
+
+.rightContent h1 {
 	color: #769E89;
 }
 
-.upperContent p {
-	padding-left: 20px;
+.rightContent p {
+	padding-left: 30px;
 	margin-top: 10%;
 	letter-spacing: 5px;
 	line-height: 45px;
@@ -586,31 +601,31 @@ footer .copyrights{
 
 @media (max-width: 1600px){
 	.mapWrapper{
-		margin: 50px 400px;
+		margin: 50px 400px 0;
 	}
 }
 
 @media (max-width: 1441px),(max-height: 800px){
 	.mapWrapper{
-		margin: 50px 300px;
+		margin: 50px 300px 0;
 	}
 }
 
 @media (max-width: 1300px){
 	.mapWrapper{
-		margin: 50px 400px;
+		margin: 50px 400px 0;
 	}
 }
 
 @media (max-width: 1170px){
 	.mapWrapper{
-		margin: 50px 250px;
+		margin: 50px 250px 0;
 	}
 }
 
 @media (max-width:  992px){
 	.mapWrapper{
-		margin: 50px 200px;
+		margin: 50px 200px 0;
 	}
 }
 
@@ -638,7 +653,7 @@ footer .copyrights{
 	}
 
 	.mapWrapper{
-		margin: 50px 150px;
+		margin: 50px 150px 0;
 	}
 
 	footer .content{
@@ -665,13 +680,13 @@ footer .copyrights{
 
 @media (max-width: 580px){
 	.mapWrapper{
-		margin: 50px 80px;
+		margin: 50px 80px 0;
 	}
 }
 
 @media (max-width: 470px){
 	.mapWrapper{
-		margin: 50px 50px;
+		margin: 50px 50px 0;
 	}
 }
 

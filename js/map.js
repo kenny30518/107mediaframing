@@ -194,15 +194,6 @@ function playTour(audioId){
     });
     $(audioId).attr('controls','controls');
 };
-/*
-$('#farmInLove .chinese').on('click',function(){
-    $('#farmInLoveAudioC').attr('controls','controls');
-});
-
-$('#farmInLove .english').on('click',function(){
-    $('#farmInLoveAudioE').attr('controls','controls');
-});
-*/
 
 /*
 //scroll to top animation

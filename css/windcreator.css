@@ -9,7 +9,7 @@ body{
 	height: 100vh;
 	background-color: #fff;
 	cursor: url("../image/cursor.svg"), auto;
-	overflow: hidden;
+	/*overflow: hidden;*/
 }
 
 a:hover{
@@ -103,12 +103,35 @@ a:hover{
 	height: 100vh;
 }
 
-.s2 {
+.s1 a{
+	text-align: center;
+	display: block;
+	left: 0;
+	right: 0;
+	position: absolute;
+	bottom: 10px;
+	margin: 0 auto;
+	color: black;
+	font-size: 70px;
+}
+
+.s2,.s3 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	height: 100vh;
 }
 
+.s2 p {
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
 
-
+select {
+   	padding: 10px 20px;
+   	border-radius: 5px;
+}
 
 
 

@@ -395,10 +395,6 @@ svg{
 	line-height: 55px;
 }
 
-.text2{
-	line-height: 55px;
-}
-
 #parking .content{
 	letter-spacing: 2px;
 	display: flex;
@@ -637,10 +633,6 @@ footer .copyrights{
 	}
 
 	.text{
-		line-height: 35px;
-	}
-
-	.text2{
 		line-height: 35px;
 	}
 

@@ -58,7 +58,7 @@
 		<h3>試著想像自己是一杯有動力的咖啡。</h3>
 	</section>
 
-	<section id="s3" class="s2">
+	<section id="s3" class="s3">
 		<p>｜身份調查｜</p>
 		<select>
 			<option value = "M" selected>生理男</option>
@@ -67,12 +67,62 @@
 		</select>
 	</section>
 
-	<section id="s4" class="s2">
-		<p>12313</p>
+	<section id="s4" class="s4">
+		<div class="sliderWrapper">
+			<p>｜選擇咖啡酸度｜</p>
+		    <div class="slider-container">
+		    	<input class="slider" id="s4Slider" type="range" min="0" max="100" step="50" value="0">
+			</div>
+			<div class="label-container">
+				<div class="label-slider">微酸</div>
+				<div class="label-slider">酸</div>
+				<div class="label-slider">濃酸</div>
+			</div>
+			<p class="s4Submit" onclick="getValue()">送出</p>
+		</div>
 	</section>
 
-	<section id="s5" class="s2">
-		<p>12313</p>
+	<section id="s5" class="s5">
+		<div class="sliderWrapper">
+			<p>｜選擇咖啡風味｜</p>
+		    <div class="slider-container">
+		    	<input class="slider" id="s5Slider" type="range" min="0" max="100" step="50" value="0">
+			</div>
+			<div class="label-container">
+				<div class="label-slider">微苦</div>
+				<div class="label-slider">苦</div>
+				<div class="label-slider">濃苦</div>
+			</div>
+			<p class="s4Submit" onclick="getBitterValue()">送出</p>
+		</div>
+	</section>
+
+	<section id="s6" class="s6">
+		<div class="sliderWrapper">
+			<p>｜選擇容器｜</p>
+		    <div class="slider-container">
+		    	<input class="slider" id="s6Slider" type="range" min="0" max="100" step="50" value="0">
+			</div>
+			<div class="label-container">
+				<div class="label-slider">牛奶紋路馬克杯</div>
+				<div class="label-slider">透明玻璃杯</div>
+				<div class="label-slider">有把手的啤酒杯</div>
+			</div>
+		</div>
+
+		<div class="coffeeCup">
+			<div class="cup-mug">
+				<div class="mugHandle"></div>
+				<div class="mugInnerHandle"></div>
+			</div>
+
+			<div class="cup-beer">
+				<div class="beerHandle"></div>
+				<div class="beerInnerHandle"></div>
+			</div>
+
+			<div class="cup-glass"></div>
+		</div>
 	</section>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

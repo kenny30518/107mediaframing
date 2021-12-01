@@ -9,11 +9,11 @@ $(window).on('load', function(){
     }
 });
 
-$(window).on('load', function(){
+/*$(window).on('load', function(){
 	$('html, body').animate({
         scrollTop: $('.start').offset().top
  	},800);
-});
+});*/
 
 $('.s1 a').on('click', function(e){
 	if(this.hash !== ''){
@@ -37,7 +37,7 @@ $('.next').on('click', function(e){
     }
 });
 
-var tl = new TimelineMax({onComplete:scrollDetect})
+var tl = new TimelineMax(/*{onComplete:scrollDetect}*/)
 
 tl.fromTo(".start h1",1,{
 	autoAlpha: 0
@@ -74,11 +74,40 @@ function scrollDetect(){
         },800);
 		return false;
 	});
+};
+
+//slider background color control
+$('.slider' ).on( 'input', function( ) {
+	$( this ).css( 'background', 'linear-gradient(to right, #5aa6a5 0%, #5aa6a5 '+this.value +'%, #fff ' + this.value + '%, white 100%)' );
+});
+
+//get slider value and convert it to text
+function getValue() {
+	var x = document.getElementById("s4Slider");
+	var currentVal = parseInt(x.value);
+	var actualValue;
+	if (currentVal == 0) {
+		alert('你選擇的咖啡酸度是: 微酸');
+	}else if (currentVal == 50) {
+		alert('你選擇的咖啡酸度是: 酸');
+	}else if (currentVal == 100) {
+		alert('你選擇的咖啡酸度是: 濃酸');
+	}
 }
 
-
-
-
+//section 5 slider value
+function getBitterValue() {
+	var x = document.getElementById("s5Slider");
+	var currentVal = parseInt(x.value);
+	var actualValue;
+	if (currentVal == 0) {
+		alert('你選擇的咖啡酸度是: 微苦');
+	}else if (currentVal == 50) {
+		alert('你選擇的咖啡酸度是: 苦');
+	}else if (currentVal == 100) {
+		alert('你選擇的咖啡酸度是: 濃苦');
+	}
+}
 
 
 

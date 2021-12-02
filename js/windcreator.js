@@ -9,6 +9,24 @@ $(window).on('load', function(){
     }
 });
 
+//setTimeOut refresh
+/*let time = new Date().getTime();
+const setActivityTime = (e) => {
+   time = new Date().getTime();
+}
+document.body.addEventListener("mousemove", setActivityTime);
+document.body.addEventListener("keypress", setActivityTime);
+
+const refresh = () => {
+   if (new Date().getTime() - time >= 60000) {
+      window.location.reload(true);
+   } else {
+      setTimeout(refresh, 10000);
+   }
+}
+
+setTimeout(refresh, 10000);*/
+
 /*$(window).on('load', function(){
 	$('html, body').animate({
         scrollTop: $('.start').offset().top
@@ -76,6 +94,45 @@ function scrollDetect(){
 	});
 };
 
+//section 3 radio control
+$(document).ready(function(){
+	$('.s3Check input[type="radio"]').change(function(){
+  
+    	if(this.checked){
+			$('.s3Check input[type="radio"]').not(this).prop('checked', false);
+    	}
+	});
+});
+
+//section 7 radio control
+$(document).ready(function(){
+	$('.s7Check input[type="radio"]').change(function(){
+		if(this.checked){
+			$('.s7Check input[type="radio"]').not(this).prop('checked', false);
+    	}
+
+    	var cup = $('.s7Check input[type="radio"]:checked').val();
+    	if (cup == "milk") {
+    		$('.cup-mug').css('opacity', '1');
+    		$('.cup-glass').css('opacity', '0');
+    		$('.cup-beer').css('opacity', '0');
+    	}else if (cup == "glass") {
+    		$('.cup-mug').css('opacity', '0');
+    		$('.cup-glass').css('opacity', '1');
+    		$('.cup-beer').css('opacity', '0');
+    	}else if (cup == "beer") {
+    		$('.cup-mug').css('opacity', '0');
+    		$('.cup-glass').css('opacity', '0');
+    		$('.cup-beer').css('opacity', '1');
+    	}
+	});
+});
+
+function getGender() {
+	var gender = $('.gender:checked').val();
+	alert(gender);
+}
+
 //slider background color control
 $('.slider' ).on( 'input', function( ) {
 	$( this ).css( 'background', 'linear-gradient(to right, #5aa6a5 0%, #5aa6a5 '+this.value +'%, #fff ' + this.value + '%, white 100%)' );
@@ -109,6 +166,33 @@ function getBitterValue() {
 	}
 }
 
+//section 6 slider value
+function getCaffeineValue() {
+	var x = document.getElementById("s6Slider");
+	var currentVal = parseInt(x.value);
+	var actualValue;
+	if (currentVal == 0) {
+		alert('你選擇的咖啡因濃度是: 低');
+	}else if (currentVal == 50) {
+		alert('你選擇的咖啡因濃度是: 中');
+	}else if (currentVal == 100) {
+		alert('你選擇的咖啡因濃度是: 高');
+	}
+}
+
+//section 8 text value
+function getCoffeeName() {
+	var currentVal = $('#coffeeName').val();
+	if (currentVal == '') {
+		alert('請輸入名稱!');
+	}else{
+		alert(currentVal);
+	}
+}
+
+function getRandom() {
+	return Math.floor(Math.random()*18);
+}
 
 
 

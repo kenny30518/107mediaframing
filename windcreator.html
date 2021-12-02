@@ -60,11 +60,15 @@
 
 	<section id="s3" class="s3">
 		<p>｜身份調查｜</p>
-		<select>
-			<option value = "M" selected>生理男</option>
-        	<option value = "F">生理女</option>
-        	<option value = "Other">其他</option>
-		</select>
+		<div class="s3Check">
+			<input class="gender" type="radio" value="生理男" id="M" checked>
+			<label for="M">生理男</label>
+			<input class="gender" type="radio" value="生理女" id="F">
+			<label for="F">生理女</label>
+			<input class="gender" type="radio" value="其他" id="O">
+			<label for="O">其他</label>
+		</div>
+		<p class="s4Submit" onclick="getGender()">送出</p>
 	</section>
 
 	<section id="s4" class="s4">
@@ -99,14 +103,29 @@
 
 	<section id="s6" class="s6">
 		<div class="sliderWrapper">
-			<p>｜選擇容器｜</p>
+			<p>｜選擇咖啡因濃度｜</p>
 		    <div class="slider-container">
 		    	<input class="slider" id="s6Slider" type="range" min="0" max="100" step="50" value="0">
 			</div>
 			<div class="label-container">
-				<div class="label-slider">牛奶紋路馬克杯</div>
-				<div class="label-slider">透明玻璃杯</div>
-				<div class="label-slider">有把手的啤酒杯</div>
+				<div class="label-slider">低</div>
+				<div class="label-slider">中</div>
+				<div class="label-slider">高</div>
+			</div>
+			<p class="s4Submit" onclick="getCaffeineValue()">送出</p>
+		</div>
+	</section>
+
+	<section id="s7" class="s7">
+		<div class="sliderWrapper">
+			<p>｜選擇容器｜</p>
+			<div class="s7Check">
+				<input class="cup" type="radio" value="milk" id="milk" checked>
+				<label for="milk">牛奶紋路馬克杯</label>
+				<input class="cup" type="radio" value="glass" id="glass">
+				<label for="glass">透明玻璃杯</label>
+				<input class="cup" type="radio" value="beer" id="beer">
+				<label for="beer">有把手的啤酒杯</label>
 			</div>
 		</div>
 
@@ -116,14 +135,51 @@
 				<div class="mugInnerHandle"></div>
 			</div>
 
+			<div class="cup-glass"></div>
+
 			<div class="cup-beer">
 				<div class="beerHandle"></div>
 				<div class="beerInnerHandle"></div>
 			</div>
-
-			<div class="cup-glass"></div>
 		</div>
 	</section>
+
+	<section id="s8" class="s8">
+		<div class="sliderWrapper">
+			<p>｜咖啡名稱｜</p>
+			<p>為自己的咖啡取個名字吧！例如：「銘謝惠顧」</p>
+			<div class="coffeeName">
+				<p>輸入你的咖啡名稱：</p>
+				<input type="text" id="coffeeName" required="required">
+			</div>
+		</div>
+		<p class="generate" onclick="getCoffeeName()">產生咖啡</p>
+	</section>
+
+	<!--section class="s8">
+		<div class="proccessing">
+			<div class="laptop"> 
+		        <div class="monitor">
+		            <div class="screen"> 
+		                <div class="element"> </div>
+		            </div>
+			        <div class="stand"> 
+			            <div class="base"> </div>
+			        </div>
+		        </div>
+		    </div>		    
+			<div class="cupWrapper">
+			    <div class="cup">
+			        <div class="coffee"> </div>
+			    </div>
+			    <div class="holder"></div>
+			    <div class="holder2"> </div>
+			    <div class="straw"> 
+			        <div class="inner"> </div>
+			    </div>
+			</div>
+		</div>
+	</section-->
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous"></script>

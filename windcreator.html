@@ -56,19 +56,20 @@
 
 	<section id="s2" class="s2">
 		<h3>試著想像自己是一杯有動力的咖啡。</h3>
+		<a class="next" href="#s3">下一步</a>
 	</section>
 
 	<section id="s3" class="s3">
 		<p>｜身份調查｜</p>
 		<div class="s3Check">
-			<input class="gender" type="radio" value="生理男" id="M" checked>
+			<input class="gender" type="radio" value="M" id="M" checked>
 			<label for="M">生理男</label>
-			<input class="gender" type="radio" value="生理女" id="F">
+			<input class="gender" type="radio" value="F" id="F">
 			<label for="F">生理女</label>
-			<input class="gender" type="radio" value="其他" id="O">
+			<input class="gender" type="radio" value="O" id="O">
 			<label for="O">其他</label>
 		</div>
-		<p class="s4Submit" onclick="getGender()">送出</p>
+		<a class="next" href="#s4">下一步</a>
 	</section>
 
 	<section id="s4" class="s4">
@@ -82,7 +83,7 @@
 				<div class="label-slider">酸</div>
 				<div class="label-slider">濃酸</div>
 			</div>
-			<p class="s4Submit" onclick="getValue()">送出</p>
+			<a class="next" href="#s5">下一步</a>
 		</div>
 	</section>
 
@@ -97,7 +98,7 @@
 				<div class="label-slider">苦</div>
 				<div class="label-slider">濃苦</div>
 			</div>
-			<p class="s4Submit" onclick="getBitterValue()">送出</p>
+			<a class="next" href="#s6">下一步</a>
 		</div>
 	</section>
 
@@ -112,7 +113,7 @@
 				<div class="label-slider">中</div>
 				<div class="label-slider">高</div>
 			</div>
-			<p class="s4Submit" onclick="getCaffeineValue()">送出</p>
+			<a class="next" href="#s7">下一步</a>
 		</div>
 	</section>
 
@@ -121,11 +122,11 @@
 			<p>｜選擇容器｜</p>
 			<div class="s7Check">
 				<input class="cup" type="radio" value="milk" id="milk" checked>
-				<label for="milk">牛奶紋路馬克杯</label>
+				<label for="milk">創意馬克杯</label>
 				<input class="cup" type="radio" value="glass" id="glass">
 				<label for="glass">透明玻璃杯</label>
 				<input class="cup" type="radio" value="beer" id="beer">
-				<label for="beer">有把手的啤酒杯</label>
+				<label for="beer">豪邁啤酒杯</label>
 			</div>
 		</div>
 
@@ -142,18 +143,30 @@
 				<div class="beerInnerHandle"></div>
 			</div>
 		</div>
+		<a class="next" href="#s8">下一步</a>
 	</section>
 
 	<section id="s8" class="s8">
 		<div class="sliderWrapper">
 			<p>｜咖啡名稱｜</p>
-			<p>為自己的咖啡取個名字吧！例如：「銘謝惠顧」</p>
+			<p>為自己的咖啡取個名字吧！例如：「人造風向」咖啡</p>
 			<div class="coffeeName">
 				<p>輸入你的咖啡名稱：</p>
 				<input type="text" id="coffeeName" required="required">
+				<p>咖啡</p>
 			</div>
 		</div>
-		<p class="generate" onclick="getCoffeeName()">產生咖啡</p>
+		<a class="next" href="#s9" onclick="send()">產生咖啡</a>
+	</section>
+
+	<section class="s9" id="s9">
+		<h1>| 風向產生結果 |</h1>
+		<p class="result">一個華麗的轉身就會捲起一陣輕風，<br/>預測不久之後遙遠的他方會有颶風。</p>
+		<h1 class="coffeeTitle">人造風向 咖啡</h1>
+		<img src="image/cup.png">
+		<p class="cupType">精緻透明玻璃杯</p>
+		<p class="flavor">酸度- 微酸/ 風味-微苦 / 咖啡因含量-高</p>
+		<p class="final">獨特的你是做事有原則且心思細膩，<br/>享受獨處時光的人，生活充滿質感與浪漫。</p>
 	</section>
 
 	<!--section class="s8">

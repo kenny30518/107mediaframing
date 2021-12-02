@@ -102,6 +102,19 @@ p {
 	white-space: nowrap;
 }
 
+.next {
+	padding: 10px 20px;
+	background-color: transparent;
+	border: 2px solid black;
+	color: black;
+	margin-top: 10%;
+}
+
+.next:hover {
+	color: black;
+	text-decoration: none;
+}
+
 .s1 {
 	height: 100vh;
 }
@@ -118,8 +131,9 @@ p {
 	font-size: 70px;
 }
 
-.s2,.s3 {
+.s2 {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	height: 100vh;
@@ -335,6 +349,47 @@ label {
 	border: 2px solid black;
 }
 
+.s9 {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.s9 h1 {
+	margin-bottom: 2%;
+	font-weight: 500;
+}
+
+.s9 .result {
+	font-size: 18px;
+	font-weight: 500;
+	padding-bottom: 3%;
+	margin-bottom: 3%;
+	border-bottom: 2px solid black;
+}
+
+.s9 img {
+	max-width: 100px;
+}
+
+.s9 .cupType {
+	margin-bottom: 20px;
+}
+
+.s9 .flavor {
+	margin-bottom: 10px;
+}
+
+.s9 .flavor, .final {
+	letter-spacing: 3px;
+	font-size: 20px;
+	font-weight: 300;
+}
+
 input[type="range"] {
 	background: linear-gradient(to right, #5aa6a5 0%, #5aa6a5 0%, #fff 0%, #fff 100%); 
 	appearance: none;
@@ -389,12 +444,6 @@ input[type="range"]::-moz-range-thumb {
 .slider-container {
 	width: 100%;
 	margin-top: 5px;
-}
-
-.s4Submit {
-	padding: 10px 20px;
-	background: #fff;
-	border: 2px solid black;
 }
 
 /*.s8 {

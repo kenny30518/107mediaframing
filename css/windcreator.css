@@ -9,7 +9,7 @@ body{
 	height: 100vh;
 	background-color: #F4F1E6;
 	cursor: url("../image/cursor.svg"), auto;
-	/*overflow: hidden;*/
+	overflow: hidden;
 }
 
 a:hover{

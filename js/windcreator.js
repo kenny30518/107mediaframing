@@ -27,11 +27,11 @@ const refresh = () => {
 
 setTimeout(refresh, 10000);*/
 
-/*$(window).on('load', function(){
+$(window).on('load', function(){
 	$('html, body').animate({
         scrollTop: $('.start').offset().top
  	},800);
-});*/
+});
 
 $('.s1 a').on('click', function(e){
 	if(this.hash !== ''){
@@ -180,11 +180,11 @@ function getBitterValue() {
 function getCupValue() {
 	var cup = $('.cup:checked').val();
 	if (cup == "milk") {
-		return ['創意馬克杯', '冒險與創意'];
+		return ['創意馬克杯', '冒險與創意', 'image/mug.png'];
 	}else if (cup == "glass") {
-		return ['透明玻璃杯', '質感與浪漫'];
+		return ['透明玻璃杯', '質感與浪漫', 'image/glass.png'];
 	}else if (cup == "beer") {
-		return ['豪邁啤酒杯', '熱血與故事'];
+		return ['豪邁啤酒杯', '熱血與故事', 'image/beer.png'];
 	}
 }
 
@@ -212,6 +212,9 @@ function send() {
 		$('.coffeeTitle').html(currentVal + ' 咖啡');
 
 		var cup = getCupValue();
+		var cupImage = cup[2];
+		$('.cupImage').attr('src', cupImage);
+
 		var cupType = cup[0];
 		var cupResult = cup[1];
 		$('.cupType').html(cupType);

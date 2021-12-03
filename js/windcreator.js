@@ -27,11 +27,11 @@ const refresh = () => {
 
 setTimeout(refresh, 10000);*/
 
-$(window).on('load', function(){
+/*$(window).on('load', function(){
 	$('html, body').animate({
         scrollTop: $('.start').offset().top
  	},800);
-});
+});*/
 
 $('.s1 a').on('click', function(e){
 	if(this.hash !== ''){

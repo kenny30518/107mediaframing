@@ -9,7 +9,7 @@ body{
 	height: 100vh;
 	background-color: #F4F1E6;
 	cursor: url("../image/cursor.svg"), auto;
-	overflow: hidden;
+	/*overflow: hidden;*/
 }
 
 a:hover{
@@ -121,6 +121,10 @@ p {
 
 .s1 {
 	height: 100vh;
+}
+
+.s1 .intro {
+	text-align: center;
 }
 
 .s1 a{

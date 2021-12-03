@@ -91,12 +91,12 @@ function scrollDetect(){
             scrollTop: $('.s2').offset().top
         },800);
         $('html, body').off('scroll touchmove mousewheel');
-
-        $('.s1 a').on('click', function() {
-        	$('html, body').off('scroll touchmove mousewheel');
-        })
 	});
 }
+
+$('.s1 a').on('click', function() {
+	$('html, body').off('scroll touchmove mousewheel');
+})
 
 //section 3 radio control
 $(document).ready(function(){

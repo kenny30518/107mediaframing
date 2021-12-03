@@ -241,20 +241,22 @@ a:hover{
 .upperWrapper {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: center;
 	margin-bottom: 20%;
 }
 
 .leftTitle {
+	width: 40%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-}
-
-.leftTitle {
 	color: #526D68;
 	letter-spacing: 10px;
 	font-size: 50px;
+}
+
+.rightContent {
+	width: 60%;
 }
 
 .rightContent h1 {

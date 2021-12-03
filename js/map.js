@@ -11,12 +11,14 @@ $(window).on('load', function(){
 
 var states = [
       '#farmColor', '#timeColor', '#ballColor', '#bekiColor', 
-      '#templeColor', '#soundColor'
+      '#templeColor', '#soundColor', '#growColor', '#socialColor',
+      '#driveColor', '#sinkColor', '#culletColor','#tdotColor'
     ],
     
     colors = [
       '#b3bda2', '#D8C4A9', '#DB8662', '#C8BAAA', '#A65C4F', 
-      '#74736B'
+      '#74736B', '#DDB4B4', '#4975A1', '#BD9F7A', '#D8999E',
+      '#D4D2A7','#AFCDD8'
     ];
 
 function fillMap(state, color, time) {
@@ -152,6 +154,36 @@ $(".btn1").click(function() {
         $('.leftSide img').attr('src','image/saveandsound.png');
         $('#audioC').attr('src','audio/sample.mp3');
         $('#audioE').attr('src','audio/wave.mp3');
+    }else if ($(this).attr('id') == 'grow') {
+        $('.intro h2').html("長大才不會懂");
+        $('.leftSide img').attr('src','image/something_need_to_know.png');
+        $('#audioC').attr('src','audio/wave.mp3');
+        $('#audioE').attr('src','audio/sample.mp3');
+    }else if ($(this).attr('id') == 'social') {
+        $('.intro h2').html("涉群危基 Social Crisis");
+        $('.leftSide img').attr('src','image/socialcrisis.png');
+        $('#audioC').attr('src','audio/wave.mp3');
+        $('#audioE').attr('src','audio/sample.mp3');
+    }else if ($(this).attr('id') == 'drive') {
+        $('.intro h2').html("ㄏㄚˊ士騎 Defensive Driving");
+        $('.leftSide img').attr('src','image/defensivedriving.png');
+        $('#audioC').attr('src','audio/wave.mp3');
+        $('#audioE').attr('src','audio/sample.mp3');
+    }else if ($(this).attr('id') == 'sink') {
+        $('.intro h2').html("沈淪新機 Sink into phone");
+        $('.leftSide img').attr('src','image/sinkintophone.png');
+        $('#audioC').attr('src','audio/wave.mp3');
+        $('#audioE').attr('src','audio/sample.mp3');
+    }else if ($(this).attr('id') == 'cullet') {
+        $('.intro h2').html("蜘網 Cullet");
+        $('.leftSide img').attr('src','image/cullet.png');
+        $('#audioC').attr('src','audio/wave.mp3');
+        $('#audioE').attr('src','audio/sample.mp3');
+    }else if ($(this).attr('id') == 'tdot') {
+        $('.intro h2').html("桌點子 T.dot");
+        $('.leftSide img').attr('src','image/tdot.png');
+        $('#audioC').attr('src','audio/wave.mp3');
+        $('#audioE').attr('src','audio/sample.mp3');
     }
     event.preventDefault();
 });

@@ -55,35 +55,37 @@ $('.next').on('click', function(e){
     }
 });
 
-var tl = new TimelineMax({onComplete:scrollDetect})
+$(window).on('load', function(){
+	var tl = new TimelineMax({onComplete:scrollDetect})
 
-tl.fromTo(".start h1",0.7,{
-	autoAlpha: 0
-},{
-	autoAlpha: 1
-},"+=0.5");
+	tl.fromTo(".start h1",0.7,{
+		autoAlpha: 0
+	},{
+		autoAlpha: 1
+	},"+=0.5");
 
-tl.to(".start h1",0.7,{
-	autoAlpha: 0
-},"+=0.2");
+	tl.to(".start h1",0.7,{
+		autoAlpha: 0
+	},"+=0.2");
 
-tl.fromTo(".introFirst",0.7,{
-	autoAlpha: 0
-},{
-	autoAlpha: 1
-},"+=0.2");
+	tl.fromTo(".introFirst",0.7,{
+		autoAlpha: 0
+	},{
+		autoAlpha: 1
+	},"+=0.2");
 
-tl.fromTo(".introSecond",0.7,{
-	autoAlpha: 0
-},{
-	autoAlpha: 1
-},"+=0.2");
+	tl.fromTo(".introSecond",0.7,{
+		autoAlpha: 0
+	},{
+		autoAlpha: 1
+	},"+=0.2");
 
-tl.fromTo(".s1 a",0.7,{
-	autoAlpha: 0
-},{
-	autoAlpha: 1
-},"+=0.2");
+	tl.fromTo(".s1 a",0.7,{
+		autoAlpha: 0
+	},{
+		autoAlpha: 1
+	},"+=0.2");
+});
 
 function scrollDetect(){
 	$('html, body').on('scroll touchmove mousewheel', function(e) {

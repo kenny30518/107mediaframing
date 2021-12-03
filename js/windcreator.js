@@ -27,11 +27,11 @@ const refresh = () => {
 
 setTimeout(refresh, 10000);*/
 
-/*$(window).on('load', function(){
+$(window).on('load', function(){
 	$('html, body').animate({
         scrollTop: $('.start').offset().top
  	},800);
-});*/
+});
 
 $('.s1 a').on('click', function(e){
 	if(this.hash !== ''){
@@ -55,41 +55,46 @@ $('.next').on('click', function(e){
     }
 });
 
-var tl = new TimelineMax(/*{onComplete:scrollDetect}*/)
+var tl = new TimelineMax({onComplete:scrollDetect})
 
-tl.fromTo(".start h1",1,{
+tl.fromTo(".start h1",0.7,{
+	autoAlpha: 0
+},{
+	autoAlpha: 1
+},"+=0.5");
+
+tl.to(".start h1",0.7,{
+	autoAlpha: 0
+},"+=0.2");
+
+tl.fromTo(".introFirst",0.7,{
 	autoAlpha: 0
 },{
 	autoAlpha: 1
 },"+=0.2");
 
-tl.to(".start h1",1,{
-	autoAlpha: 0
-},"+=0.2");
-
-tl.fromTo(".introFirst",1,{
+tl.fromTo(".introSecond",0.7,{
 	autoAlpha: 0
 },{
 	autoAlpha: 1
 },"+=0.2");
 
-tl.fromTo(".introSecond",1,{
-	autoAlpha: 0
-},{
-	autoAlpha: 1
-},"+=0.2");
-
-tl.fromTo(".s1 a",1,{
+tl.fromTo(".s1 a",0.7,{
 	autoAlpha: 0
 },{
 	autoAlpha: 1
 },"+=0.2");
 
 function scrollDetect(){
-	$(window).on('wheel', function() {
+	$('html, body').on('scroll touchmove mousewheel', function(e) {
         $('html, body').animate({
             scrollTop: $('.s2').offset().top
         },800);
+        $('html, body').off('scroll touchmove mousewheel');
+
+        $('.s1 a').on('click', function() {
+        	$('html, body').off('scroll touchmove mousewheel');
+        })
 	});
 }
 
@@ -144,7 +149,7 @@ $('.slider' ).on( 'input', function( ) {
 });
 
 //get slider value and convert it to text
-function getValue() {
+function getSour() {
 	var x = document.getElementById("s4Slider");
 	var currentVal = parseInt(x.value);
 	if (currentVal == 0) {
@@ -212,9 +217,12 @@ function send() {
 		var caffeine = getCaffeineValue();
 		var caffeineLevel = caffeine[0];
 		var caffeineResult = caffeine[1];
-		$('.flavor').html('酸度-' + getValue() + '風味-' + getBitterValue() + '咖啡因含量-' + caffeineLevel);
+		$('.flavor').html('酸度-' + getSour() + '風味-' + getBitterValue() + '咖啡因含量-' + caffeineLevel);
 
 		$('.final').html(getGender() + '是' + caffeineResult + '，且生活充滿' + cupResult + '。');
+		$('html, body').animate({
+            scrollTop: $('.s9').offset().top
+        },800);
 	}
 }
 

@@ -9,7 +9,7 @@ body{
 	height: 100vh;
 	background-color: #F4F1E6;
 	cursor: url("../image/cursor.svg"), auto;
-	/*overflow: hidden;*/
+	overflow: hidden;
 }
 
 a:hover{
@@ -113,6 +113,10 @@ p {
 .next:hover {
 	color: black;
 	text-decoration: none;
+}
+
+.question {
+	margin-bottom: 20px;
 }
 
 .s1 {

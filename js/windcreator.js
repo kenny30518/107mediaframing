@@ -202,7 +202,7 @@ function getCaffeineValue() {
 }
 
 //section 8 text value
-function send() {
+/*function send() {
 	var currentVal = $('#coffeeName').val();
 	if (currentVal == '') {
 		alert('請輸入名稱!');
@@ -229,7 +229,7 @@ function send() {
             scrollTop: $('.s9').offset().top
         },800);
 	}
-}
+}*/
 
 let results = ['一個華麗的轉身就會捲起一陣輕風，<br/>預測不久之後遙遠的他方會有颶風。',
 			   '走路帶風，凡是經過任何地方，<br/>風力都能把身邊的人吹起來逆時針轉三個圈。',
@@ -242,4 +242,116 @@ function generateResult() {
 	var result = results[Math.floor(Math.random()*results.length)];
 	return result;
 }
+
+
+
+
+//ticket
+let ticketresults = ['一個華麗的轉身就會捲起一陣輕風，\n預測不久之後遙遠的他方會有颶風。\n',
+			   '走路帶風，凡是經過任何地方，\n風力都能把身邊的人吹起來逆時針轉三個圈。\n',
+			   '臉朝下撲街的時候，會由下往上揚起一陣風，\n路過的人都會察覺，然後被塵土嗆到。\n',
+			   '打排球準備殺球時，\n手向下揮動所產生的風，足以拍飛三個大學生。\n',
+			   '在公司或學校放屁，\n風力所傳遞的氣味，可以貫穿整個101。\n',
+			   '心情不好時嘆了一口氣所產生的風，會成為上升氣流；\n如果讓上帝聽見，祂會為你哭泣。\n'];
+
+function generateTicketResult() {
+	var ticketResult = ticketresults[Math.floor(Math.random()*ticketresults.length)];
+	return ticketResult;
+}
+
+//section 7 getCaffeine for ticket
+function getCaffeine() {
+	var x = document.getElementById("s6Slider");
+	var currentVal = parseInt(x.value);
+	if (currentVal == 0) {
+		return ['低', '不受拘束且自由的靈魂，\n容易親近'];
+	}else if (currentVal == 50) {
+		return ['中', '不過分張揚的努力型天才，\n是大家永遠依靠'];
+	}else if (currentVal == 100) {
+		return ['高', '做事有原則的邏輯鬼才，\n享受獨處時光'];
+	}
+}
+
+
+function send() {
+	var currentVal = $('#coffeeName').val();
+	var cup = getCupValue();
+	var cupType = cup[0];
+	var cupImage = cup[2];
+	var caffeine = getCaffeineValue();
+	var caffeineLevel = caffeine[0];
+	var caffeineResult = caffeine[1];
+	const conector = new ConectorPlugin();
+	conector.establecerTamanioFuente(2, 2);
+    conector.establecerEnfatizado(1);
+    conector.establecerJustificacion(ConectorPlugin.Constantes.AlineacionCentro);
+	conector.feed(1);
+	conector.texto("|風向產生結果|\n");
+	conector.texto(generateTicketResult());
+	conector.feed(1);
+	conector.establecerTamanioFuente(1, 1);
+	conector.establecerEnfatizado(0);
+	conector.texto("───────────────────────────────\n");
+	conector.feed(1);
+	conector.establecerTamanioFuente(2, 2);
+	conector.establecerEnfatizado(1);
+	conector.texto(currentVal + "咖啡\n");
+	conector.imagenLocal("C:\\Users\\kennychen\\desktop\\107mediaframing\\image\\" + cupImage);
+	conector.feed(1);
+	conector.establecerTamanioFuente(1, 1);
+	conector.establecerEnfatizado(0);
+	conector.texto(cupType);
+	conector.feed(1);
+	conector.texto("酸度-" + getSour() + "風味-" + getBitterValue() + "咖啡因含量-" + caffeineLevel + "\n");
+	conector.texto(caffeineResult);
+	conector.feed(2);
+	conector.texto("--------------------------------\n");
+	conector.establecerJustificacion(ConectorPlugin.Constantes.AlineacionIzquierda);
+	conector.texto("|店家1名稱|\n");
+	conector.texto("xxx飲料/大杯 折扣5元\n");
+	conector.texto("|店家2名稱|\n");
+	conector.texto("xxx飲料/大杯 折扣5元\n");
+	conector.texto("|店家3名稱|\n");
+	conector.texto("xxx飲料/大杯 折扣5元\n");
+	conector.establecerJustificacion(ConectorPlugin.Constantes.AlineacionDerecha)
+	conector.texto("世新大學資訊傳播學系畢展《人造風向》製");
+	conector.cortar();
+    conector.imprimirEn("myprinter").then(respuestaAlImprimir => {
+        if (respuestaAlImprimir === true) {
+            loguear("Impreso correctamente");
+        } else {
+            loguear("Error. La respuesta es: " + respuestaAlImprimir);
+        }
+    });
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

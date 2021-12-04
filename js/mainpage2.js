@@ -171,13 +171,23 @@ $(document).ready(function(){
 
 	$('.pictures').slick({
 	  dots: false,
-	  arrows: false,
+	  prevArrow:"<img class='a-left control-c prev slick-prev' src='image/leftArrow.svg'>",
+      nextArrow:"<img class='a-right control-c next slick-next' src='image/rightArrow.svg'>",
 	  centerMode: false,
 	  autoplay: true,
 	  autoplaySpeed: 1500,
 	  centerPadding: '60px',
 	  slidesToShow: 3,
 	  responsive: [
+	  	{
+	      breakpoint: 1120,
+	      settings: {
+	        arrows: false,
+	        centerMode: true,
+	        centerPadding: '40px',
+	        slidesToShow: 3
+	      }
+	    },
 	    {
 	      breakpoint: 768,
 	      settings: {

@@ -519,6 +519,21 @@ a:hover{
 	width: 100%;
 }
 
+.control-c {
+	max-width: 30px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.slick-prev {
+	left: -40px;
+}
+
+.slick-next {
+	right: -40px;
+}
+
 .mail{
 	position: relative;
 	text-align: center;
@@ -690,7 +705,7 @@ footer .copyrights{
 	}
 
 	.slide-container{
-		max-width: 1200px;
+		max-width: 1000px;
 	}
 }
 

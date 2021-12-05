@@ -125,7 +125,10 @@ $(".btn1").click(function() {
     $(href).fadeIn(250);
     $("popup-box").removeClass("transform-out").addClass("transform-in");
     if ($(this).attr('id') == 'farm') {
-        $('.intro h2').html("蔬情 Farm In Love");
+        $('.chineseName').html("蔬情");
+        $('.englishName').html("Farm In Love");
+        $('.chineseText').html("「讓我們把最蔬情的故事，說給你聽。」<br/>希望藉由平台推廣小農產品，透過影音刻畫小農的自身故事，使情感成為一個成功的包裝。");
+        $('.englishText').html("Let us tell you a story that makes you “Farm In Love”. “Farm In Love” is a platform that build up smallholders’ brand image through our film works and recipes.Besides product promotion, it is also a space where smallholders can learn valuable know-how from each other’s sharing.");
         $('.leftSide img').attr('src','image/farminlove.png');
         $('#audioC').attr('src','audio/wave.mp3');
         $('#audioE').attr('src','audio/wave.mp3');

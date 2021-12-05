@@ -9,7 +9,7 @@ body{
 	height: 100vh;
 	background-color: #F4F1E6;
 	cursor: url("../image/cursor.svg"), auto;
-	overflow: hidden;
+	/*overflow: hidden;*/
 }
 
 a:hover{
@@ -18,6 +18,17 @@ a:hover{
 
 p {
 	margin-bottom: 0;
+}
+
+.hide.active {
+	display: none;
+}
+
+.print {
+	width: 300px;
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 
 .loading{
@@ -390,16 +401,44 @@ label {
 
 .s9 .cupType {
 	margin-bottom: 20px;
+	font-weight: 700;
+	font-size: 20px;
 }
 
 .s9 .flavor {
 	margin-bottom: 10px;
 }
 
+.s9 .final {
+	padding-bottom: 40px;
+	border-bottom: 2px dashed black;
+}
+
 .s9 .flavor, .final {
 	letter-spacing: 3px;
 	font-size: 20px;
-	font-weight: 300;
+	font-weight: 700;
+}
+
+.s9 .sponsor {
+	text-align: left;
+}
+
+.s9 .sponsorName {
+	margin-top: 20px;
+}
+
+.s9 .copyrights {
+	font-size: 15px;
+	margin-top: 20px;
+	float: right;
+}
+
+.s9 .create {
+	padding: 10px 20px;
+	color: black;
+	background: transparent;
+	border: 2px solid black;
 }
 
 input[type="range"] {

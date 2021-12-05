@@ -11,7 +11,7 @@
 	  gtag('config', 'G-C72BB2QS6N');
 	</script-->
 	<meta lang="zh-Hant-TW">
-	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html";charset=utf-8 />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
@@ -22,7 +22,7 @@
     <link href="css/windcreator.css" rel="stylesheet">
 	<title>資傳107級畢業展人造風向</title>
 </head>
-<body id="top">
+<body id="top" onafterprint="afterprint()">
 	<div class="loading" id="preloader">
 		<div class="wavy">
 			<span style="--i:1;">風</span>
@@ -40,133 +40,149 @@
 		<h1>風向製造機</h1>
 		<!--p>進入測驗</p-->
 	</div>
+	<div class="hide">
+		<section class="s1">
+			<div class="title">
+				<div class="intro">
+					<h3 class="introFirst">歡迎來到風向製造所，這裡有六名員工。</h3>
+					<h3 class="introSecond">他們日夜不眠不休地造風，而此動力來源竟然是？</h3>
+				</div>
 
-	<section class="s1">
-		<div class="title">
-			<div class="intro">
-				<h3 class="introFirst">歡迎來到風向製造所，這裡有六名員工。</h3>
-				<h3 class="introSecond">他們日夜不眠不休地造風，而此動力來源竟然是？</h3>
+				<a href="#s2">
+					<i class="fas fa-arrow-down"></i>
+				</a>
+			</div>
+		</section>
+
+		<section id="s2" class="s2">
+			<h3>試著想像自己是一杯有動力的咖啡。</h3>
+			<a class="next" href="#s3">下一步</a>
+		</section>
+
+		<section id="s3" class="s3">
+			<p class="question">｜身份調查｜</p>
+			<div class="s3Check">
+				<input class="gender" type="radio" value="M" id="M" checked>
+				<label for="M">生理男</label>
+				<input class="gender" type="radio" value="F" id="F">
+				<label for="F">生理女</label>
+				<input class="gender" type="radio" value="O" id="O">
+				<label for="O">其他</label>
+			</div>
+			<a class="next" href="#s4">下一步</a>
+		</section>
+
+		<section id="s4" class="s4">
+			<div class="sliderWrapper">
+				<p class="question">｜選擇咖啡酸度｜</p>
+			    <div class="slider-container">
+			    	<input class="slider" id="s4Slider" type="range" min="0" max="100" step="50" value="0">
+				</div>
+				<div class="label-container">
+					<div class="label-slider">微酸</div>
+					<div class="label-slider">酸</div>
+					<div class="label-slider">濃酸</div>
+				</div>
+				<a class="next" href="#s5">下一步</a>
+			</div>
+		</section>
+
+		<section id="s5" class="s5">
+			<div class="sliderWrapper">
+				<p class="question">｜選擇咖啡風味｜</p>
+			    <div class="slider-container">
+			    	<input class="slider" id="s5Slider" type="range" min="0" max="100" step="50" value="0">
+				</div>
+				<div class="label-container">
+					<div class="label-slider">微苦</div>
+					<div class="label-slider">苦</div>
+					<div class="label-slider">濃苦</div>
+				</div>
+				<a class="next" href="#s6">下一步</a>
+			</div>
+		</section>
+
+		<section id="s6" class="s6">
+			<div class="sliderWrapper">
+				<p class="question">｜選擇咖啡因濃度｜</p>
+			    <div class="slider-container">
+			    	<input class="slider" id="s6Slider" type="range" min="0" max="100" step="50" value="0">
+				</div>
+				<div class="label-container">
+					<div class="label-slider">低</div>
+					<div class="label-slider">中</div>
+					<div class="label-slider">高</div>
+				</div>
+				<a class="next" href="#s7">下一步</a>
+			</div>
+		</section>
+
+		<section id="s7" class="s7">
+			<div class="sliderWrapper">
+				<p class="question">｜選擇容器｜</p>
+				<div class="s7Check">
+					<input class="cup" type="radio" value="milk" id="milk" checked>
+					<label for="milk">創意馬克杯</label>
+					<input class="cup" type="radio" value="glass" id="glass">
+					<label for="glass">透明玻璃杯</label>
+					<input class="cup" type="radio" value="beer" id="beer">
+					<label for="beer">豪邁啤酒杯</label>
+				</div>
 			</div>
 
-			<a href="#s2">
-				<i class="fas fa-arrow-down"></i>
-			</a>
-		</div>
-	</section>
+			<div class="coffeeCup">
+				<div class="cup-mug">
+					<div class="mugHandle"></div>
+					<div class="mugInnerHandle"></div>
+				</div>
 
-	<section id="s2" class="s2">
-		<h3>試著想像自己是一杯有動力的咖啡。</h3>
-		<a class="next" href="#s3">下一步</a>
-	</section>
+				<div class="cup-glass"></div>
 
-	<section id="s3" class="s3">
-		<p class="question">｜身份調查｜</p>
-		<div class="s3Check">
-			<input class="gender" type="radio" value="M" id="M" checked>
-			<label for="M">生理男</label>
-			<input class="gender" type="radio" value="F" id="F">
-			<label for="F">生理女</label>
-			<input class="gender" type="radio" value="O" id="O">
-			<label for="O">其他</label>
-		</div>
-		<a class="next" href="#s4">下一步</a>
-	</section>
+				<div class="cup-beer">
+					<div class="beerHandle"></div>
+					<div class="beerInnerHandle"></div>
+				</div>
+			</div>
+			<a class="next" href="#s8">下一步</a>
+		</section>
 
-	<section id="s4" class="s4">
-		<div class="sliderWrapper">
-			<p class="question">｜選擇咖啡酸度｜</p>
-		    <div class="slider-container">
-		    	<input class="slider" id="s4Slider" type="range" min="0" max="100" step="50" value="0">
+		<section id="s8" class="s8">
+			<div class="sliderWrapper">
+				<p class="question">｜咖啡名稱｜</p>
+				<p>為自己的咖啡取個名字吧！例如：「人造風向」咖啡</p>
+				<div class="coffeeName">
+					<p>輸入你的咖啡名稱：</p>
+					<input type="text" id="coffeeName" required="required">
+					<p>咖啡</p>
+				</div>
 			</div>
-			<div class="label-container">
-				<div class="label-slider">微酸</div>
-				<div class="label-slider">酸</div>
-				<div class="label-slider">濃酸</div>
-			</div>
-			<a class="next" href="#s5">下一步</a>
-		</div>
-	</section>
-
-	<section id="s5" class="s5">
-		<div class="sliderWrapper">
-			<p class="question">｜選擇咖啡風味｜</p>
-		    <div class="slider-container">
-		    	<input class="slider" id="s5Slider" type="range" min="0" max="100" step="50" value="0">
-			</div>
-			<div class="label-container">
-				<div class="label-slider">微苦</div>
-				<div class="label-slider">苦</div>
-				<div class="label-slider">濃苦</div>
-			</div>
-			<a class="next" href="#s6">下一步</a>
-		</div>
-	</section>
-
-	<section id="s6" class="s6">
-		<div class="sliderWrapper">
-			<p class="question">｜選擇咖啡因濃度｜</p>
-		    <div class="slider-container">
-		    	<input class="slider" id="s6Slider" type="range" min="0" max="100" step="50" value="0">
-			</div>
-			<div class="label-container">
-				<div class="label-slider">低</div>
-				<div class="label-slider">中</div>
-				<div class="label-slider">高</div>
-			</div>
-			<a class="next" href="#s7">下一步</a>
-		</div>
-	</section>
-
-	<section id="s7" class="s7">
-		<div class="sliderWrapper">
-			<p class="question">｜選擇容器｜</p>
-			<div class="s7Check">
-				<input class="cup" type="radio" value="milk" id="milk" checked>
-				<label for="milk">創意馬克杯</label>
-				<input class="cup" type="radio" value="glass" id="glass">
-				<label for="glass">透明玻璃杯</label>
-				<input class="cup" type="radio" value="beer" id="beer">
-				<label for="beer">豪邁啤酒杯</label>
-			</div>
-		</div>
-
-		<div class="coffeeCup">
-			<div class="cup-mug">
-				<div class="mugHandle"></div>
-				<div class="mugInnerHandle"></div>
-			</div>
-
-			<div class="cup-glass"></div>
-
-			<div class="cup-beer">
-				<div class="beerHandle"></div>
-				<div class="beerInnerHandle"></div>
-			</div>
-		</div>
-		<a class="next" href="#s8">下一步</a>
-	</section>
-
-	<section id="s8" class="s8">
-		<div class="sliderWrapper">
-			<p class="question">｜咖啡名稱｜</p>
-			<p>為自己的咖啡取個名字吧！例如：「人造風向」咖啡</p>
-			<div class="coffeeName">
-				<p>輸入你的咖啡名稱：</p>
-				<input type="text" id="coffeeName" required="required">
-				<p>咖啡</p>
-			</div>
-		</div>
-		<p class="next" onclick="send()">產生咖啡</p>
-	</section>
+			<p class="next" onclick="createTicket()">產生咖啡</p>
+		</section>
+	</div>
 
 	<section class="s9" id="s9">
-		<h1>| 風向產生結果 |</h1>
-		<p class="result">一個華麗的轉身就會捲起一陣輕風，<br/>預測不久之後遙遠的他方會有颶風。</p>
-		<h1 class="coffeeTitle">人造風向 咖啡</h1>
-		<img class="cupImage" src="image/mug.png">
-		<p class="cupType">精緻透明玻璃杯</p>
-		<p class="flavor">酸度- 微酸/ 風味-微苦 / 咖啡因含量-高</p>
-		<p class="final">獨特的你是做事有原則且心思細膩，<br/>享受獨處時光的人，生活充滿質感與浪漫。</p>
+		<div class="toTopLeft">
+			<h1>| 風向產生結果 |</h1>
+			<p class="result">一個華麗的轉身就會捲起一陣輕風，<br/>預測不久之後遙遠的他方會有颶風。</p>
+			<h1 class="coffeeTitle">人造風向 咖啡</h1>
+			<img class="cupImage" src="image/mug.png">
+			<p class="cupType">精緻透明玻璃杯</p>
+			<p class="flavor">酸度- 微酸/ 風味-微苦 / 咖啡因含量-高</p>
+			<p class="final">獨特的你是做事有原則且心思細膩，<br/>享受獨處時光的人，生活充滿質感與浪漫。</p>
+			<div class="sponsor">
+				<p class="sponsorName">Mf life(咖啡廳)</p>
+				<p class="discount">飲料/大杯折扣5元</p>
+				
+				<p class="sponsorName">一直是晴天中山店(咖啡廳)</p>
+				<p class="discount">品項/消費滿xx元，打9折優惠</p>
+
+				<p class="sponsorName">司康小売所</p>
+				<p class="discount">限量兌換1分司康，換完為止</p>
+			</div>
+			<p class="copyrights">世新大學資訊傳播學系畢展《人造風向》製</p>
+		</div>
+
+		<p class="create" onclick="printTicket()">領取票券!</p>
 	</section>
 
 	<!--section class="s8">

@@ -27,11 +27,11 @@ const refresh = () => {
 
 setTimeout(refresh, 10000);*/
 
-$(window).on('load', function(){
+/*$(window).on('load', function(){
 	$('html, body').animate({
         scrollTop: $('.start').offset().top
  	},800);
-});
+});*/
 
 $('.s1 a').on('click', function(e){
 	if(this.hash !== ''){
@@ -193,16 +193,27 @@ function getCaffeineValue() {
 	var x = document.getElementById("s6Slider");
 	var currentVal = parseInt(x.value);
 	if (currentVal == 0) {
-		return ['低', '不受拘束且自由的靈魂，<br/>容易親近'];
+		return ['低', '不受拘束且自由的靈魂，容易親近'];
 	}else if (currentVal == 50) {
-		return ['中', '不過分張揚的努力型天才，<br/>是大家永遠依靠'];
+		return ['中', '不過分張揚的努力型天才，是大家永遠依靠'];
 	}else if (currentVal == 100) {
-		return ['高', '做事有原則的邏輯鬼才，<br/>享受獨處時光'];
+		return ['高', '做事有原則的邏輯鬼才，享受獨處時光'];
 	}
 }
 
+function afterprint() {
+	document.querySelector('.toTopLeft').classList.toggle('print');
+}
+
+function printTicket() {
+	$('.create').css('display', 'none');
+	document.querySelector('.hide').classList.toggle('active');
+	document.querySelector('.toTopLeft').classList.toggle('print');
+	window.print();
+}
+
 //section 8 text value
-/*function send() {
+function createTicket() {
 	var currentVal = $('#coffeeName').val();
 	if (currentVal == '') {
 		alert('請輸入名稱!');
@@ -229,14 +240,14 @@ function getCaffeineValue() {
             scrollTop: $('.s9').offset().top
         },800);
 	}
-}*/
+}
 
-let results = ['一個華麗的轉身就會捲起一陣輕風，<br/>預測不久之後遙遠的他方會有颶風。',
-			   '走路帶風，凡是經過任何地方，<br/>風力都能把身邊的人吹起來逆時針轉三個圈。',
-			   '臉朝下撲街的時候，會由下往上揚起一陣風，<br/>路過的人都會察覺，然後被塵土嗆到。',
-			   '打排球準備殺球時，<br/>手向下揮動所產生的風，足以拍飛三個大學生。',
-			   '在公司或學校放屁，<br/>風力所傳遞的氣味，可以貫穿整個101。',
-			   '心情不好時嘆了一口氣所產生的風，會成為上升氣流；<br/>如果讓上帝聽見，祂會為你哭泣。'];
+let results = ['一個華麗的轉身就會捲起一陣輕風，預測不久之後遙遠的他方會有颶風。',
+			   '走路帶風，凡是經過任何地方，風力都能把身邊的人吹起來逆時針轉三個圈。',
+			   '臉朝下撲街的時候，會由下往上揚起一陣風，路過的人都會察覺，然後被塵土嗆到。',
+			   '打排球準備殺球時，手向下揮動所產生的風，足以拍飛三個大學生。',
+			   '在公司或學校放屁，風力所傳遞的氣味，可以貫穿整個101。',
+			   '心情不好時嘆了一口氣所產生的風，會成為上升氣流；如果讓上帝聽見，祂會為你哭泣。'];
 
 function generateResult() {
 	var result = results[Math.floor(Math.random()*results.length)];
@@ -272,8 +283,12 @@ function getCaffeine() {
 	}
 }
 
-
+/*
 function send() {
+	document.querySelector('.hide').classList.toggle('active');
+	document.querySelector('.toTopLeft').classList.toggle('print');
+	window.print();
+
 	var currentVal = $('#coffeeName').val();
 	var cup = getCupValue();
 	var cupType = cup[0];
@@ -282,21 +297,23 @@ function send() {
 	var caffeineLevel = caffeine[0];
 	var caffeineResult = caffeine[1];
 	const conector = new ConectorPlugin();
-	conector.establecerTamanioFuente(2, 2);
-    conector.establecerEnfatizado(1);
+	let sohai = "人造風向";
+	conector.establecerTamanioFuente(1, 1);
+    conector.establecerEnfatizado(0);
     conector.establecerJustificacion(ConectorPlugin.Constantes.AlineacionCentro);
 	conector.feed(1);
-	conector.texto("|風向產生結果|\n");
+	conector.texto(sohai+"\n");
 	conector.texto(generateTicketResult());
 	conector.feed(1);
 	conector.establecerTamanioFuente(1, 1);
 	conector.establecerEnfatizado(0);
-	conector.texto("───────────────────────────────\n");
+	conector.texto("--------------------------------\n");
 	conector.feed(1);
 	conector.establecerTamanioFuente(2, 2);
 	conector.establecerEnfatizado(1);
 	conector.texto(currentVal + "咖啡\n");
-	conector.imagenLocal("C:\\Users\\kennychen\\desktop\\107mediaframing\\image\\" + cupImage);
+	conector.imagenLocal("C:\\Users\\KennyChen\\Desktop\\107mediaframing\\"+cupImage);
+	conector.feed(3);
 	conector.feed(1);
 	conector.establecerTamanioFuente(1, 1);
 	conector.establecerEnfatizado(0);
@@ -316,15 +333,8 @@ function send() {
 	conector.establecerJustificacion(ConectorPlugin.Constantes.AlineacionDerecha)
 	conector.texto("世新大學資訊傳播學系畢展《人造風向》製");
 	conector.cortar();
-    conector.imprimirEn("myprinter").then(respuestaAlImprimir => {
-        if (respuestaAlImprimir === true) {
-            loguear("Impreso correctamente");
-        } else {
-            loguear("Error. La respuesta es: " + respuestaAlImprimir);
-        }
-    });
-}
-
+    conector.imprimirEn("CP-Q1T");
+}*/
 
 
 

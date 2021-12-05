@@ -791,6 +791,34 @@ footer .copyrights{
 	.mapWrapper{
 		margin: 50px 50px 0;
 	}
+
+	.logo {
+		max-width: 200px;
+		max-height: 200px;
+	}
+
+	.tour .intro {
+		line-height: 30px;
+	}
+
+	.tour .intro h2:nth-child(1) {
+		font-size: 35px;
+		margin-bottom: 10px;
+	}
+
+	.tour .intro h2:nth-child(2) {
+		font-size: 25px;
+		margin-bottom: 10px;
+	}
+
+	.tour .intro .chineseText {
+		padding-top: 10px;
+		padding-bottom: 0;
+	}
+
+	.tour .intro p {
+		font-size: 12px;
+	}
 }
 
 

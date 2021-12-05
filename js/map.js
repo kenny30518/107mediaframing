@@ -10,15 +10,11 @@ $(window).on('load', function(){
 });
 
 var states = [
-      '#farmColor', '#timeColor', '#ballColor', '#bekiColor', 
-      '#templeColor', '#soundColor', '#growColor', '#socialColor',
-      '#driveColor', '#sinkColor', '#culletColor','#tdotColor'
+      '.memoryArea', '.cultureArea', '.educationArea', '.forumArea', '.memoryArea', '.cultureArea', '.educationArea', '.forumArea'
     ],
     
     colors = [
-      '#b3bda2', '#D8C4A9', '#DB8662', '#C8BAAA', '#A65C4F', 
-      '#74736B', '#DDB4B4', '#4975A1', '#BD9F7A', '#D8999E',
-      '#D4D2A7','#AFCDD8'
+      '#dc6c50', '#eb9d5f', '#E2BF6A', '#244552', 'transparent', 'transparent', 'transparent', 'transparent'
     ];
 
 function fillMap(state, color, time) {
@@ -29,22 +25,69 @@ function fillMap(state, color, time) {
   );
 };
 
-function clearMap(state, time) {
-    setTimeout(
-        function() { 
-            $(state).css('fill', 'black');
-        }, time
-    );
-};
-
 $(function() {
     setTimeout(function(){
-        for(var i = 0; i < 13; i++) {
+        for(var i = 0; i < 9; i++) {
             fillMap(states[i], colors[i], (i+1)*500);
         };
     }, 1500);
 });
 
+var status = 0;
+$('.groupTitle').on('click', function() {
+    var target = $(this).attr('id');
+    if (target == 'memory'){
+        $('.memoryArea').css('fill', '#dc6c50');
+        setTimeout(() => { 
+            $('.memoryArea').css('fill', 'transparent');
+        }, 2000);
+    }else if (target == 'culture'){
+        if (status == 1) {
+            to1F();
+            setTimeout(() => { 
+                $('.cultureArea').css('fill', '#eb9d5f');
+            }, 4000);
+            setTimeout(() => { 
+                $('.cultureArea').css('fill', 'transparent');
+            }, 2000);
+            status = 0;
+        }else{
+            $('.cultureArea').css('fill', '#eb9d5f');
+            setTimeout(() => { 
+                $('.cultureArea').css('fill', 'transparent');
+            }, 2000);
+        }
+    }else if (target == 'education'){
+        $('.educationArea').css('fill', '#E2BF6A');
+        setTimeout(() => { 
+            $('.educationArea').css('fill', 'transparent');
+        }, 2000);
+    }else if (target == 'forum'){
+        if (status == 0) {
+            toB1();
+            setTimeout(() => { 
+                $('.forumArea').css('fill', '#244552');
+            }, 4000);
+            setTimeout(() => { 
+                $('.forumArea').css('fill', 'transparent');
+            }, 2000);
+            status = 1;
+        }else{
+            $('.forumArea').css('fill', '#244552');
+            setTimeout(() => { 
+                $('.forumArea').css('fill', 'transparent');
+            }, 2000);
+        }
+    }
+})
+
+$("#farmColor").on("mouseover", function () {
+    $(this).css('fill', '#dc6c50');
+});
+
+$("#farmColor").on("mouseleave", function () {
+    $(this).css('fill', 'transparent');
+});
 //burger animation
 var tl = new TimelineMax({paused: true});
 
@@ -72,6 +115,60 @@ $(document).on("click", ".burgerwrapper", function() {
     tl.reversed(!tl.reversed());
 });
 
+function to1F() {
+    $('#firstFloor').css('color','#769E89');
+    $('#secondFloor').css('color','transparent');
+    document.getElementById('firstFloor').style.pointerEvents = "none";
+    var tl3 = new TimelineMax();
+
+    tl3.to(".map",{
+        keyframes: [
+            {duration: 0.2, xPercent: 0,},
+            {duration: 0.2, yPercent: 0,},
+        ]
+    }).to(".map2",0.2,{
+        keyframes: [
+            {duration: 0.2, xPercent: 20,},
+            {duration: 0.2, yPercent: -20},
+        ]
+    }).to(".map2",{
+        zIndex: 1
+    },"+=1").to(".map2",{
+        keyframes: [
+            {duration: 0.2, xPercent: 0,},
+            {duration: 0.2, yPercent: 0},
+        ]
+    },"-=0.2");
+    document.getElementById('secondFloor').style.pointerEvents = "all";
+}
+
+function toB1() {
+    $('#secondFloor').css('color','#769E89');
+    $('#firstFloor').css('color','transparent');
+    document.getElementById('secondFloor').style.pointerEvents = "none";
+    var tl6 = new TimelineMax();
+
+    tl6.to(".map2",{
+        keyframes: [
+            {duration: 0.2, xPercent: 20,},
+            {duration: 0.2, yPercent: -20},
+        ]
+    }).to(".map2",0.2,{
+        zIndex: -1
+    },"+=1").to(".map2",{
+        keyframes: [
+            {duration: 0.2, xPercent: 0,},
+            {duration: 0.2, yPercent: 20},
+        ]
+    },"+=0.2").to(".map",{
+        keyframes: [
+            {duration: 0.2, xPercent: 0,},
+            {duration: 0.2, yPercent: -60},
+        ]
+    },"-=0.2");
+    document.getElementById('firstFloor').style.pointerEvents = "all";
+}
+
 //Floor switch button
 $('#secondFloor').on('click',function(){
     $('#secondFloor').css('color','#769E89');
@@ -98,6 +195,7 @@ $('#secondFloor').on('click',function(){
         ]
     },"-=0.2");
     document.getElementById('firstFloor').style.pointerEvents = "all";
+    status = 1;
 });
 
 $('#firstFloor').on('click',function(){
@@ -125,6 +223,7 @@ $('#firstFloor').on('click',function(){
         ]
     },"-=0.2");
     document.getElementById('secondFloor').style.pointerEvents = "all";
+    status = 0;
 });
 
 //phoneFloor switch button

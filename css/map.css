@@ -235,6 +235,11 @@ a:hover{
 	display: none;
 }
 
+.groupTitle { 
+	padding: 10px 40px 10px 5px;
+	font-size: 20px;
+}
+
 .mapWrapper{
 	position: relative;
 	-webkit-transform: translate3d(0, 0, 0);

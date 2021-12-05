@@ -231,6 +231,10 @@ a:hover{
 	cursor: url('../image/hover.svg'), auto;
 }
 
+.phoneFloor {
+	display: none;
+}
+
 .mapWrapper{
 	position: relative;
 	-webkit-transform: translate3d(0, 0, 0);
@@ -782,6 +786,28 @@ footer .copyrights{
 		margin: 50px 80px 0;
 	}
 
+	.floor {
+		display: none;
+	}
+
+	.phoneFloor {
+		position: relative;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+
+	.phoneFloor p{
+		font-size: 5em;
+	    color: transparent;
+	    -webkit-text-stroke: 2px #769E89;
+	    margin-bottom: 0;
+	}
+
+	#phoneFirstFloor {
+		color: #769E89;
+	}
+
 	.tour .intro {
 		line-height: 35px;
 	}
@@ -790,6 +816,10 @@ footer .copyrights{
 @media (max-width: 470px){
 	.mapWrapper{
 		margin: 50px 50px 0;
+	}
+
+	.phoneFloor p {
+		font-size: 3em;
 	}
 
 	.logo {
@@ -818,6 +848,19 @@ footer .copyrights{
 
 	.tour .intro p {
 		font-size: 12px;
+	}
+
+	.leftTitle h1 {
+		font-size: 35px;
+	}
+
+	.rightContent h1 {
+		font-size: 30px;
+	}
+
+	.rightContent p {
+		padding-left: 15px;
+		line-height: 35px;
 	}
 }
 

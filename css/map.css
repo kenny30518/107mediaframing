@@ -862,6 +862,10 @@ footer .copyrights{
 		margin: 50px 150px 0;
 	}
 
+	.map, .map2 {
+   		margin: 0px 25px;
+	}
+
 	.popup-box {
 		padding: 15px 15px;
 	}
@@ -918,6 +922,10 @@ footer .copyrights{
 	.phoneFloor {
 		justify-content: space-evenly;
 	}
+
+	.map, .map2 {
+    	margin: 0px 30px;
+	}
 }
 
 @media (max-width: 470px){
@@ -968,6 +976,10 @@ footer .copyrights{
 	.rightContent p {
 		padding-left: 15px;
 		line-height: 35px;
+	}
+
+	.map, .map2 {
+   		margin: 0px 25px;
 	}
 }
 

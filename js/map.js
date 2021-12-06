@@ -299,6 +299,7 @@ $('#phoneSecondFloor').on('click',function(){
         ]
     },"-=0.2");
     document.getElementById('phoneFirstFloor').style.pointerEvents = "all";
+    status = 1;
 });
 
 $('#phoneFirstFloor').on('click',function(){
@@ -326,6 +327,7 @@ $('#phoneFirstFloor').on('click',function(){
         ]
     },"-=0.2");
     document.getElementById('phoneSecondFloor').style.pointerEvents = "all";
+    status = 0;
 });
 
 //pupup menu

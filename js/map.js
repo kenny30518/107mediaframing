@@ -9,6 +9,11 @@ $(window).on('load', function(){
     }
 });
 
+$(window).resize(function(){
+    if($(window).width() <= 530) {
+        location.reload();
+    }
+});
 
 //change phone layout by screen width
 if($( window ).width() <= 530){

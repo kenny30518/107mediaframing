@@ -235,9 +235,85 @@ a:hover{
 	display: none;
 }
 
+.groupName {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 10%;
+}
+
+#groupName a:hover {
+	text-decoration: none;
+}
+
+.upperGroup, .lowerGroup {
+	display: flex;
+}
+
+.button-6 {
+	letter-spacing: 5px;
+	align-items: center;
+	background-color: #FFFFFF;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: .25rem;
+	box-shadow: rgba(0, 0, 0, 0.3) 0 4px 12px;
+	box-sizing: border-box;
+	cursor: pointer;
+	display: inline-flex;
+	font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	justify-content: center;
+	line-height: 1.25;
+	margin: 10px 20px;
+	min-height: 3rem;
+	padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+	position: relative;
+	text-decoration: none;
+	transition: all 250ms;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+	vertical-align: baseline;
+	width: auto;
+}
+
+.button-6:hover,
+.button-6:focus {
+	border-color: rgba(0, 0, 0, 0.15);
+	box-shadow: rgba(0, 0, 0, 0.5) 0 4px 12px;
+}
+
+.button-6:hover {
+	transform: translateY(-1px);
+}
+
+.button-6:active {
+	background-color: #F0F0F1;
+	border-color: rgba(0, 0, 0, 0.15);
+	box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+	color: rgba(0, 0, 0, 0.65);
+	transform: translateY(0);
+}
+
 .groupTitle { 
-	padding: 10px 40px 10px 5px;
 	font-size: 20px;
+	color: #fff;
+}
+
+#culture {
+	background: #eb9d5f;
+}
+
+#memory {
+	background: #dc6c50;
+}
+
+#forum {
+	background: #244552;
+}
+
+#education {
+	background: #E2BF6A;
 }
 
 .mapWrapper{
@@ -251,7 +327,7 @@ a:hover{
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	margin-bottom: 20%;
+	margin-bottom: 10%;
 }
 
 .leftTitle {
@@ -279,6 +355,10 @@ a:hover{
 	line-height: 45px;
 	color: #2A2B2B;
 	border-left: 2px solid black;
+}
+
+.map, .map2 {
+	margin: 0px 50px;
 }
 
 .map{

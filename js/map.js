@@ -330,7 +330,7 @@ $(".btn1").click(function() {
         $('.chineseName').html("留聲跡");
         $('.englishName').html("Save And Sound");
         $('.chineseText').html("你是否也有能勾起你回憶的聲音呢？我們將提供一個平台讓你可以保存和分享聲音以及背後的故事。留聲跡希望與你一同留下屬於你聲音的足跡。");
-        $('.englishText').html("");
+        $('.englishText').html("Is there a sound that would make you recall a memory?  Our name is “Save and Sound.” We provide a platform to let you upload sounds and share the stories behind them.  Like every step would leave a footprint. We believe that every sound could have a story behind it.   Here is the place that you can keep your memories “Save and Sound.”");
         $('.leftSide img').attr('src','image/saveandsound.png');
         $('#audioC').attr('src','audio/sample.mp3');
         $('#audioE').attr('src','audio/wave.mp3');
@@ -397,7 +397,7 @@ function closeWindow(){
 }
 
 //Smooth scroll effect
-$('.trafficNav ul li a').on('click', function(e){
+$('#groupName a').on('click', function(e){
     if(this.hash !== ''){
         e.preventDefault();
 

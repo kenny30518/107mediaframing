@@ -27,13 +27,21 @@ const refresh = () => {
 
 setTimeout(refresh, 10000);*/
 
+/*const swingRadius = gsap.getProperty("body", "--radius"); // gets the radius var from CSS... useful for this example's flexability. 
+const transformOriginValue = '50% -' + swingRadius + 'vh';
+tl.from('.sign', {
+	duration: 10, rotation: '-10deg', 
+	transformOrigin: transformOriginValue, 
+	ease: 'elastic.out(3, 0.1)'
+})*/
+
 /*$(window).on('load', function(){
 	$('html, body').animate({
-        scrollTop: $('.start').offset().top
+        scrollTop: $('.s1').offset().top
  	},800);
 });*/
 
-$('.s1 a').on('click', function(e){
+$('.arrow').on('click', function(e){
 	if(this.hash !== ''){
         e.preventDefault();
 
@@ -44,35 +52,24 @@ $('.s1 a').on('click', function(e){
     }
 });
 
-$('.next').on('click', function(e){
-	if(this.hash !== ''){
-        e.preventDefault();
+$('.startButton').on('click', function(){
+	$('.startButton').css('display','none');
+	$('.sign').css('opacity','1');
+	const swingRadius = gsap.getProperty("body", "--radius"); // gets the radius var from CSS... useful for this example's flexability. 
+	const transformOriginValue = '50% -' + swingRadius + 'vh';
+	gsap.from('.sign', {
+		duration: 10, rotation: '-10deg', 
+		transformOrigin: transformOriginValue, 
+		ease: 'elastic.out(3, 0.1)'
+	})
 
-        const hash = this.hash;
-        $('html, body').animate({
-            scrollTop: $(hash).offset().top
-        },800);
-    }
-});
-
-$(window).on('load', function(){
-	var tl = new TimelineMax({onComplete:scrollDetect})
-
-	tl.fromTo(".start h1",0.7,{
-		autoAlpha: 0
-	},{
-		autoAlpha: 1
-	},"+=0.5");
-
-	tl.to(".start h1",0.7,{
-		autoAlpha: 0
-	},"+=0.2");
+	var tl = new TimelineMax(/*{onComplete:scrollDetect}*/)
 
 	tl.fromTo(".introFirst",0.7,{
 		autoAlpha: 0
 	},{
 		autoAlpha: 1
-	},"+=0.2");
+	},"+=1");
 
 	tl.fromTo(".introSecond",0.7,{
 		autoAlpha: 0
@@ -87,14 +84,92 @@ $(window).on('load', function(){
 	},"+=0.2");
 });
 
-function scrollDetect(){
+$('.s1 a').on('click', function() {
+	TweenMax.from('.coffeeImage', 2, {autoAlpha: 0});
+	TweenMax.from('.coffeeImage', 2.5, { ease: Bounce.easeOut, y: -500});
+	var tl2 = new TimelineMax();
+
+	tl2.fromTo(".s2-1Second",1,{
+		autoAlpha: 0
+	},{
+		autoAlpha: 1
+	},"+=3");
+
+	tl2.to('.s2-1Third, .s2-1 .arrow', 1, {
+		autoAlpha: 1
+	});
+})
+
+$('.s2-1 a').on('click', function() {
+	TweenMax.from('.thinkImage', 2, {autoAlpha: 0});
+	var tl3 = new TimelineMax();
+
+	tl3.fromTo(".s2 h3, .s2 .arrow",1,{
+		autoAlpha: 0
+	},{
+		autoAlpha: 1
+	},"+=1");
+})
+
+$('input:radio[name="gender"], input:radio[name="sour"]').change(function(){
+    if ($(this).is(':checked')) {
+        var tl4 = new TimelineMax();
+
+		tl4.to(".s3 .arrow", 1, {
+			autoAlpha: 1
+		});
+    }
+});
+
+$('input:radio[name="sour"]').change(function(){
+    if ($(this).is(':checked')) {
+        var tl5 = new TimelineMax();
+
+		tl5.to(".s4 .arrow", 1, {
+			autoAlpha: 1
+		});
+    }
+});
+
+$('input:radio[name="bitter"]').change(function(){
+    if ($(this).is(':checked')) {
+        var tl6 = new TimelineMax();
+
+		tl6.to(".s5 .arrow", 1, {
+			autoAlpha: 1
+		});
+    }
+});
+
+$('input:radio[name="caffeine"]').change(function(){
+    if ($(this).is(':checked')) {
+        var tl7 = new TimelineMax();
+
+		tl7.to(".s6 .arrow", 1, {
+			autoAlpha: 1
+		});
+    }
+});
+
+/*function scrollDetect(){
 	$('html, body').on('scroll touchmove mousewheel', function(e) {
         $('html, body').animate({
-            scrollTop: $('.s2').offset().top
+            scrollTop: $('.s2-1').offset().top
         },800);
+        
+        TweenMax.from('.coffeeImage', 2, {autoAlpha: 0});
+		TweenMax.from('.coffeeImage', 2.5, { ease: Bounce.easeOut, y: -500});
+		var tl2 = new TimelineMax();
+
+		tl2.fromTo(".s2-1Second",1,{
+			autoAlpha: 0
+		},{
+			autoAlpha: 1
+		},"+=3");
+
         $('html, body').off('scroll touchmove mousewheel');
 	});
-}
+}*/
 
 $('.s1 a').on('click', function() {
 	$('html, body').off('scroll touchmove mousewheel');
@@ -106,6 +181,27 @@ $(document).ready(function(){
   
     	if(this.checked){
 			$('.s3Check input[type="radio"]').not(this).prop('checked', false);
+    	}
+	});
+
+	$('.s4Check input[type="radio"]').change(function(){
+  
+    	if(this.checked){
+			$('.s4Check input[type="radio"]').not(this).prop('checked', false);
+    	}
+	});
+
+	$('.s5Check input[type="radio"]').change(function(){
+  
+    	if(this.checked){
+			$('.s5Check input[type="radio"]').not(this).prop('checked', false);
+    	}
+	});
+
+	$('.s6Check input[type="radio"]').change(function(){
+  
+    	if(this.checked){
+			$('.s6Check input[type="radio"]').not(this).prop('checked', false);
     	}
 	});
 });
@@ -152,27 +248,25 @@ $('.slider' ).on( 'input', function( ) {
 
 //get slider value and convert it to text
 function getSour() {
-	var x = document.getElementById("s4Slider");
-	var currentVal = parseInt(x.value);
-	if (currentVal == 0) {
+	var sour = $('.sour:checked').val();
+	if (sour == 'sourLight') {
 		return '微酸/';
-	}else if (currentVal == 50) {
+	}else if (sour == 'sourMedium') {
 		return '酸/';
-	}else if (currentVal == 100) {
-		return '濃酸/';
+	}else if (sour == 'sourThick') {
+		return '最酸那種/';
 	}
 }
 
 //section 5 slider value
 function getBitterValue() {
-	var x = document.getElementById("s5Slider");
-	var currentVal = parseInt(x.value);
-	if (currentVal == 0) {
-		return '微苦/';
-	}else if (currentVal == 50) {
+	var bitter = $('.bitter:checked').val();
+	if (bitter == 'bitterLight') {
+		return '不苦/';
+	}else if (bitter == 'bitterMedium') {
 		return '苦/';
-	}else if (currentVal == 100) {
-		return '濃苦/';
+	}else if (bitter == 'bitterThick') {
+		return '跟人生一樣苦/';
 	}
 }
 
@@ -190,13 +284,12 @@ function getCupValue() {
 
 //section 7 radio value
 function getCaffeineValue() {
-	var x = document.getElementById("s6Slider");
-	var currentVal = parseInt(x.value);
-	if (currentVal == 0) {
+	var caffeine = $('.caffeine:checked').val();
+	if (caffeine == 'caffeineLight') {
 		return ['低', '不受拘束且自由的靈魂，容易親近'];
-	}else if (currentVal == 50) {
+	}else if (caffeine == 'caffeineMedium') {
 		return ['中', '不過分張揚的努力型天才，是大家永遠依靠'];
-	}else if (currentVal == 100) {
+	}else if (caffeine == 'caffeineThick') {
 		return ['高', '做事有原則的邏輯鬼才，享受獨處時光'];
 	}
 }

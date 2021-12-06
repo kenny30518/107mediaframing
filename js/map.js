@@ -9,6 +9,7 @@ $(window).on('load', function(){
     }
 });
 
+//map color control
 var states = [
       '.memoryArea', '.cultureArea', '.educationArea', '.forumArea', '.memoryArea', '.cultureArea', '.educationArea', '.forumArea'
     ],
@@ -37,19 +38,30 @@ var status = 0;
 $('.groupTitle').on('click', function() {
     var target = $(this).attr('id');
     if (target == 'memory'){
-        $('.memoryArea').css('fill', '#dc6c50');
-        setTimeout(() => { 
-            $('.memoryArea').css('fill', 'transparent');
-        }, 2000);
+        if (status == 1) {
+            to1F();
+            setTimeout(() => { 
+                $('.memoryArea').css('fill', '#dc6c50');
+                setTimeout(() => { 
+                    $('.memoryArea').css('fill', 'transparent');
+                }, 2000);
+            }, 4000);
+            status = 0
+        }else{
+            $('.memoryArea').css('fill', '#dc6c50');
+            setTimeout(() => { 
+                $('.memoryArea').css('fill', 'transparent');
+            }, 2000);
+        }
     }else if (target == 'culture'){
         if (status == 1) {
             to1F();
             setTimeout(() => { 
                 $('.cultureArea').css('fill', '#eb9d5f');
+                setTimeout(() => { 
+                    $('.cultureArea').css('fill', 'transparent');
+                }, 2000);
             }, 4000);
-            setTimeout(() => { 
-                $('.cultureArea').css('fill', 'transparent');
-            }, 2000);
             status = 0;
         }else{
             $('.cultureArea').css('fill', '#eb9d5f');
@@ -58,19 +70,30 @@ $('.groupTitle').on('click', function() {
             }, 2000);
         }
     }else if (target == 'education'){
-        $('.educationArea').css('fill', '#E2BF6A');
-        setTimeout(() => { 
-            $('.educationArea').css('fill', 'transparent');
-        }, 2000);
+        if (status == 0) {
+            toB1();
+            setTimeout(() => { 
+                $('.educationArea').css('fill', '#E2BF6A');
+                setTimeout(() => { 
+                    $('.educationArea').css('fill', 'transparent');
+                }, 2000);
+            }, 4000);
+            status = 1;
+        }else{
+            $('.educationArea').css('fill', '#E2BF6A');
+            setTimeout(() => { 
+                $('.educationArea').css('fill', 'transparent');
+            }, 2000);
+        }
     }else if (target == 'forum'){
         if (status == 0) {
             toB1();
             setTimeout(() => { 
                 $('.forumArea').css('fill', '#244552');
+                setTimeout(() => { 
+                    $('.forumArea').css('fill', 'transparent');
+                }, 2000);
             }, 4000);
-            setTimeout(() => { 
-                $('.forumArea').css('fill', 'transparent');
-            }, 2000);
             status = 1;
         }else{
             $('.forumArea').css('fill', '#244552');
@@ -81,13 +104,22 @@ $('.groupTitle').on('click', function() {
     }
 })
 
-$("#farmColor").on("mouseover", function () {
-    $(this).css('fill', '#dc6c50');
+$(".btn1").on("mouseover", function () {
+    if ($(this).find('rect').hasClass('memoryArea')) {
+        $(this).find('rect').css('fill', '#dc6c50');
+    }else if ($(this).find('rect').hasClass('cultureArea')) {
+        $(this).find('rect').css('fill', '#eb9d5f');
+    }else if ($(this).find('rect').hasClass('educationArea')) {
+        $(this).find('rect').css('fill', '#E2BF6A');
+    }else if ($(this).find('rect').hasClass('forumArea')) {
+        $(this).find('rect').css('fill', '#244552');
+    }
 });
 
-$("#farmColor").on("mouseleave", function () {
-    $(this).css('fill', 'transparent');
+$(".btn1").on("mouseleave", function () {
+    $(this).find('rect').css('fill', 'transparent');
 });
+
 //burger animation
 var tl = new TimelineMax({paused: true});
 

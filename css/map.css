@@ -227,6 +227,49 @@ a:hover{
     padding-left: 10px;
 }
 
+#firstFloor {
+	color: #769E89;
+	pointer-events: none;
+	font-size: 6em;
+    -webkit-text-stroke: 3px #769E89;
+    margin-bottom: 0;
+    padding-left: 10px;
+}
+
+#firstFloor:before{
+	position: fixed;
+	content: '1F';
+	color: #769E89;
+	transition: 0.5s;
+	width: 0%;
+	overflow: hidden;
+}
+
+#firstFloor:hover:before{
+	width: 100%;
+}
+
+#secondFloor:before{
+	position: fixed;
+	content: 'B1';
+	color: #769E89;
+	transition: 0.5s;
+	width: 0%;
+	overflow: hidden;
+}
+
+#secondFloor:hover:before{
+	width: 100%;
+}
+
+#secondFloor {
+	font-size: 6em;
+    color: transparent;
+    -webkit-text-stroke: 3px #769E89;
+    margin-bottom: 0;
+    padding-left: 10px;
+}
+
 .floor p:hover{
 	cursor: url('../image/hover.svg'), auto;
 }
@@ -247,6 +290,7 @@ a:hover{
 
 .upperGroup, .lowerGroup {
 	display: flex;
+	align-items: center;
 }
 
 .button-6 {

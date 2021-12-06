@@ -224,50 +224,7 @@ a:hover{
     color: transparent;
     -webkit-text-stroke: 3px #769E89;
     margin-bottom: 0;
-    padding-left: 10px;
-}
-
-#firstFloor {
-	color: #769E89;
-	pointer-events: none;
-	font-size: 6em;
-    -webkit-text-stroke: 3px #769E89;
-    margin-bottom: 0;
-    padding-left: 10px;
-}
-
-#firstFloor:before{
-	position: fixed;
-	content: '1F';
-	color: #769E89;
-	transition: 0.5s;
-	width: 0%;
-	overflow: hidden;
-}
-
-#firstFloor:hover:before{
-	width: 100%;
-}
-
-#secondFloor:before{
-	position: fixed;
-	content: 'B1';
-	color: #769E89;
-	transition: 0.5s;
-	width: 0%;
-	overflow: hidden;
-}
-
-#secondFloor:hover:before{
-	width: 100%;
-}
-
-#secondFloor {
-	font-size: 6em;
-    color: transparent;
-    -webkit-text-stroke: 3px #769E89;
-    margin-bottom: 0;
-    padding-left: 10px;
+    padding-left: 35px;
 }
 
 .floor p:hover{
@@ -290,7 +247,6 @@ a:hover{
 
 .upperGroup, .lowerGroup {
 	display: flex;
-	align-items: center;
 }
 
 .button-6 {
@@ -303,7 +259,6 @@ a:hover{
 	box-sizing: border-box;
 	cursor: pointer;
 	display: inline-flex;
-	font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-size: 16px;
 	font-weight: 600;
 	justify-content: center;
@@ -319,6 +274,7 @@ a:hover{
 	touch-action: manipulation;
 	vertical-align: baseline;
 	width: auto;
+	white-space: nowrap;
 }
 
 .button-6:hover,
@@ -837,7 +793,7 @@ footer .copyrights{
 
 @media (max-width: 1000px) {
 	.floor {
-		position: absolute;
+		position: fixed;
 		bottom: 5%;
 		transform: translateY(0%);
 	}
@@ -870,6 +826,36 @@ footer .copyrights{
 
 	.rwdBurger div{
 		display: inherit;
+	}
+
+	.floor {
+		display: none;
+	}
+
+	.phoneFloor {
+		position: relative;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+
+	.phoneFloor p{
+		font-size: 5em;
+	    color: transparent;
+	    -webkit-text-stroke: 2px #769E89;
+	    margin-bottom: 0;
+	}
+
+	#phoneFirstFloor {
+		color: #769E89;
+	}
+
+	.groupTitle {
+		font-size: 16px;
+	}
+
+	.button-6 {
+		padding: calc(0.875rem - 1px) calc(0.5rem - 1px);
 	}
 
 	.mapWrapper{
@@ -915,30 +901,22 @@ footer .copyrights{
 		margin: 50px 80px 0;
 	}
 
-	.floor {
-		display: none;
+	.tour .intro {
+		line-height: 35px;
+	}
+}
+
+@media (max-width: 530px) {
+	.groupName {
+		flex-direction: column;
+	}
+
+	.upperGroup, .lowerGroup {
+		justify-content: center;
 	}
 
 	.phoneFloor {
-		position: relative;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-around;
-	}
-
-	.phoneFloor p{
-		font-size: 5em;
-	    color: transparent;
-	    -webkit-text-stroke: 2px #769E89;
-	    margin-bottom: 0;
-	}
-
-	#phoneFirstFloor {
-		color: #769E89;
-	}
-
-	.tour .intro {
-		line-height: 35px;
+		justify-content: space-evenly;
 	}
 }
 

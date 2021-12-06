@@ -9,6 +9,16 @@ $(window).on('load', function(){
     }
 });
 
+
+//change phone layout by screen width
+if($( window ).width() <= 530){
+    $('.upperGroup').html('<a href="#groupName"><p class="button-6 groupTitle" id="memory">紀實記憶</p></a><a href="#groupName"><p class="button-6 groupTitle" id="education">社會教育</p></a>');
+    $('.lowerGroup').html('<a href="#groupName"><p class="button-6 groupTitle" id="culture">文化傳承</p></a><a href="#groupName"><p class="button-6 groupTitle" id="forum">創新論壇</p></a>');
+}else {
+    $('.upperGroup').html('<a href="#groupName"><p class="button-6 groupTitle" id="memory">紀實記憶</p></a><a href="#groupName"><p class="button-6 groupTitle" id="culture">文化傳承</p></a>');
+    $('.lowerGroup').html('<a href="#groupName"><p class="button-6 groupTitle" id="education">社會教育</p></a><a href="#groupName"><p class="button-6 groupTitle" id="forum">創新論壇</p></a>');
+}
+
 //map color control
 var states = [
       '.memoryArea', '.cultureArea', '.educationArea', '.forumArea', '.memoryArea', '.cultureArea', '.educationArea', '.forumArea'

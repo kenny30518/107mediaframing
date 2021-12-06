@@ -236,6 +236,9 @@ function createTicket() {
 		$('.flavor').html('酸度-' + getSour() + '風味-' + getBitterValue() + '咖啡因含量-' + caffeineLevel);
 
 		$('.final').html(getGender() + '是' + caffeineResult + '，且生活充滿' + cupResult + '。');
+
+		$('.printTime').html('票券印製時間：' + new Date());
+		
 		$('html, body').animate({
             scrollTop: $('.s9').offset().top
         },800);

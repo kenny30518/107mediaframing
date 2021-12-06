@@ -10,7 +10,7 @@ $(window).on('load', function(){
 });
 
 $(window).resize(function(){
-    if($(window).width() <= 530) {
+    if($(window).width() <= 830) {
         location.reload();
     }
 });
@@ -449,6 +449,17 @@ $('#groupName a').on('click', function(e){
         e.preventDefault();
 
         const hash = this.hash;
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top
+        },800);
+    }
+});
+
+$('.phoneFloor p').on('click', function(e){
+    if($('.phoneFloor p').attr('data-navigate') !== ''){
+        e.preventDefault();
+
+        var hash = $('.phoneFloor p').attr('data-navigate');
         $('html, body').animate({
             scrollTop: $(hash).offset().top
         },800);

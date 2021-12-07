@@ -9,6 +9,10 @@ $(window).on('load', function(){
     }
 });
 
+$("img .lazy").lazyload({
+	effect : "fadeIn"
+});
+
 //setTimeOut refresh
 /*let time = new Date().getTime();
 const setActivityTime = (e) => {

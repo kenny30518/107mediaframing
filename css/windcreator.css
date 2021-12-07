@@ -9,7 +9,7 @@ body{
 	height: 100vh;
 	background-color: #F4F1E6;
 	cursor: url("../image/cursor.svg"), auto;
-	/*overflow: hidden;*/
+	overflow: hidden;
 }
 
 a:hover{
@@ -144,17 +144,28 @@ p {
 .arrow{
 	opacity: 0;
 	text-align: center;
-	display: block;
+	display: none;
 	left: 0;
 	right: 0;
 	position: absolute;
 	bottom: 10px;
 	margin: 0 auto;
 	color: black;
+	animation: bounce 2s ease infinite;
+}
+
+@keyframes bounce{
+	0% {
+		transform: translateY(0%);
+	}50% {
+		transform: translateY(-30%);
+	}100% {
+		transform: translateY(0%);
+	}
 }
 
 .arrow img {
-	width: 5%;
+	width: 150px;
 	height: auto;
 }
 
@@ -222,7 +233,7 @@ select {
    	border-radius: 5px;
 }
 
-.s3, .s4, .s5, .s6{
+.s3, .s4, .s5, .s6, .s7, .s8{
 	position: relative;
 	width: 100%;
 	height: 100vh;
@@ -232,7 +243,7 @@ select {
 	align-items: center;
 }
 
-.s3 h3, .s4 h3, .s5 h3, .s6 h3 {
+.s3 h3, .s4 h3, .s5 h3, .s6 h3, .s7 h3 {
 	text-align: center;
 	width: 40%;
 	font-size: 35px;
@@ -242,13 +253,14 @@ select {
 	border-bottom: 4px solid black;
 }
 
-.s3 .option, .s4 .option, .s5 .option, .s6 .option {
+.s3 .option, .s4 .option, .s5 .option, .s6 .option, .s7 .option {
 	margin-top: 20px;
 	font-weight: 700;
 	font-size: 25px;
+	letter-spacing: 5px;
 }
 
-.s3Check, .s4Check, .s5Check, .s6Check {
+.s3Check, .s4Check, .s5Check, .s6Check, .s7Check {
 	margin-top: 40px;
 }
 
@@ -256,6 +268,10 @@ select {
 	display: flex;
 	align-items: center;
 	margin-bottom: 50px;
+}
+
+.s7 .optionWrapper {
+	margin: 0 20px;
 }
 
 .optionWrapper {
@@ -266,7 +282,7 @@ select {
 }
 
 .optionWrapper img {
-	width: 80%;
+	width: 150px;
 }
 
 input[type="radio"] {
@@ -297,15 +313,7 @@ input[type="radio"]:checked::before {
 	transform: scale(1);
 }
 
-.s7 {
-	width: 100%;
-	height: 100vh;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-
+/*
 .s7 .coffeeCup {
 	width: 100%;
     display: flex;
@@ -391,6 +399,7 @@ input[type="radio"]:checked::before {
 	z-index: -1;
 	border: 2px solid black;
 }
+*/
 
 .sliderWrapper {
 	display: flex;
@@ -398,13 +407,18 @@ input[type="radio"]:checked::before {
 	align-items: center;
 }
 
-.s8 {
-	width: 100%;
-	height: 100vh;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+.s8Check {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.s8 h3 {
+	text-align: center;
+	font-size: 35px;
+	letter-spacing: 10px;
+	font-weight: 700;
+	padding-bottom: 50px; 
 }
 
 .s8 .sliderWrapper p:nth-child(2) {
@@ -412,15 +426,50 @@ input[type="radio"]:checked::before {
 }
 
 .s8 .coffeeName {
+	font-size: 35px;
+	letter-spacing: 10px;
+	font-weight: 700;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 }
 
-.s8 .generate {
-	padding: 10px 20px;
+.form-field {
+	font-family: inherit;
+	border: 0;
+	border-bottom: 4px solid black;
+	outline: 0;
+	font-size: 1.3rem;
+	color: black;
+	padding: 7px 0;
 	background: transparent;
+	transition: border-color 0.2s;
+	letter-spacing: 5px;
+}
+
+.s8 .next {
+	background-color: black; 
+	color: white;
+	bottom: 40px;
+	padding: 10px 20px;
+	box-shadow: 5px 4px 0px 0px rgb(0 0 0 / 30%);
 	border: 2px solid black;
+	letter-spacing: 5px;
+	margin-right: 50px;
+}
+
+.s8 .generate {
+	position: absolute;
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.s8 .generate img {
+	width: 300px;
+	opacity: 0;
+	transition: 0.8s;
 }
 
 .s9 {
@@ -434,8 +483,9 @@ input[type="radio"]:checked::before {
 }
 
 .s9 h1 {
-	margin-bottom: 2%;
+	margin-bottom: 8%;
 	font-weight: 500;
+	font-size: 30px;
 }
 
 .s9 .result {
@@ -460,6 +510,11 @@ input[type="radio"]:checked::before {
 	margin-bottom: 10px;
 }
 
+.s9 .flavorWrapper {
+	display: flex;
+	flex-direction: column;
+}
+
 .s9 .final {
 	padding-bottom: 40px;
 	border-bottom: 2px dashed black;
@@ -473,6 +528,10 @@ input[type="radio"]:checked::before {
 
 .s9 .sponsor {
 	text-align: left;
+}
+
+.s9 .stub {
+	display: none;
 }
 
 .s9 .sponsorName {
@@ -494,6 +553,21 @@ input[type="radio"]:checked::before {
 	color: black;
 	background: transparent;
 	border: 2px solid black;
+	margin-top: 50px;
+}
+
+.s9 .thanks {
+	letter-spacing: 5px;
+	display: none;
+	opacity: 0;
+}
+
+.backToHome {
+	display: none;
+	opacity: 0;
+	padding: 10px 20px;
+	border: 2px solid black;
+	margin-top: 40px;
 }
 
 input[type="range"] {

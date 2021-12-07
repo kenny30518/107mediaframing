@@ -35,11 +35,11 @@ tl.from('.sign', {
 	ease: 'elastic.out(3, 0.1)'
 })*/
 
-/*$(window).on('load', function(){
+$(window).on('load', function(){
 	$('html, body').animate({
         scrollTop: $('.s1').offset().top
  	},800);
-});*/
+});
 
 $('.arrow').on('click', function(e){
 	if(this.hash !== ''){
@@ -52,11 +52,29 @@ $('.arrow').on('click', function(e){
     }
 });
 
+var isPressed = false;
+$(document).keydown(function(event) {
+    if (!isPressed & event.keyCode === 13) {
+        $(".startButton").click();
+        isPressed = true;
+    }
+});
+
+$(document).on("keydown", event => {
+    if (isPressed & event.keyCode === 13) {	
+        event.preventDefault();
+    }
+});
+
 $('.startButton').on('click', function(){
 	$('.startButton').css('display','none');
 	$('.sign').css('opacity','1');
 	const swingRadius = gsap.getProperty("body", "--radius"); // gets the radius var from CSS... useful for this example's flexability. 
 	const transformOriginValue = '50% -' + swingRadius + 'vh';
+	gsap.from('.sign', 0.5,{
+		y: -500
+	})
+
 	gsap.from('.sign', {
 		duration: 10, rotation: '-10deg', 
 		transformOrigin: transformOriginValue, 
@@ -80,6 +98,7 @@ $('.startButton').on('click', function(){
 	tl.fromTo(".s1 a",0.7,{
 		autoAlpha: 0
 	},{
+		display: "block",
 		autoAlpha: 1
 	},"+=0.2");
 });
@@ -96,6 +115,7 @@ $('.s1 a').on('click', function() {
 	},"+=3");
 
 	tl2.to('.s2-1Third, .s2-1 .arrow', 1, {
+		display: "block",
 		autoAlpha: 1
 	});
 })
@@ -107,6 +127,7 @@ $('.s2-1 a').on('click', function() {
 	tl3.fromTo(".s2 h3, .s2 .arrow",1,{
 		autoAlpha: 0
 	},{
+		display: "block",
 		autoAlpha: 1
 	},"+=1");
 })
@@ -116,6 +137,7 @@ $('input:radio[name="gender"], input:radio[name="sour"]').change(function(){
         var tl4 = new TimelineMax();
 
 		tl4.to(".s3 .arrow", 1, {
+			display: "block",
 			autoAlpha: 1
 		});
     }
@@ -126,6 +148,7 @@ $('input:radio[name="sour"]').change(function(){
         var tl5 = new TimelineMax();
 
 		tl5.to(".s4 .arrow", 1, {
+			display: "block",
 			autoAlpha: 1
 		});
     }
@@ -136,6 +159,7 @@ $('input:radio[name="bitter"]').change(function(){
         var tl6 = new TimelineMax();
 
 		tl6.to(".s5 .arrow", 1, {
+			display: "block",
 			autoAlpha: 1
 		});
     }
@@ -146,6 +170,18 @@ $('input:radio[name="caffeine"]').change(function(){
         var tl7 = new TimelineMax();
 
 		tl7.to(".s6 .arrow", 1, {
+			display: "block",
+			autoAlpha: 1
+		});
+    }
+});
+
+$('input:radio[name="cup"]').change(function(){
+    if ($(this).is(':checked')) {
+        var tl8 = new TimelineMax();
+
+		tl8.to(".s7 .arrow", 1, {
+			display: "block",
 			autoAlpha: 1
 		});
     }
@@ -204,8 +240,16 @@ $(document).ready(function(){
 			$('.s6Check input[type="radio"]').not(this).prop('checked', false);
     	}
 	});
+
+	$('.s7Check input[type="radio"]').change(function(){
+  
+    	if(this.checked){
+			$('.s7Check input[type="radio"]').not(this).prop('checked', false);
+    	}
+	});
 });
 
+/*
 //section 7 radio control
 $(document).ready(function(){
 	$('.s7Check input[type="radio"]').change(function(){
@@ -228,7 +272,7 @@ $(document).ready(function(){
     		$('.cup-beer').css('opacity', '1');
     	}
 	});
-});
+});*/
 
 function getGender() {
 	var gender = $('.gender:checked').val();
@@ -273,7 +317,7 @@ function getBitterValue() {
 //section 6 slider value
 function getCupValue() {
 	var cup = $('.cup:checked').val();
-	if (cup == "milk") {
+	if (cup == "mug") {
 		return ['創意馬克杯', '冒險與創意', 'image/mug.png'];
 	}else if (cup == "glass") {
 		return ['透明玻璃杯', '質感與浪漫', 'image/glass.png'];
@@ -295,13 +339,29 @@ function getCaffeineValue() {
 }
 
 function afterprint() {
-	document.querySelector('.toTopLeft').classList.toggle('print');
+	$('.toTopLeft').css('display', 'none');
+
+	$('.thanks').css('display', 'block');
+	gsap.to('.thanks', 1, {
+		autoAlpha: 1
+	});
+
+	$('.backToHome').css('display', 'block');
+	gsap.to('.backToHome', 1, {
+		autoAlpha: 1
+	});
+
+	setTimeout(() => { 
+        location.reload();
+    }, 60000);
 }
 
 function printTicket() {
 	$('.create').css('display', 'none');
 	document.querySelector('.hide').classList.toggle('active');
 	document.querySelector('.toTopLeft').classList.toggle('print');
+	$('.stub').css('display','block');
+	alert('列印對話框出現後，請直接按下列印即可！');
 	window.print();
 }
 
@@ -309,8 +369,28 @@ function printTicket() {
 function createTicket() {
 	var currentVal = $('#coffeeName').val();
 	if (currentVal == '') {
+		$('.generate img').css('opacity','0');
 		alert('請輸入名稱!');
 	}else {
+		var tl9 = new TimelineMax();
+		tl9.to('.generate img', 0.5,{
+			autoAlpha: 1,
+			rotation: -45
+		});
+
+		tl9.to('.generate img', 0.5,{
+			rotation: 0
+		});
+
+		tl9.to('.generate img', 0.5,{
+			autoAlpha: 1,
+			rotation: -45
+		});
+
+		tl9.to('.generate img', 0.5,{
+			rotation: 0
+		});
+
 		$('.result').html(generateResult());
 
 		$('.coffeeTitle').html(currentVal + ' 咖啡');
@@ -332,9 +412,11 @@ function createTicket() {
 
 		$('.printTime').html('票券印製時間：' + new Date());
 		
-		$('html, body').animate({
-            scrollTop: $('.s9').offset().top
-        },800);
+		setTimeout(() => { 
+			$('html, body').animate({
+	            scrollTop: $('.s9').offset().top
+	        },800);
+	    }, 3000);
 	}
 }
 
@@ -349,6 +431,11 @@ function generateResult() {
 	var result = results[Math.floor(Math.random()*results.length)];
 	return result;
 }
+
+$('.backToHome').on('click', function() {
+	location.reload();
+})
+
 
 
 

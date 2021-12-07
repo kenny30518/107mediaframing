@@ -86,7 +86,7 @@
 				<div class="optionWrapper">
 					<label for="F"><img src="image/girl.png"></label>
 					<label class="option" for="F">女</label>
-					<input class="gender" name="gender" type="radio" value="F" id="F">
+					<input class="gender" name="gender" type="radio" value="F" id="F" >
 				</div>
 
 				<div class="optionWrapper">
@@ -112,7 +112,7 @@
 				<div class="optionWrapper">
 					<label for="sourLight"><img src="image/sourLight.png"></label>
 					<label class="option" for="sourLight">微酸</label>
-					<input class="sour" name="sour" type="radio" value="sourLight" id="sourLight">
+					<input class="sour" name="sour" type="radio" value="sourLight" id="sourLight" >
 				</div>
 
 				<div class="optionWrapper">
@@ -138,7 +138,7 @@
 				<div class="optionWrapper">
 					<label for="bitterLight"><img src="image/bitterLight.png"></label>
 					<label class="option" for="bitterLight">不苦</label>
-					<input class="bitter" name="bitter" type="radio" value="bitterLight" id="bitterLight">
+					<input class="bitter" name="bitter" type="radio" value="bitterLight" id="bitterLight" >
 				</div>
 
 				<div class="optionWrapper">
@@ -164,7 +164,7 @@
 				<div class="optionWrapper">
 					<label for="caffeineLight"><img src="image/caffeineLight.png"></label>
 					<label class="option" for="caffeineLight">低</label>
-					<input class="caffeine" name="caffeine" type="radio" value="caffeineLight" id="caffeineLight">
+					<input class="caffeine" name="caffeine" type="radio" value="caffeineLight" id="caffeineLight" >
 				</div>
 
 				<div class="optionWrapper">
@@ -185,19 +185,27 @@
 		</section>
 
 		<section id="s7" class="s7">
-			<div class="sliderWrapper">
-				<p class="question">｜選擇容器｜</p>
-				<div class="s7Check">
-					<input class="cup" type="radio" value="milk" id="milk" checked>
-					<label for="milk">創意馬克杯</label>
-					<input class="cup" type="radio" value="glass" id="glass">
-					<label for="glass">透明玻璃杯</label>
-					<input class="cup" type="radio" value="beer" id="beer">
-					<label for="beer">豪邁啤酒杯</label>
+			<h3 class="question">選一個你喜歡的杯子吧！</h3>
+			<div class="s7Check">
+				<div class="optionWrapper">
+					<label for="mug"><img src="image/mug.png"></label>
+					<label class="option" for="mug">創意馬克杯</label>
+					<input class="cup" name="cup" type="radio" value="mug" id="mug" >
+				</div>
+
+				<div class="optionWrapper">
+					<label for="glass"><img src="image/glass.png"></label>
+					<label class="option" for="glass">透明玻璃杯</label>
+					<input class="cup" name="cup" type="radio" value="glass" id="glass">
+				</div>
+
+				<div class="optionWrapper">
+					<label for="beer"><img src="image/beer.png"></label>
+					<label class="option" for="beer">豪邁啤酒杯</label>
+					<input class="cup" name="cup" type="radio" value="beer" id="beer">
 				</div>
 			</div>
-
-			<div class="coffeeCup">
+			<!--div class="coffeeCup">
 				<div class="cup-mug">
 					<div class="mugHandle"></div>
 					<div class="mugInnerHandle"></div>
@@ -209,51 +217,65 @@
 					<div class="beerHandle"></div>
 					<div class="beerInnerHandle"></div>
 				</div>
-			</div>
-			<a class="next" href="#s8">下一步</a>
+			</div-->
+			<a href="#s8" class="arrow">
+				<img src="image/downArrow.png">
+			</a>
 		</section>
 
 		<section id="s8" class="s8">
-			<div class="sliderWrapper">
-				<p class="question">｜咖啡名稱｜</p>
-				<p>為自己的咖啡取個名字吧！例如：「人造風向」咖啡</p>
+			<div class="s8Check">
+				<h3 class="question">為自己的咖啡取個名字吧！</h3>
 				<div class="coffeeName">
 					<p>輸入你的咖啡名稱：</p>
-					<input type="text" id="coffeeName" required="required">
+					<input type="text" class="form-field" id="coffeeName" maxlength="10" placeholder="字數10字內" required="required">
 					<p>咖啡</p>
 				</div>
 			</div>
-			<p class="next" onclick="createTicket()">產生咖啡</p>
+			<div class="generate">
+				<p class="next" onclick="createTicket()">產生咖啡</p>
+				<img src="image/pour.png">
+			</div>
 		</section>
 	</div>
 
 	<section class="s9" id="s9">
 		<div class="toTopLeft">
-			<h1>| 風向產生結果 |</h1>
-			<p class="result">一個華麗的轉身就會捲起一陣輕風，<br/>預測不久之後遙遠的他方會有颶風。</p>
-			<h1 class="coffeeTitle">人造風向 咖啡</h1>
-			<img class="cupImage" src="image/mug.png">
-			<p class="cupType">精緻透明玻璃杯</p>
-			<p class="flavor">酸度- 微酸/ 風味-微苦 / 咖啡因含量-高</p>
-			<p class="final">獨特的你是做事有原則且心思細膩，<br/>享受獨處時光的人，生活充滿質感與浪漫。</p>
-			<div class="sponsor">
-				<p class="sponsorName">Mf life(咖啡廳)</p>
-				<p class="discount">飲料/大杯折扣5元</p>
-				
-				<p class="sponsorName">一直是晴天中山店(咖啡廳)</p>
-				<p class="discount">品項/消費滿xx元，打9折優惠</p>
-
-				<p class="sponsorName">司康小売所</p>
-				<p class="discount">「經典原味司康」折扣5元</p>
-
-				<p class="ticketLimit">使用期限：12/10~12/12</p>
-				<p>票券使用：僅供兌換乙次</p>
-				<p class="printTime">票券印製時間：</p>
+			<div>
+				<h1>| 風向產生結果 |</h1>
+				<p class="result">一個華麗的轉身就會捲起一陣輕風，<br/>預測不久之後遙遠的他方會有颶風。</p>
+				<h1 class="coffeeTitle">人造風向 咖啡</h1>
+				<img class="cupImage" src="image/mug.png">
+				<p class="cupType">精緻透明玻璃杯</p>
+				<p class="flavor"></p>
+				<p class="final">獨特的你是做事有原則且心思細膩，<br/>享受獨處時光的人，生活充滿質感與浪漫。</p>
 			</div>
-			<p class="copyrights">世新大學資訊傳播學系畢展《人造風向》製</p>
+			<div class="sponsor">
+				<div class="stub">
+					<p class="sponsorName">Mf life(咖啡廳)</p>
+					<p class="discount">飲料/大杯折扣5元</p>
+					
+					<p class="sponsorName">一直是晴天中山店(咖啡廳)</p>
+					<p class="discount">品項/消費滿xx元，打9折優惠</p>
+
+					<p class="sponsorName">司康小売所</p>
+					<p class="discount">「經典原味司康」折扣5元</p>
+
+					<p class="ticketLimit">使用期限：110.12.10~110.12.12</p>
+					<p>票券使用：僅供兌換乙次</p>
+					<p class="printTime">票券印製時間：</p>
+				</div>
+				<p class="copyrights">世新大學資訊傳播學系畢展《人造風向》製</p>
+			</div>
 		</div>
 
 		<p class="create" onclick="printTicket()">領取票券!</p>
+		<div class="thanks">
+			<h1>感謝您使用風向製造機，請取票</h1>
+			<h1>掃QR code填寫問卷，可至後方櫃檯抽獎呦！</h1>
+			<img src="image/thanks.svg">
+		</div>
+		<p class="backToHome">回首頁</p>
 	</section>
 
 	<!--section class="s8">

@@ -9,7 +9,7 @@ body{
 	height: 100vh;
 	background-color: #F4F1E6;
 	cursor: url("../image/cursor.svg"), auto;
-	/*overflow: hidden;*/
+	overflow: hidden;
 }
 
 a:hover{
@@ -500,6 +500,12 @@ input[type="radio"]:checked::before {
 
 .buttons p {
 	margin: 40px 0;
+	transition: 0.8s;
+}
+
+.buttons p:hover {
+	background: #272828;
+	color: #fff;
 }
 
 .again {

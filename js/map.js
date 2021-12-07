@@ -163,7 +163,7 @@ $(document).on("click", ".burgerwrapper", function() {
 });
 
 function to1F() {
-    $('#firstFloor').css('color','#769E89');
+    $('#firstFloor').css('color','#272828');
     $('#secondFloor').css('color','transparent');
     document.getElementById('firstFloor').style.pointerEvents = "none";
     var tl3 = new TimelineMax();
@@ -190,7 +190,7 @@ function to1F() {
 }
 
 function toB1() {
-    $('#secondFloor').css('color','#769E89');
+    $('#secondFloor').css('color','#272828');
     $('#firstFloor').css('color','transparent');
     document.getElementById('secondFloor').style.pointerEvents = "none";
     var tl6 = new TimelineMax();
@@ -218,7 +218,7 @@ function toB1() {
 
 //Floor switch button
 $('#secondFloor').on('click',function(){
-    $('#secondFloor').css('color','#769E89');
+    $('#secondFloor').css('color','#272828');
     $('#firstFloor').css('color','transparent');
     document.getElementById('secondFloor').style.pointerEvents = "none";
     var tl2 = new TimelineMax();
@@ -246,7 +246,7 @@ $('#secondFloor').on('click',function(){
 });
 
 $('#firstFloor').on('click',function(){
-    $('#firstFloor').css('color','#769E89');
+    $('#firstFloor').css('color','#272828');
     $('#secondFloor').css('color','transparent');
     document.getElementById('firstFloor').style.pointerEvents = "none";
     var tl3 = new TimelineMax();
@@ -275,7 +275,7 @@ $('#firstFloor').on('click',function(){
 
 //phoneFloor switch button
 $('#phoneSecondFloor').on('click',function(){
-    $('#phoneSecondFloor').css('color','#769E89');
+    $('#phoneSecondFloor').css('color','#272828');
     $('#phoneFirstFloor').css('color','transparent');
     document.getElementById('phoneSecondFloor').style.pointerEvents = "none";
     var tl4 = new TimelineMax();
@@ -303,7 +303,7 @@ $('#phoneSecondFloor').on('click',function(){
 });
 
 $('#phoneFirstFloor').on('click',function(){
-    $('#phoneFirstFloor').css('color','#769E89');
+    $('#phoneFirstFloor').css('color','#272828');
     $('#phoneSecondFloor').css('color','transparent');
     document.getElementById('phoneFirstFloor').style.pointerEvents = "none";
     var tl5 = new TimelineMax();

@@ -189,14 +189,14 @@ a:hover{
 }
 
 .floor p:nth-child(1){
-	color: #769E89;
+	color: #272828;
 	pointer-events: none;
 }
 
 .floor p:nth-child(1):before{
 	position: fixed;
 	content: '1F';
-	color: #769E89;
+	color: #272828;
 	transition: 0.5s;
 	width: 0%;
 	overflow: hidden;
@@ -209,7 +209,7 @@ a:hover{
 .floor p:nth-child(2):before{
 	position: fixed;
 	content: 'B1';
-	color: #769E89;
+	color: #272828;
 	transition: 0.5s;
 	width: 0%;
 	overflow: hidden;
@@ -222,7 +222,7 @@ a:hover{
 .floor p{
 	font-size: 6em;
     color: transparent;
-    -webkit-text-stroke: 3px #769E89;
+    -webkit-text-stroke: 3px #272828;
     margin-bottom: 0;
     padding-left: 35px;
 }
@@ -842,12 +842,12 @@ footer .copyrights{
 	.phoneFloor p{
 		font-size: 5em;
 	    color: transparent;
-	    -webkit-text-stroke: 2px #769E89;
+	    -webkit-text-stroke: 2px #272828;
 	    margin-bottom: 0;
 	}
 
 	#phoneFirstFloor {
-		color: #769E89;
+		color: #272828;
 	}
 
 	.groupTitle {

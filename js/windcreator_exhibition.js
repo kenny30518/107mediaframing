@@ -39,11 +39,11 @@ tl.from('.sign', {
 	ease: 'elastic.out(3, 0.1)'
 })*/
 
-/*$(window).on('load', function(){
+$(window).on('load', function(){
 	$('html, body').animate({
         scrollTop: $('.s1').offset().top
  	},800);
-});*/
+});
 
 $('.arrow').on('click', function(e){
 	if(this.hash !== ''){
@@ -350,7 +350,7 @@ function getCaffeineValue() {
 	}
 }
 
-/*function afterprint() {
+function afterprint() {
 	$('.toTopLeft').css('display', 'none');
 
 	$('.thanks').css('display', 'block');
@@ -375,7 +375,7 @@ function printTicket() {
 	$('.stub').css('display','block');
 	alert('列印對話框出現後，請直接按下列印即可！');
 	window.print();
-}*/
+}
 
 //section 8 text value
 function createTicket() {

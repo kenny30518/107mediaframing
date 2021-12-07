@@ -9,7 +9,7 @@ body{
 	height: 100vh;
 	background-color: #F4F1E6;
 	cursor: url("../image/cursor.svg"), auto;
-	/*overflow: hidden;*/
+	overflow: hidden;
 }
 
 a:hover{
@@ -482,36 +482,6 @@ input[type="radio"]:checked::before {
 	text-align: center;
 }
 
-.toTopLeft {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
-	align-items: center;
-	width: 100%;
-}
-
-.buttons a {
-	color: black;
-}
-
-.buttons a:hover {
-	text-decoration: none;
-}
-
-.buttons p {
-	margin: 40px 0;
-}
-
-.again {
-	padding: 10px 20px;
-	border: 2px solid black;
-}
-
-.quit {
-	padding: 10px 20px;
-	border: 2px solid black;
-}
-
 .s9 h1 {
 	margin-bottom: 8%;
 	font-weight: 500;
@@ -575,6 +545,7 @@ input[type="radio"]:checked::before {
 .s9 .copyrights {
 	font-size: 15px;
 	margin-top: 20px;
+	float: right;
 }
 
 .s9 .create {

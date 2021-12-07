@@ -70,7 +70,15 @@ $(document).on("keydown", event => {
     }
 });
 
+var tabIsPressed = true;
+$(document).on("keydown", event => {
+    if (tabIsPressed & event.keyCode === 9) {	
+        event.preventDefault();
+    }
+});
+
 $('.startButton').on('click', function(){
+	isPressed = true;
 	$('.startButton').css('display','none');
 	$('.sign').css('opacity','1');
 	const swingRadius = gsap.getProperty("body", "--radius"); // gets the radius var from CSS... useful for this example's flexability. 

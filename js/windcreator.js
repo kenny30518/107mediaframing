@@ -39,11 +39,11 @@ tl.from('.sign', {
 	ease: 'elastic.out(3, 0.1)'
 })*/
 
-$(window).on('load', function(){
+/*$(window).on('load', function(){
 	$('html, body').animate({
         scrollTop: $('.s1').offset().top
  	},800);
-});
+});*/
 
 $('.arrow').on('click', function(e){
 	if(this.hash !== ''){

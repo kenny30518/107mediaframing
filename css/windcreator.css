@@ -9,7 +9,7 @@ body{
 	height: 100vh;
 	background-color: #F4F1E6;
 	cursor: url("../image/cursor.svg"), auto;
-	overflow: hidden;
+	/*overflow: hidden;*/
 }
 
 a:hover{
@@ -827,7 +827,24 @@ input[type="range"]::-moz-range-thumb {
   width: 180px;
 }*/
 
+@media (max-width: 790px) {
+	.title .intro {
+		white-space: normal;
+	}
 
+	.title .intro h3 {
+		line-height: 45px;
+		font-size: 20px;
+	}
+
+	.title .intro h3:nth-child(2) {
+		font-size: 20px;
+	}
+
+	.arrow img {
+		width: 100px;
+	}
+}
 
 
 

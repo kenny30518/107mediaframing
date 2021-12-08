@@ -9,7 +9,7 @@ body{
 	height: 100vh;
 	background-color: #F4F1E6;
 	cursor: url("../image/cursor.svg"), auto;
-	overflow: hidden;
+	/*overflow: hidden;*/
 }
 
 a:hover{
@@ -27,7 +27,7 @@ p {
 .print {
 	width: 300px;
 	position: absolute;
-	top: 0;
+	top: 3cm;
 	left: 0;
 }
 

@@ -97,11 +97,7 @@ p {
 .title .intro {
 	letter-spacing: 10px;
 	color: black;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translateX(-50%);
-	white-space: nowrap;
+	margin-top: 20%;
 }
 
 .introFirst, .introSecond, .s1 a {
@@ -123,13 +119,19 @@ p {
 .s1 {
 	position: relative;
 	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .sign {
 	opacity: 0;
 	position: absolute;
 	top: -3%;
-	width: 100%;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	width: 40%;
 }
 
 .sign img {
@@ -828,6 +830,10 @@ input[type="range"]::-moz-range-thumb {
 }*/
 
 @media (max-width: 790px) {
+	.sign {
+		width: 55%;
+	}
+
 	.title .intro {
 		white-space: normal;
 	}
@@ -844,8 +850,144 @@ input[type="range"]::-moz-range-thumb {
 	.arrow img {
 		width: 100px;
 	}
+
+	.s2-1 .coffeeImage img {
+		width: 40%;
+		height: 100%;
+	}
+
+	.s2-1Third {
+		font-size: 30px;
+	}
+
+	.s2Image img {
+		width: 25%;
+	}
+
+	.s8 h3 {
+		font-size: 25px;
+	}
+
+	.coffeeName {
+		font-size: 25px;
+	}
+
+	.form-field {
+		font-size: 1rem;
+	}
+
+	.toTopLeft {
+		flex-direction: column;
+	}
+
+	.buttons {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.buttons p {
+    	margin: 20px 10px;
+    }
 }
 
+@media (max-width: 700px) {
+	.optionWrapper img {
+    	width: 100px;
+	}
+
+	.s3 h3, .s4 h3, .s5 h3, .s6 h3, .s7 h3 {
+		font-size: 30px;
+	}
+
+	.s3 .option, .s4 .option, .s5 .option, .s6 .option, .s7 .option {
+		font-size: 20px;
+	}
+
+	.s8 .coffeeName {
+    	font-size: 25px;
+    	flex-direction: column;
+    	align-items: flex-start;
+    }
+
+    .inputField {
+    	display: flex;
+    	flex-direction: row;
+    	align-items: flex-end;
+    }
+}
+
+@media (max-width: 530px) {
+	.startButton {
+		letter-spacing: 2px;
+	}
+
+	.sign {
+		width: 70%;
+	}
+
+	.title .intro {
+	    width: 80%;
+    	margin: 0 auto;
+    	letter-spacing: 5px;
+	}
+
+	.s2-1 .coffeeImage img {
+		width: 55%;
+	}
+
+	.s2-1 h3 {
+		letter-spacing: 2px;
+	}
+
+	.s2-1Second {
+		font-size: 18px;
+	}
+
+	.s2-1Third {
+		font-size: 18px;
+	}
+
+	.s2 h3 {
+		letter-spacing: 5px;
+		font-size: 20px;
+	}
+
+	.s3 h3, .s4 h3, .s5 h3, .s6 h3, .s7 h3 {
+		font-size: 20px;
+		letter-spacing: 5px;
+	}
+
+	.s7 img {
+		width: 80px;
+	}
+
+	.s7 .option {
+		font-size: 14px;
+		letter-spacing: 2px;
+	}
+
+	.s8 h3 {
+		letter-spacing: 3px;
+		font-size: 18px;
+	}
+
+	.s8 .coffeeName {
+		font-size: 18px;
+	}
+
+	.form-field {
+		font-size: 18px;
+	}
+
+	.s8 .next {
+		padding: 5px 10px;
+	    margin-right: 25px;
+	}
+
+	.s8 .generate img {
+		width: 150px;
+	}
+}
 
 
 

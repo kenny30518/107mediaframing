@@ -373,7 +373,6 @@ function printTicket() {
 	document.querySelector('.hide').classList.toggle('active');
 	document.querySelector('.toTopLeft').classList.toggle('print');
 	$('.stub').css('display','block');
-	alert('列印對話框出現後，請直接按下列印即可！');
 	window.print();
 }
 

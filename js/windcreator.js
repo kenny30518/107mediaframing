@@ -13,7 +13,7 @@ $("img .lazy").lazyload({
 	effect : "fadeIn"
 });
 
-//setTimeOut refresh
+//setTimeOut refres
 /*let time = new Date().getTime();
 const setActivityTime = (e) => {
    time = new Date().getTime();
